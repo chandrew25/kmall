@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{margin:2px auto;overflow:hidden;width:964px;}
+#main .navi_left{width:202px;float:left;overflow:hidden;margin:0px 5px 0px 0px;border:#BCC1C5 1px solid;}
+#main .navi_left ul{width:202px;background:white;}
+#main .navi_left ul li{overflow:hidden;}
+#main .navi_left ul li .title{font-size:15px;font-family:"microfost yahei";font-weight:bold;color:white;background:url(images/title_bg.jpg);height:27px;margin:0px auto;width:194px;padding:5px 0px 0px 15px;;line-height:27px;}
+#main .navi_left ul li .title .words{line-height:31px;margin:0px 0px 0px 10px;font-size:14px;float:left;}
+#main .navi_left ul li .title .time{float:right;margin:5px 10px 0px 0px;line-height:26px;font-size:14px;}
+#main .navi_left ul li .box{width:202px;margin:0;border-left:#999 1px solid;border-right:#999 1px solid;border-bottom:none;padding:8px 0px 8px 0px;}
+#main .navi_left ul li .box li{padding:0px 0px 0px 15px;line-height:25px;}
+#main .navi_left ul li .box .single{background:#E9EEF2;font-family:"microsoft yahei";font-size:14px;line-height:26px;}
+#main .navi_left ul li .box .double{font-family:"microsoft yahei";font-size:14px;line-height:26px;}
+#main .navi_left ul li .box .top{overflow:hidden;}
+#main .navi_left ul li .box .top .number{float:left;margin:0px 5px 0px 0px;width:18px;height:23px;background:url(images/number_1.gif);}
+#main .navi_left ul li .box .top .number span{color:#7FAFD7;font-size:13px;margin:1px 0px 0px 5px;font-weight:bold;line-height:19px;}
+#main .navi_left ul li .box .top .pic{margin:0px 5px 0px 0px;float:left;width:53px;}
+#main .navi_left ul li .box .top .intro{float:right;width:106px;}
+#main .navi_left ul li .box .top .intro .name{overflow:hidden;}
+#main .navi_left ul li .box .top .intro .name .words{float:left;}
+#main .navi_left ul li .box .top .intro .name .condition{float:right;margin:10px 8px 0px 0px;}
+#main .navi_left ul li .box .top .intro .grade{overflow:hidden;}
+#main .navi_left ul li .box .top .intro .type{color:#CCC;}
+#main .navi_left ul li .box .normal{overflow:hidden;}
+#main .navi_left ul li .box .normal .number{float:left;margin:0px 15px 0px 0px;width:8px;color:#09F;}
+#main .navi_left ul li .box .normal .pic{margin:3px 5px 0px 0px;float:left;width:17px;}
+#main .navi_left ul li .box .normal .intro{float:right;width:136px;}
+#main .navi_left ul li .box .normal .intro .name{overflow:hidden;}
+#main .navi_left ul li .box .normal .intro .name .words{float:left;}
+#main .navi_left ul li .box .normal .intro .name .condition{float:right;margin:10px 8px 0px 0px;}
+
+.week_show_detail{display:none;}
+.week_show_lists{display:block;}
+.week_show_detail_show{display:block;}
+.week_show_lists_hide{display:none;}
+.month_show_detail{display:none;}
+.month_show_lists{display:block;}
+.month_show_detail_show{display:block;}
+.month_show_lists_hide{display:none;}
+
+#main .content{width:752px;float:right;overflow:hidden;background:white;border:#BCC1C5 1px solid;}
+#main .content .title{line-height:31px;font-size:16px;border-bottom:#999 1px solid;padding:0px 0px 0px 10px;font-weight:bold;}
+#main .content .general{margin:25px 0px 0px 61px;overflow:hidden;}
+#main .content .general .pic{margin:4px 0px 0px 0px;width:30%;float:left;}
+#main .content .general table{width:65%;}
+#main .content .general table td{height:25px;}
+#main .content .intro{margin:42px 0px 0px 0px;overflow:hidden;}
+#main .content .intro .head{overflow:hidden;}
+#main .content .intro .head .name{line-height:31px;}
+#main .content .intro .head .bottom{background:url(images/details_intro_line.jpg);height:2px;width:100%;overflow:hidden;}
+#main .content .intro #app_detail_show .words{width:95%;overflow:hidden;line-height:30px;margin:5px auto;color:black;}
+#main .content .intro #app_detail_show .pics{margin:10px auto;width:92%;overflow:hidden;}
+#main .content .intro #app_detail_show .pics img{float:left;margin:0px 5px 0px 0px;}
+
+.week_month{float:left;margin:0px 0px 0px 0px;padding:0px 5px 0px 5px;font-family:"microsoft yahei";cursor:pointer;}
+.week_month_show{background:white;}
+.week_month_box{display:none;}
+#week_show{display:block;}
+.app_tip{padding:0px 20px 0px 20px;text-align:center;font-family:"microsoft yahei";font-size:14px;font-weight:bold;float:left;margin:0px 5px 0px 0px;background:#86B6DC;}
+.app_tip_hover{background:#298BD4;}
+#app_detail_show{display:block;}
+#use_in_show{display:none;}
+
+.stargrade{display:inline-block;}

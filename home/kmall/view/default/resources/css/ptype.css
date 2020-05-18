@@ -1,0 +1,102 @@
+.manage{ background-color:#FFF;}
+.showimg{margin-top:2px;}
+.showimg img{display:block;}
+.mcon{padding:10px 0px;overflow:hidden;}
+.mcon .mbar{float:left;width:200px;overflow:hidden;}
+
+.mcon .mview{float:right;width:1180px;margin-right:10px;overflow:hidden; display:inline; margin-top:5px;}
+
+.mbar img{ border:1px solid #CECECE;}
+.mbar .left_list{ width:198px; text-align:center; border:1px solid #CECECE;}
+.mbar .left_list .list_top{ border-bottom:1px solid #CECECE; width:100%; height:36px;}
+.mbar .left_list .list_top span{ width:196px; font-size:14px; height:35px; display:block; margin:1px; line-height:34px; background-color:#ED8B24; color:#FFFFFF; font-weight:bold;}
+.mbar .left_list dl{ border-bottom:1px dashed #999999;width:180px; margin-left:8px;}
+.mbar .left_list dl.f{border:0;}
+.mbar .left_list dl dt{ line-height:30px; height:30px;text-align:left; font-weight:bold;}
+.mbar .left_list dl dd ul li{ float:left; line-height:24px; height:24px;margin-right:8px;}
+
+.left_foot{ width:198px; height:1230; text-align:center; border:1px solid #CECECE; margin-top:10px;}
+.m_list{width:100%;}
+.month_list{ border-bottom:1px solid #CECECE; width:100%;}
+.span_left_title{ width:196px; font-size:14px; height:35px; display:block; margin:1px; line-height:34px; background-color:#F5F5F5; font-weight:bold;}
+
+.h_list dl dt{height: 173px; width: 173px; margin: 10px;}
+.h_list dl dd{ height:50px; line-height:22px; text-align:left; margin-left:36px;}
+.pic_color{ color:CC0000;}
+.his_list{ border-bottom:1px solid #CECECE;border-top:1px solid #CECECE; width:100%; height:36px;}
+.spancolor1{color:#666666; height:20px; float:left;;}
+.spancolor2{color:#CC0000; height:20px; width:80px; float:left; text-overflow:ellipsis; display:block; overflow:hidden;}
+.span_height{height:20px; width:125px; text-overflow:ellipsis; display:block; float:left; overflow:hidden;}
+
+.m_list dl dt{height: 173px; width: 173px; margin: 10px;}
+.m_list dl dd{ text-align:left;}
+.left_num_1{ display:block; width:16px; height:16px; background-color:#F97919; line-height:16px; float:left; margin-left:10px; text-align:center;color:#FFFFFF}
+.left_num{display:block; width:16px; height:16px; background-color:#F97919; line-height:16px; float:left; text-align:center; margin-left:2px;
+color:#FFFFFF; background-color:#666666; float:left;}
+.left_num_2{ margin-left:5px; height:20px; width:145px; overflow:hidden; text-overflow:ellipsis; display:block; float:left;}
+.left_num_3{ margin-left:5px;color:#666666; float:left; display:inline;}
+.left_num_4{color:#C00; height:20px; width:80px; overflow:hidden; text-overflow:ellipsis; display:block; float:left;}
+
+
+.libgc{background-image:url(images/ptype/back.png);}
+.manage_list{float:left;width:1194px;}
+.list_img{ width:226px; height:280px; border:1px solid #ccc; text-align:center; float:left; margin-right:10px; margin-bottom:15px;}
+.div_img{ width:206px; height:210px;margin-left:10px;}
+.manage_w{ text-align:left; margin-left:10px; line-height:21px; margin-top:5px;width:206px;overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/}
+.img_manage_list{ margin-left:1px; margin-top:1px;}
+.pingpai{font-weight:bold; margin-left:10px; width:60px; height:100%; float:left;overflow:hidden;}
+.fl_ul{max-height :20px; float:right; width:1110px;overflow:hidden; display:inline;}
+.spfl{ border-bottom:1px dashed #ccc; width:1180px; float:left; padding-bottom:5px;}
+.mul li{padding:3px 5px;margin-right:5px;margin-bottom:5px;display:inline;line-height: 20px;}
+.span_title{
+    height:40px; 
+}
+.span1{color:#666666; height:20px; width:260px; display:block;}
+.span1 span{text-decoration:line-through;}
+.span2{font-size:14px; width:280px; color:#FF2222; font-weight:bold; height:20px; overflow:hidden; text-overflow:ellipsis;}
+.span3{color:#666666;}
+.yichu{ overflow:hidden; text-overflow:ellipsis;}
+
+.fenye{float:right;line-height:20px;float:right;}
+.fenye span{ float:left; margin-left:5px; margin-top:10px;}
+.left_tab{border-bottom:1px dashed #F4F4F4; margin-top:10px; margin-left:8px;}
+.left_tab tr{border-top:1px dashed #F4F4F4;}
+.spanbt{height:20px; overflow:hidden; text-overflow:ellipsis; display:block; float:left; width:80px; }
+.swy{width:40px; height:20px; display:block; border:1px solid #CECECE; text-align:center;}
+.fy{ width:20px; height:20px;display:block; border:1px solid #CECECE; text-align:center;}
+.xyy{ width:45px; height:20px; display:block; border:1px solid #CECECE; text-align:center;}
+
+
+.manage_top{float: left; border-top:1px solid #ccc; width:1180px; height:40px; margin-top:10px; line-height:40px;}
+.manage_top .pl{font-weight:bold; margin-left:10px; float:left;}
+.manage_top ul{ width:240px; float:left;}
+.manage_top ul li{width:50px; height:20px; border:1px solid #CACACA; line-height:20px; float:left; margin-top:8px; margin-left:5px; text-align:left;}
+.manage_top .plfs{display:block; width:25px; height:20px;
+ text-align:center; float:left; color:#6A6A6A; margin-left:5px; display:inline;}
+.manage_top form{ width:250px; float:left; height:40px; line-height:40px; display:inline;}
+.span_form{margin:8px 3px;color:#6A6A6A; height:20px; line-height:20px; float:left;}
+.manage_top form input{width:50px; height:20px; border:1px solid #CACACA; margin-top:8px; float:left;}
+.manage_top .btn{width:49px; height:20px; padding:1px;background:url(images/ptype/bnt_bg.png) no-repeat 0px 2px; line-height:20px; margin-top:8px; margin-left:5px;text-align:center; float:left; display:inline;cursor:pointer;}
+
+.ud_bgred{ background:url(images/ptype/down_1.png) no-repeat;margin-top:3px;margin-left:3px; width:12px; height:15px; float:left;}
+.ud_bg{ background:url(images/ptype/down_2.png) no-repeat;margin-top:3px;margin-left:3px; width:12px; height:15px; float:left;}
+.ud_bgred1{ background:url(images/ptype/up_1.png) no-repeat;margin-top:3px;margin-left:3px; width:12px; height:15px; float:left;}
+.ud_bg1{ background:url(images/ptype/up_2.png) no-repeat;margin-top:3px;margin-left:3px; width:12px; height:15px; float:left;}
+
+.show_all{
+    float: right;
+    cursor: pointer;
+}
+
+ul.mul{
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .header{width: 1200px;}
+    .fixed_search{width: 1200px;}
+    .banner{width: 1200px;}
+    .footer{width: 1200px;}
+}

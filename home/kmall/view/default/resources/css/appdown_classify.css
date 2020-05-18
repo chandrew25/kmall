@@ -1,0 +1,87 @@
+
+#main{margin:2px auto 0px auto;overflow:hidden;width:964px;margin-bottom:10px;}
+#main .navi_left{width:202px;float:left;overflow:hidden;margin:0px 5px 0px 0px;border:#BCC1C5 1px solid;}
+#main .navi_left ul{width:202px;background:white;}
+#main .navi_left ul li{overflow:hidden;}
+#main .navi_left ul li .title{font-size:15px;font-family:"microfost yahei";font-weight:bold;color:white;background:url(images/title_bg.jpg);height:27px;margin:0px auto;width:194px;padding:5px 0px 0px 15px;;line-height:27px;}
+#main .navi_left ul li .title .words{line-height:31px;margin:0px 0px 0px 10px;font-size:14px;float:left;overflow:visible;}
+#main .navi_left ul li .title .time{float:right;margin:5px 10px 0px 0px;line-height:26px;font-size:14px;}
+#main .navi_left ul li .box{width:202px;margin:0;padding:8px 0px 8px 0px;overflow:visible;}
+#main .navi_left ul li .box li{padding:0px 0px 0px 15px;line-height:25px;}
+#main .navi_left ul li .box .single{background:#E9EEF2;font-family:"microsoft yahei";font-size:14px;line-height:26px;}
+#main .navi_left ul li .box .double{font-family:"microsoft yahei";font-size:14px;line-height:26px;}
+#main .navi_left ul li .box .top{overflow:hidden;}
+#main .navi_left ul li .box .top .number{float:left;margin:0px 5px 0px 0px;width:18px;height:23px;background:url(images/number_1.gif);}
+#main .navi_left ul li .box .top .number span{color:#7FAFD7;font-size:13px;margin:1px 0px 0px 5px;font-weight:bold;line-height:19px;}
+#main .navi_left ul li .box .top .pic{margin:0px 5px 0px 0px;float:left;width:53px;}
+#main .navi_left ul li .box .top .intro{float:right;width:106px;}
+#main .navi_left ul li .box .top .intro .name{overflow:hidden;}
+#main .navi_left ul li .box .top .intro .name .words{float:left;}
+#main .navi_left ul li .box .top .intro .name .condition{float:right;margin:10px 8px 0px 0px;}
+#main .navi_left ul li .box .top .intro .grade{overflow:hidden;}
+#main .navi_left ul li .box .top .intro .type{color:#CCC;}
+#main .navi_left ul li .box .normal{overflow:hidden;}
+#main .navi_left ul li .box .normal .number{float:left;margin:0px 15px 0px 0px;width:8px;color:#09F;}
+#main .navi_left ul li .box .normal .pic{margin:3px 5px 0px 0px;float:left;width:17px;}
+#main .navi_left ul li .box .normal .intro{float:right;width:136px;}
+#main .navi_left ul li .box .normal .intro .name{overflow:hidden;}
+#main .navi_left ul li .box .normal .intro .name .words{float:left;}
+#main .navi_left ul li .box .normal .intro .name .condition{float:right;margin:10px 8px 0px 0px;}
+
+.week_show_detail{display:none;}
+.week_show_lists{display:block;}
+.week_show_detail_show{display:block;}
+.week_show_lists_hide{display:none;}
+.month_show_detail{display:none;}
+.month_show_lists{display:block;}
+.month_show_detail_show{display:block;}
+.month_show_lists_hide{display:none;}
+.week_month{float:left;margin:0px 0px 0px 0px;padding:0px 5px 0px 5px;font-family:"microsoft yahei";cursor:pointer;}
+.week_month_show{background:white;}
+.week_month_box{display:none;}
+#week_show{display:block;}
+
+
+#main .content {float: right;overflow: hidden;width: 746px;background:white;border:#BCC1C5 1px solid;}
+#main .ce{ width:715px;overflow:hidden; padding-left:5px;  border-bottom:1px  dashed #CCC;}
+.software-item {margin: -1px 0 0;padding: 10px 0 10px 140px;}
+.software-item.image {border: 1px solid #DCDCDC;display: inline;float: left;margin-left: -132px;max-height: 128px;overflow: hidden;padding: 2px;}
+.software-item .pdftu { float:left; margin:10px 0px 0px 26px; width:90px; height:90px;}
+.wenzi{ float:right; width:736px; overflow:hidden; padding: 0px 0px 0px 0px; position: relative;}
+.wenzi dl{ padding-top:15px; padding-bottom:20px; overflow:hidden;border-bottom:1px  dashed #999;}
+.wenzi dl dt{ float:left;}
+.wenzi dl dd{ float:left; width:605px; padding-left:20px; color:#666 }
+.wenzi dl dd img{ padding-left:10px; padding-top:5px;float:left;}
+.wenzi dl dd span{ float:right;}
+.wenzi dl dd h4{ font-size:14px; float:left; line-height:30px;}
+.biaoti{ float:left;font-family::"microsoft yahei"; font-size:12px; font-weight:blod;}
+.img, iframe, fieldset {border: 0 none;}
+.info em {color: #00adef; font-style: normal;}
+.date {color: #666666;float: right;font-size:12px; font-weight: normal;}
+
+.pages_list { float:right; margin: 0;overflow: hidden;padding: 20px 0px 5px 200px;width: 600px; font-size:14px;}
+.pages{margin:0; padding:0;}
+.pages a{ display:inline-block; padding:1px 7px; margin:0 1px; line-height:20px; border:1px solid #cecece;}
+.pages a:hover{ background:#298bd4; text-decoration:none;  border:1px solid #cecece; font-family:"arial";font-size:14px; color: #ffffff }
+.current { background-color:#298bd4; border:1px solid #cecece; font-family:"arial"; font-size:14px; color:#fbfcfd;font-weight: bold;}
+
+
+/* 分页
+----------------------------------*/
+#main .content #product_paging{width:591px;height:25px;margin:10px 0px 20px 20px;float:left;display:inline;}
+#main .content #submit_page{width:37px;height:19px;margin-top:2px;float:left;display:inline;}
+#main .content #to_page{width:86px;height:25px;line-height:25px;font-size:13px;color:#C1A3A6;float:left;}
+#main .content #to_page span{float:left;display:inline;}
+#main .content #to_page input{border-style:solid;border-width:1px;width:30px;height:18px;margin:0 5px 0 5px;line-height:18px;text-align:center;color:#000;float:left;display:inline;}
+#main .content #total_page{width:57px;height:25px;line-height:25px;font-size:13px;color:#C1A3A6;text-align:right;float:left;margin-right:4px;}
+#main .content .ellipsis{width:10px;height:2px;margin:14px 13px 9px 7px;background:url("images/product/ellipsis.jpg") no-repeat;float:left;display:inline;}
+#main .content .page_index{border-style:solid;border-width:1px;width:17px;height:21px;margin-right:5px;line-height:23px;text-align:center;float:left;display:inline;}
+
+/*星级*/
+#star_big{width:75px;height:15px;display:inline-block;float:none;margin:7px 0px 0px 5px;}
+.star_big_show{background:url("images/star_big.png");}
+.star_big1{background-position: -60px 0px;}
+.star_big2{background-position: -45px 0px;}
+.star_big3{background-position: -30px 0px;}
+.star_big4{background-position: -15px 0px;}
+.star_big5{background-position: 0px 0px;}

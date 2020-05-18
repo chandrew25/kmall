@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8"?>
+<classes>
+    <class name="Ads">
+        <conditions>
+            <condition>name</condition>
+            <condition>adstype</condition>
+        </conditions>
+    </class>
+    <class name="Seckill">
+        <conditions>
+            <condition relation_class="Product" show_name="name">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="product_id" relation_class="Product">name</show>
+            <show local_key="goods_id" relation_class="Goods">goods_name</show>
+        </relationShows>
+    </class>
+    <class name="Country">
+        <conditions>
+            <condition>name</condition>
+        </conditions>
+        <has_many>
+            <relationclass name="Product">products</relationclass>
+        </has_many>
+    </class>
+    <class name="Activity">
+        <conditions>
+            <condition>name</condition>
+        </conditions>
+        <has_many>
+            <relationclass name="ActivityProduct">activityProducts</relationclass>
+        </has_many>
+        <many_many>
+            <relationclass name="Product">products</relationclass>
+        </many_many>
+    </class>
+    <class name="ActivityProduct">
+        <conditions>
+            <condition relation_class="Activity" show_name="name">activity_id</condition>
+            <condition relation_class="Product" show_name="product_name">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="activity_id" relation_class="Activity">name</show>
+            <show local_key="product_id" relation_class="Product">product_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Activity">activitys</relationclass>
+            <relationclass name="Product">products</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Brand">
+        <conditions>
+            <condition>brand_name</condition>
+        </conditions>
+        <has_many>
+            <relationclass name="Brandptype">brandptypes</relationclass>
+            <relationclass name="Product">products</relationclass>
+            <relationclass name="Goods">goodss</relationclass>
+        </has_many>
+    </class>
+    <class name="Bproduct">
+        <conditions>
+            <condition>product_name</condition>
+            <condition relation_class="Brandptype" show_name="name">brandptype_id</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="brandptype_id" relation_class="Brandptype">name</show>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Brandptype">brandptype</relationclass>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Brandptype">
+        <conditions>
+            <condition relation_class="Brand" show_name="brand_name">brand_id</condition>
+            <condition relation_class="Ptype" show_name="name">ptype_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="brand_id" relation_class="Brand">brand_name</show>
+            <show local_key="ptype_id" relation_class="Ptype">name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Brand">brand</relationclass>
+            <relationclass name="Ptype">ptype</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Bproduct">bproducts</relationclass>
+        </has_many>
+    </class>
+    <class name="Helpcenter">
+        <conditions>
+            <condition>help_title</condition>
+        </conditions>
+    </class>
+    <class name="News">
+        <conditions>
+            <condition>news_title</condition>
+            <condition>news_type</condition>
+        </conditions>
+    </class>
+    <class name="Appdown">
+        <conditions>
+            <condition>appdown_name</condition>
+            <condition>suitabletype</condition>
+            <condition>type</condition>
+        </conditions>
+        <has_many>
+            <relationclass name="Appfree">appfrees</relationclass>
+            <relationclass name="Apphotrecommend">apphotrecommends</relationclass>
+            <relationclass name="Applog">applogs</relationclass>
+        </has_many>
+    </class>
+    <class name="Appfree">
+        <conditions>
+            <condition>appdown_name</condition>
+            <condition>type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="appdown_id" relation_class="Appdown">appdown_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Appdown">appdown</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Apphotrecommend">
+        <conditions>
+            <condition>appdown_name</condition>
+            <condition>type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="appdown_id" relation_class="Appdown">appdown_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Appdown">appdown</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Applog">
+        <conditions>
+            <condition>appdown_name</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="appdown_id" relation_class="Appdown">appdown_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Appdown">appdown</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Bulkpurchase">
+        <conditions>
+            <condition>customername</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+            <condition>company_name</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Attribute">
+        <conditions>
+            <condition>attribute_name</condition>
+            <condition>attr_type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="parent_id" relation_class="Attribute">attribute_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Attribute">attribute_p</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Productspec">productspecs</relationclass>
+            <relationclass name="Ptypeattr">ptypeattrs</relationclass>
+        </has_many>
+    </class>
+    <class name="Deliverytype">
+        <conditions>
+            <condition>deliverytype_code</condition>
+            <condition>name</condition>
+        </conditions>
+    </class>
+    <class name="Logintype">
+        <conditions>
+            <condition>logintype_code</condition>
+            <condition>app_name</condition>
+        </conditions>
+        <has_many>
+            <relationclass name="Thirdpartylogin">thirdpartylogins</relationclass>
+        </has_many>
+    </class>
+    <class name="Paymenttype">
+        <conditions>
+            <condition>paymenttype_code</condition>
+            <condition>name</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="parent_id" relation_class="Paymenttype">paymenttype_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Paymenttype">paymenttype_p</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Ptype">
+        <conditions>
+            <condition>name</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="parent_id" relation_class="Ptype">name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Ptype">ptype_p</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Brandptype">brandptypes</relationclass>
+            <relationclass name="Product">products</relationclass>
+            <relationclass name="Goods">goodss</relationclass>
+            <relationclass name="Ptypeshow">ptypeshows</relationclass>
+            <relationclass name="Category">categorys</relationclass>
+            <relationclass name="Ptcolumn">ptcolumns</relationclass>
+            <relationclass name="Ptypeattr">ptypeattrs</relationclass>
+        </has_many>
+    </class>
+    <class name="Quantifier">
+        <conditions>
+            <condition>quantifier_name</condition>
+        </conditions>
+    </class>
+    <class name="Region">
+        <conditions>
+            <condition>region_type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="parent_id" relation_class="Region">region_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Region">region_p</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Jifenlog">
+        <conditions>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Rankjifenlog">
+        <conditions>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Wealthlog">
+        <conditions>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition>logtype</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Ocouponlog">
+        <conditions>
+            <condition>coupon_name</condition>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="coupon_id" relation_class="Coupon">coupon_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Coupon">coupon</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Pcouponlog">
+        <conditions>
+            <condition>coupon_name</condition>
+            <condition relation_class="Promotion" show_name="promotion_name">promotion_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="promotion_id" relation_class="Promotion">promotion_name</show>
+            <show local_key="coupon_id" relation_class="Coupon">coupon_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Promotion">promotion</relationclass>
+            <relationclass name="Coupon">coupon</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Couponlog">
+        <conditions>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition relation_class="Coupon" show_name="coupon_name">coupon_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="coupon_id" relation_class="Coupon">coupon_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Coupon">coupon</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Deliverylog">
+        <conditions>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition>order_no</condition>
+            <condition>delivery_no</condition>
+            <condition relation_class="Admin" show_name="username">admin_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="admin_id" relation_class="Admin">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Admin">admin</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Orderlog">
+        <conditions>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition>order_no</condition>
+            <condition>delivery_no</condition>
+            <condition relation_class="Admin" show_name="username">admin_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="admin_id" relation_class="Admin">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Admin">admin</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Paylog">
+        <conditions>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition>order_no</condition>
+            <condition relation_class="Admin" show_name="username">admin_id</condition>
+            <condition>pay_type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="admin_id" relation_class="Admin">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Admin">admin</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Promotionlog">
+        <conditions>
+            <condition>promotion_name</condition>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="promotion_id" relation_class="Promotion">promotion_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Promotion">promotion</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Goodslog">
+        <conditions>
+            <condition>goodsActionType</condition>
+            <condition relation_class="Goods" show_name="goods_code">goods_id</condition>
+            <condition relation_class="Admin" show_name="username">admin_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="goods_id" relation_class="Goods">goods_code</show>
+            <show local_key="admin_id" relation_class="Admin">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Goods">goods</relationclass>
+            <relationclass name="Admin">admin</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Contractlog">
+        <conditions>
+            <condition relation_class="Contract" show_name="contract_no">contract_id</condition>
+            <condition relation_class="Admin" show_name="username">admin_id</condition>
+            <condition>actionType</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="contract_id" relation_class="Contract">contract_no</show>
+            <show local_key="admin_id" relation_class="Admin">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Contract">contract</relationclass>
+            <relationclass name="Admin">admin</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Member">
+        <conditions>
+            <condition>username</condition>
+            <condition>realname</condition>
+            <condition>usertype</condition>
+        </conditions>
+        <has_one>
+            <relationclass name="Address">address</relationclass>
+            <relationclass name="Order">order</relationclass>
+        </has_one>
+        <has_many>
+            <relationclass name="Jifenlog">jifenlogs</relationclass>
+            <relationclass name="Rankjifenlog">rankjifenlogs</relationclass>
+            <relationclass name="Wealthlog">wealthlogs</relationclass>
+            <relationclass name="Collect">collects</relationclass>
+            <relationclass name="Comment">comments</relationclass>
+            <relationclass name="Company">companys</relationclass>
+            <relationclass name="Pwdreset">pwdresets</relationclass>
+            <relationclass name="Seeproduct">seeproducts</relationclass>
+            <relationclass name="Thirdpartylogin">thirdpartylogins</relationclass>
+            <relationclass name="Couponitems">couponitemss</relationclass>
+            <relationclass name="Cart">carts</relationclass>
+            <relationclass name="Delivery">deliverys</relationclass>
+            <relationclass name="Invoice">invoices</relationclass>
+            <relationclass name="Consult">consults</relationclass>
+            <relationclass name="Ordergoods">ordergoodss</relationclass>
+            <relationclass name="Payments">paymentss</relationclass>
+        </has_many>
+    </class>
+    <class name="Address">
+        <conditions>
+            <condition>address</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition>zipcode</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Admin">
+        <conditions>
+            <condition>username</condition>
+            <condition>realname</condition>
+            <condition relation_class="Department" show_name="name">department_id</condition>
+            <condition>roletype</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="department_id" relation_class="Department">name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Department">department</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Deliverylog">deliverylogs</relationclass>
+            <relationclass name="Orderlog">orderlogs</relationclass>
+            <relationclass name="Paylog">paylogs</relationclass>
+            <relationclass name="Goodslog">goodslogs</relationclass>
+            <relationclass name="Contractlog">contractlogs</relationclass>
+            <relationclass name="Supplier">suppliers</relationclass>
+        </has_many>
+    </class>
+    <class name="Collect">
+        <conditions>
+            <condition>product_name</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Comment">
+        <conditions>
+            <condition>memberName</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition>comment_type</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+            <show local_key="parent_id" relation_class="Comment">memberName</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+            <relationclass name="Product">product</relationclass>
+            <relationclass name="Comment">comment_p</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Company">
+        <conditions>
+            <condition>com_name</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition>com_mcode</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Pwdreset">
+        <conditions>
+            <condition>username</condition>
+            <condition>code</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Seeproduct">
+        <conditions>
+            <condition>product_name</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Thirdpartylogin">
+        <conditions>
+            <condition relation_class="Logintype" show_name="logintype_code">logintype_id</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="logintype_id" relation_class="Logintype">logintype_code</show>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Logintype">logintype</relationclass>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Indexpage">
+        <conditions>
+            <condition>title</condition>
+            <condition>type_name</condition>
+            <condition>link_name</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="parent_id" relation_class="Indexpage">title</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Indexpage">indexpage_p</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Coupon">
+        <conditions>
+            <condition>coupon_name</condition>
+            <condition>coupon_type</condition>
+        </conditions>
+        <has_many>
+            <relationclass name="Ocouponlog">ocouponlogs</relationclass>
+            <relationclass name="Pcouponlog">pcouponlogs</relationclass>
+            <relationclass name="Couponlog">couponlogs</relationclass>
+            <relationclass name="Couponitems">couponitemss</relationclass>
+            <relationclass name="Prefcoupon">prefcoupons</relationclass>
+        </has_many>
+    </class>
+    <class name="Couponitems">
+        <conditions>
+            <condition>couponitems_key</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition relation_class="Coupon" show_name="coupon_name">coupon_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+            <show local_key="coupon_id" relation_class="Coupon">coupon_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+            <relationclass name="Coupon">coupon</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Preferentialrule">
+        <conditions>
+            <condition>classify_type</condition>
+            <condition>preferential_type</condition>
+        </conditions>
+        <has_many>
+            <relationclass name="Prefcoupon">prefcoupons</relationclass>
+            <relationclass name="Prefproduct">prefproducts</relationclass>
+        </has_many>
+    </class>
+    <class name="Promotion">
+        <conditions>
+            <condition>promotion_name</condition>
+        </conditions>
+        <has_many>
+            <relationclass name="Pcouponlog">pcouponlogs</relationclass>
+            <relationclass name="Promotionlog">promotionlogs</relationclass>
+        </has_many>
+    </class>
+    <class name="Prefcoupon">
+        <conditions>
+            <condition relation_class="Preferentialrule" show_name="name">preferentialrule_id</condition>
+            <condition relation_class="Coupon" show_name="coupon_name">coupon_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="preferentialrule_id" relation_class="Preferentialrule">name</show>
+            <show local_key="coupon_id" relation_class="Coupon">coupon_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Preferentialrule">preferentialrule</relationclass>
+            <relationclass name="Coupon">coupon</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Prefproduct">
+        <conditions>
+            <condition relation_class="Preferentialrule" show_name="name">preferentialrule_id</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="preferentialrule_id" relation_class="Preferentialrule">name</show>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Preferentialrule">preferentialrule</relationclass>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Product">
+        <conditions>
+            <condition>product_code</condition>
+            <condition relation_class="Supplier" show_name="sp_name">supplier_id</condition>
+            <condition>sptype</condition>
+            <condition relation_class="Ptype" show_name="name">ptype_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="supplier_id" relation_class="Supplier">sp_name</show>
+            <show local_key="ptype_id" relation_class="Ptype">name</show>
+            <show local_key="brand_id" relation_class="Brand">brand_name</show>
+            <show local_key="country_id" relation_class="Country">name</show>
+        </relationShows>
+        <has_one>
+            <relationclass name="Comment">comment</relationclass>
+            <relationclass name="Deliveryitem">deliveryitem</relationclass>
+        </has_one>
+        <belong_has_one>
+            <relationclass name="Supplier">supplier</relationclass>
+            <relationclass name="Ptype">ptype</relationclass>
+            <relationclass name="Brand">brand</relationclass>
+            <relationclass name="Country">country</relationclass>
+        </belong_has_one>
+        <belongs_many_many>
+            <relationclass name="Activity">activitys</relationclass>
+        </belongs_many_many>
+        <has_many>
+            <relationclass name="Bproduct">bproducts</relationclass>
+            <relationclass name="Bulkpurchase">bulkpurchases</relationclass>
+            <relationclass name="Collect">collects</relationclass>
+            <relationclass name="Seeproduct">seeproducts</relationclass>
+            <relationclass name="Prefproduct">prefproducts</relationclass>
+            <relationclass name="Goods">goodss</relationclass>
+            <relationclass name="Ptypeshow">ptypeshows</relationclass>
+            <relationclass name="Productgift">productgifts</relationclass>
+            <relationclass name="Productspec">productspecs</relationclass>
+            <relationclass name="Seriesimg">seriesimgs</relationclass>
+            <relationclass name="Cart">carts</relationclass>
+        </has_many>
+    </class>
+    <class name="Goods">
+        <conditions>
+            <condition>goods_code</condition>
+            <condition>goods_name</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+            <condition relation_class="Ptype" show_name="name">ptype_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+            <show local_key="ptype_id" relation_class="Ptype">name</show>
+            <show local_key="brand_id" relation_class="Brand">brand_name</show>
+        </relationShows>
+        <has_one>
+            <relationclass name="Ordergoods">ordergoods</relationclass>
+        </has_one>
+        <belong_has_one>
+            <relationclass name="Product">product</relationclass>
+            <relationclass name="Ptype">ptype</relationclass>
+            <relationclass name="Brand">brand</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Goodslog">goodslogs</relationclass>
+            <relationclass name="Warehousegoods">warehousegoodss</relationclass>
+        </has_many>
+    </class>
+    <class name="Ptypeshow">
+        <conditions>
+            <condition>product_name</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+            <condition relation_class="Ptype" show_name="name">ptype_id</condition>
+            <condition>showtype</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+            <show local_key="ptype_id" relation_class="Ptype">name</show>
+            <show local_key="parent_id" relation_class="Ptypeshow">product_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Product">product</relationclass>
+            <relationclass name="Ptype">ptype</relationclass>
+            <relationclass name="Ptypeshow">ptypeshow_p</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Productgift">
+        <conditions>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Productspec">
+        <conditions>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+            <condition relation_class="Attribute" show_name="attribute_name">attribute_id</condition>
+            <condition>attr_name</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+            <show local_key="attribute_id" relation_class="Attribute">attribute_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Product">product</relationclass>
+            <relationclass name="Attribute">attribute</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Seriesimg">
+        <conditions>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Category">
+        <conditions>
+            <condition>ptype_name</condition>
+            <condition relation_class="Ptype" show_name="name">ptype_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="ptype_id" relation_class="Ptype">name</show>
+            <show local_key="parent_id" relation_class="Category">ptype_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Ptype">ptype</relationclass>
+            <relationclass name="Category">category_p</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Ptcolumn">
+        <conditions>
+            <condition>ptype_name</condition>
+            <condition>column_type</condition>
+            <condition relation_class="Ptype" show_name="name">ptype_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="ptype_id" relation_class="Ptype">name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Ptype">ptype</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Ptypeattr">
+        <conditions>
+            <condition relation_class="Attribute" show_name="attribute_name">attribute_id</condition>
+            <condition relation_class="Ptype" show_name="name">ptype_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="attribute_id" relation_class="Attribute">attribute_name</show>
+            <show local_key="ptype_id" relation_class="Ptype">name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Attribute">attribute</relationclass>
+            <relationclass name="Ptype">ptype</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Cart">
+        <conditions>
+            <condition>product_name</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+            <condition>product_code</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Delivery">
+        <conditions>
+            <condition>delivery_no</condition>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition>status</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Deliveryitem">deliveryitems</relationclass>
+        </has_many>
+    </class>
+    <class name="Deliveryitem">
+        <conditions>
+            <condition>product_name</condition>
+            <condition relation_class="Delivery" show_name="delivery_no">delivery_id</condition>
+            <condition relation_class="Product" show_name="product_code">product_id</condition>
+            <condition>item_type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="delivery_id" relation_class="Delivery">delivery_no</show>
+            <show local_key="product_id" relation_class="Product">product_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Delivery">delivery</relationclass>
+            <relationclass name="Product">product</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Invoice">
+        <conditions>
+            <condition>invoice_code</condition>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition>type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Order">
+        <conditions>
+            <condition>order_no</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition>member_no</condition>
+            <condition>order_type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Ocouponlog">ocouponlogs</relationclass>
+            <relationclass name="Couponlog">couponlogs</relationclass>
+            <relationclass name="Deliverylog">deliverylogs</relationclass>
+            <relationclass name="Orderlog">orderlogs</relationclass>
+            <relationclass name="Paylog">paylogs</relationclass>
+            <relationclass name="Promotionlog">promotionlogs</relationclass>
+            <relationclass name="Delivery">deliverys</relationclass>
+            <relationclass name="Consult">consults</relationclass>
+            <relationclass name="Ordergoods">ordergoodss</relationclass>
+            <relationclass name="Workfloworder">workfloworders</relationclass>
+            <relationclass name="Payments">paymentss</relationclass>
+        </has_many>
+    </class>
+    <class name="Consult">
+        <conditions>
+            <condition>title</condition>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Ordergoods">
+        <conditions>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition relation_class="Goods" show_name="goods_code">goods_id</condition>
+            <condition>goods_code</condition>
+            <condition>goods_name</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="member_id" relation_class="Member">username</show>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="goods_id" relation_class="Goods">goods_code</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Member">member</relationclass>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Goods">goods</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Workfloworder">
+        <conditions>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition>type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Payments">
+        <conditions>
+            <condition relation_class="Order" show_name="order_no">order_id</condition>
+            <condition relation_class="Member" show_name="username">member_id</condition>
+            <condition>status</condition>
+            <condition>pay_type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="order_id" relation_class="Order">order_no</show>
+            <show local_key="member_id" relation_class="Member">username</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Order">order</relationclass>
+            <relationclass name="Member">member</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Warehousegoods">
+        <conditions>
+            <condition relation_class="Goods" show_name="goods_code">goods_id</condition>
+            <condition>goods_code</condition>
+            <condition relation_class="Supplier" show_name="sp_name">supplier_id</condition>
+            <condition relation_class="Warehouse" show_name="warehouse_name">warehouse_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="goods_id" relation_class="Goods">goods_code</show>
+            <show local_key="supplier_id" relation_class="Supplier">sp_name</show>
+            <show local_key="warehouse_id" relation_class="Warehouse">warehouse_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Goods">goods</relationclass>
+            <relationclass name="Supplier">supplier</relationclass>
+            <relationclass name="Warehouse">warehouse</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Warehouse">
+        <conditions>
+            <condition>warehouse_name</condition>
+            <condition relation_class="Supplier" show_name="sp_name">supplier_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="supplier_id" relation_class="Supplier">sp_name</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Supplier">supplier</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Warehousegoods">warehousegoodss</relationclass>
+        </has_many>
+    </class>
+    <class name="Contract">
+        <conditions>
+            <condition>contract_no</condition>
+            <condition>contract_name</condition>
+            <condition relation_class="Supplier" show_name="sp_name">supplier_id</condition>
+            <condition>contract_status</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="supplier_id" relation_class="Supplier">sp_name</show>
+        </relationShows>
+        <has_one>
+            <relationclass name="Contractorder">contractorder</relationclass>
+        </has_one>
+        <belong_has_one>
+            <relationclass name="Supplier">supplier</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Contractlog">contractlogs</relationclass>
+            <relationclass name="Confiles">confiless</relationclass>
+        </has_many>
+    </class>
+    <class name="Confiles">
+        <conditions>
+            <condition>origin_name</condition>
+            <condition relation_class="Contract" show_name="contract_no">contract_id</condition>
+            <condition>file_name</condition>
+            <condition>file_type</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="contract_id" relation_class="Contract">contract_no</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Contract">contract</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Contractorder">
+        <conditions>
+            <condition>goods_name</condition>
+            <condition>co_no</condition>
+            <condition relation_class="Supplier" show_name="sp_name">supplier_id</condition>
+            <condition relation_class="Contract" show_name="contract_no">contract_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="supplier_id" relation_class="Supplier">sp_name</show>
+            <show local_key="contract_id" relation_class="Contract">contract_no</show>
+        </relationShows>
+        <belong_has_one>
+            <relationclass name="Supplier">supplier</relationclass>
+            <relationclass name="Contract">contract</relationclass>
+        </belong_has_one>
+    </class>
+    <class name="Supplier">
+        <conditions>
+            <condition>sp_name</condition>
+            <condition>stype</condition>
+            <condition relation_class="Admin" show_name="username">admin_id</condition>
+        </conditions>
+        <relationShows>
+            <show local_key="admin_id" relation_class="Admin">username</show>
+        </relationShows>
+        <has_one>
+            <relationclass name="Warehouse">warehouse</relationclass>
+            <relationclass name="Contract">contract</relationclass>
+            <relationclass name="Contractorder">contractorder</relationclass>
+        </has_one>
+        <belong_has_one>
+            <relationclass name="Admin">admin</relationclass>
+        </belong_has_one>
+        <has_many>
+            <relationclass name="Product">products</relationclass>
+            <relationclass name="Warehousegoods">warehousegoodss</relationclass>
+        </has_many>
+    </class>
+</classes>

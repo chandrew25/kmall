@@ -1,0 +1,56 @@
+/*
+* public style begin
+* fxf 924197212@qq.com
+* 2013-5-21
+*/
+.main{width:964px;margin:0px auto;height:auto;overflow:hidden;zoom:1;position:relative;}
+.light_border{border-top:1px solid #E6E7E8;border-bottom:1px solid #E6E7E8;}
+
+/*banner*/
+.light_banner{width:100%;height:240px;}
+
+/*introduce*/
+.light_intro{width:100%;height:196px;background:url(images/light/light_bg.jpg) no-repeat left top white;}
+.light_intro .light_i_detail{width:426px;height:100%;float:left;}
+.light_intro .light_i_detail p{width:388px;margin:0px auto;line-height:23px;font-size:12px;font-family:'simsun';color:#666666;}
+.light_intro .light_i_detail .light_i_d_p{margin-top:10px;}
+.light_intro .light_i_detail .light_i_d_name{font-weight:bold;color:black;}
+.light_intro .light_i_pic{width:518px;height:100%;float:left;margin-left:20px;_margin-left:10px;}
+.light_intro .light_i_pic .light_i_p_block{width:158px;margin-top:10px;margin-right:12px;float:left;display:inline;height:179px;}
+.light_intro .light_i_pic .light_i_p_img{width:156px;height:156px;border:1px solid #E3E4E6;float:left;}
+.light_intro .light_i_pic .light_i_p_img img{border:1px solid white;}
+.light_intro .light_i_pic .light_i_p_info{width:100%;float:left;margin-top:1px;height:20px;line-height:20px;text-align:center;font-size: 12px;font-family:"simsun";}
+
+/*product show*/
+.light_content{width:942px;margin:0px auto;height:auto;overflow:hidden;zoom:1;position:relative;}
+.light_content .light_c_topbar{width:940px;height:30px;border:1px solid #E8E9EA;float:left;margin-top:5px;margin-bottom:4px;background:url(images/public/bar_bg.jpg) repeat-x;}
+.light_content .light_c_topbar .light_c_t_name{width:48px;height:30px;line-height:30px;text-align:center;float:left;}
+.light_content .light_c_topbar .light_c_t_ul{width:290px;height:20px;border:1px solid #CCCCCC;border-right:none;float:left;margin-top:4px;}
+.light_content .light_c_topbar .light_c_t_ul li{float:left;width:57px;border-right:1px solid #CCCCCC;height:20px;text-indent:1em;background:url(images/public/btn_on.jpg);}
+.light_content .light_c_topbar .light_c_t_ul .light_c_t_ul_bg{background:url(images/public/btn_up.jpg) no-repeat;}
+.light_content .light_c_topbar .light_c_t_ul li a{text-decoration:none;display:block;width:57px;height:20px;line-height:20px;}
+
+.light_content .light_c_lists{width:100%;}
+.light_content .light_c_lists .light_c_l_show{width:226px;height:334px;border:1px solid #E3E4E6;float:left;margin-right:10px;margin-bottom:10px;display:inline;}
+.light_content .light_c_lists .light_c_l_show_last{margin-right:0px;}
+.light_content .light_c_lists .light_c_l_show .light_cls_pic{width:224px;height:224px;border:1px solid white;}
+.light_content .light_c_lists .light_c_l_show .light_cls_pic img{width:224px;height:224px;}
+.light_content .light_c_lists .light_c_l_show .light_cls_title{width:224px;height:38px;border-left:1px solid white;border-right:1px solid white;background:#EEEEEE;line-height:18px;text-align:center;}
+.light_content .light_c_lists .light_c_l_show .light_cls_title p{width:210px;margin:0px auto;}
+.light_content .light_c_lists .light_c_l_show .light_cls_line{height:1px;width:100%;overflow:hidden;background:#E6E7E9;}
+.light_content .light_c_lists .light_c_l_show .light_cls_deatil{width:224px;height:67px;border:1px solid white;background:#E3E4E6;font-family:'Microsoft Yahei,simsun';}
+.light_content .light_c_lists .light_c_l_show .light_cls_deatil .light_clsd_price{width:100%;height:20px;line-height:20px;margin-top:6px;
+}
+.light_content .light_c_lists .light_c_l_show .light_cls_deatil .light_clsd_price .light_clsdp_shoprice{float:left;height:20px;margin-left:10px;display:inline;}
+.light_content .light_c_lists .light_c_l_show .light_cls_deatil .light_clsd_price .light_clsdp_pricestyle{color:red;float:left;font-size: 14px;font-weight:bold;height:20px;*line-height:19px;}
+.light_content .light_c_lists .light_c_l_show .light_cls_deatil .light_clsd_price .light_clsdp_sign{font-size:12px;*line-height:22px;}
+.light_content .light_c_lists .light_c_l_show .light_cls_deatil .light_clsd_cart{height:41px;width:100%;}
+.light_content .light_c_lists .light_c_l_show .light_cls_deatil .light_clsd_cart a{margin-top:7px;float:left;margin-left:137px;_margin-left:68.5px;;display:block;}
+
+.light_content .light_c_lists .light_c_l_clear{clear:both;}
+
+/*sort*/
+.light_sort{width:100%;height:47px}
+/*
+*  public style end
+*/

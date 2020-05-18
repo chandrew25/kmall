@@ -1,0 +1,271 @@
+@import url("common.css");
+.banner {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.banner_list {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.banner_item {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.banner_item img {
+	width: 100%;
+	height: 100%;
+}
+
+.b_btn_box {
+	width: 64px;
+	height: 10px;
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	margin-left: -32px;
+	z-index: 2;
+}
+
+.btn_item {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	float: left;
+	margin: 0 4px;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.on_btn_item {
+	width: 20px;
+	background-color: #f00;
+}
+
+.logo_box {
+	height: 113px;
+}
+
+.logo {
+	float: left;
+	margin-top: 32px;
+}
+
+.search {
+	width: 436px;
+	height: 40px;
+	float: left;
+	margin: 34px 0 0 156px;
+	border: 1px solid #e2e2e2;
+	padding: 0 15px;
+	border-radius: 20px;
+}
+
+.search input {
+	border: none;
+	height: 40px;
+	line-height: 40px;
+	color: #999;
+	width: 415px;
+	float: left;
+	outline:none;
+}
+
+.search_btn {
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	background: url('../images/search.png') no-repeat;
+}
+
+.centerBox{
+	width: 1250px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.indexBoxTitle{
+	position: relative;
+	padding: 20px 0;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.centerBoxOneGoods{
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+.goodLeft{
+	float: left;
+	width: 580px;
+	height: 480px;
+	margin-right: 90px;
+	position: relative;
+}
+.goodRight{
+	float: left;
+	width: 580px;
+	height: 480px;
+	position: relative;
+}
+.goodRight a{
+    display: block;
+	width: 100%;
+	height: 100%;
+}
+.goodLeft a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.goodRight .shadow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background:#fff;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.goodLeft .shadow{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.goodLeft:hover .shadow{
+	opacity: 0.5;
+}
+.goodRight:hover .shadow{
+	opacity: 0.5;
+}
+.centerBoxOneGoods ul li{
+	float: left;
+	width: 300px;
+	height: 420px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.centerBoxOneGoods ul li:nth-child(4n){
+	margin-right: 0;
+}
+.centerBoxOneGoods ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.centerBoxOneGoods ul li a img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: all 0.5s;
+}
+.centerBoxOneGoods ul li:hover img{
+	transform: scale(1.05,1.05);
+}
+.allBrand_logo{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin: 20px 0 50px 0;
+	position: relative;
+}
+.allBrand_logo:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 18px;
+	width: 540px;
+	height: 1px;
+	background: #ccc;
+}
+.allBrand_logo:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 18px;
+	width: 540px;
+	height: 1px;
+	background: #ccc;
+}
+.allBrand_filter_letters{
+	border-top: 5px solid #D29E61;
+    height: 50px;
+    line-height: 50px;
+    background: #F9F3EC;
+    padding: 0 20px;
+    width: 1250px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.allBrand_filter_letters a{
+	display: inline-block;
+    min-width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+}
+.allBrand_filter_letters a:last-child{
+	margin-right: 0;
+}
+.allBrand_filter_letters a:hover{
+	background: #DC3B38;
+    color: #FFFFFF;
+}
+.allBrand_filter_letters a.active{
+	background: #DC3B38;
+    color: #FFFFFF !important;
+}
+.allBrand_filter_cont{
+	display: block;
+    overflow: hidden;
+    position: relative;
+}
+.allBrand_filter_cont dl{
+	overflow: hidden;
+    padding: 50px 0px 50px 230px;
+    position: relative;
+    border-bottom: 1px solid #ECECEC;
+}   
+ .allBrand_filter_cont dl dt{
+	position: absolute;
+    left: 30px;
+    top: 53px;
+    font-size: 30px;
+    color: #DC3B38;
+    width: 20px;
+    height: 30px;
+    text-align: center;
+}
+ .allBrand_filter_cont dl dd ul{
+	margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #333333;
+}
+.allBrand_filter_cont dl dd ul li{
+	width: 33%;
+    float: left;
+    height: 30px;
+}

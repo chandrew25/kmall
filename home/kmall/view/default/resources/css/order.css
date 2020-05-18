@@ -1,0 +1,49 @@
+body{ background-color:#FFFFFF;}
+.clear{ clear:both;}
+.manage{ margin:auto; width:1000px; background-color:#FFFFFF; margin-top:20px;}
+.manage .left_list{ width:195px; float:left; display:inline;}
+.manage .left_list .title{ height:40px; width:100%; background:url(images/member/new/bg_left.jpg) no-repeat; text-align:center;}
+.manage .left_list .title span{ font:18px "微软雅黑"; color:#FFFFFF; display:block; width:100%; height:100%; line-height:40px;}
+.manage .left_list .list{ width:193px; border:1px solid #D0D0D0; padding-bottom:5px;}
+.manage .left_list .list dl{ width:100%;}
+.manage .left_list .list dl dt{ font:14px "宋体"; height:37px; line-height:37px; width:100%; border-bottom:1px solid #D0D0D0; font-weight:bold;}
+.manage .left_list .list dl .dt_bg1{ background:url(images/member/new/left_bg1.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl .dt_bg2{ background:url(images/member/new/left_bg2.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl .dt_bg3{ background:url(images/member/new/left_bg3.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl dt span{ margin-left:40px;}
+.manage .left_list .list dl dd{ width:100%; text-align:center; margin-bottom:2px;}
+.manage .left_list .list dl dd ul{ width:170px; margin-left:12px;}
+.manage .left_list .list dl dd ul li{ width:170px; height:33px; border-bottom:1px dashed #999999; line-height:33px; text-align:left; padding-left:30px;}
+.manage .left_list .list dl dd ul .click_li{ background:url(images/member/new/li_bg.png) no-repeat 18px 14px;}
+.manage .left_list .list dl dd ul .click_li a{ color:#F00707;}
+
+.manage .right_list{ width:785px; float:right; display:inline;}
+.manage .right_list .title{ width:100%; height:30px; line-height:30px; margin-top:10px; border-bottom:1px solid #FF9933;}
+.manage .right_list .titles{ width:100%; height:25px; line-height:25px; margin-top:10px; border-top:1px solid #CCCCCC;}
+.manage .right_list .title,.titles span{ font-weight:bold;}
+.manage .right_list .detail table{ margin-left:10px; margin-top:5px;}
+.manage .right_list .detail table td{ height:30px; text-align:left; line-height:30px;}
+.manage .right_list .detail table .tdw{ font-weight:bold;}
+.manage .right_list .detail table td span{overflow:hidden;text-overflow:ellipsis; display:block; height:30px; width:700px;}
+.manage .right_list .detail table td .span_color{ color:#FF2222;}
+.manage .right_list .follow_up span{ display:block; font-weight:bold; width:76px; height:25px; line-height:25px; margin-left:5px;overflow:hidden;text-overflow:ellipsis;}
+.manage .right_list .follow_up .m{ margin-top:5px;}
+.manage .right_list .follow_up .bor_c{ width:86px; height:86px; border:1px solid #FF9627;float:left; display:inline; margin:10px;}
+.manage .right_list .follow_up .bor_h{ width:86px; height:86px; border:1px solid #CCCCCC;float:left; display:inline; margin:10px;}
+.manage .right_list .follow_up .bg_c{ width:30px; height:20px;float:left; display:inline; background:url(images/member/new/bg_pic1.jpg) no-repeat; margin-top:42px;}
+.manage .right_list .follow_up .bg_h{ width:30px; height:20px;float:left; display:inline; background:url(images/member/new/bg_pic2.jpg) no-repeat;margin-top:42px;}
+.manage .right_list .bill table{ margin-top:5px; margin-bottom:10px;}
+.manage .right_list .bill table td{ text-align:center; height:32px;}
+.manage .right_list .bill table td span{ color:#666666; overflow:hidden;text-overflow:ellipsis; display:block; height:20px; width:100%;}
+.manage .right_list .bill table td .span_color{ color:#D00620;}
+.manage .right_list .bill table .tr_bg{ background-color:#E5E5E5;}
+.manage .right_list .bill table .tr_bor td{ border-bottom:1px solid #CCCCCC;}
+.manage .right_list .bill table .td_left{ text-align:left; padding-left:10px;}
+.manage .right_list .total{ width:180px; float:right; display:inline;}
+.manage .right_list .span_s{ color:#666666; margin-left:10px; text-align:left; display:block; height:20px; width:120px;overflow:hidden;text-overflow:ellipsis;}
+.manage .right_list .span_b{ font-size:14px; font-weight:600; display:block; height:20px; width:100px; float:left;overflow:hidden;text-overflow:ellipsis;}
+.manage .right_list .span_color{font-size:14px; color:#D00620; display:block; height:20px; width:80px; float:left;overflow:hidden;text-overflow:ellipsis;}
+
+
+
+

@@ -1,0 +1,25 @@
+/*
+* public style begin
+* fxf 924197212@qq.com
+* 2013-5-21
+*/
+.main{margin:0px auto;height:auto;background:white;}
+.main_order_search{width:964px;margin:0px auto;position:relative;overflow:hidden;zoom:1;overflow:hidden;}
+.mos_title{width:100%;height:53px;float:left;}
+.mos_title .mos_img{width:180px;height:28px;margin-left:6px;margin-top:16px;}
+.mos_lists{width:100%;float:left;}
+.mos_lists .mos_content{width:944px;margin:0px auto;border-top:2px solid #666666;border-bottom:2px solid #666666;margin-bottom:20px;}
+.mos_lists .mos_content .mos_table{margin:12px auto;border:1px solid #CCCCCC;border-collapse:collapse;text-align:center;font-family:"simsun";font-size:12px;}
+.mos_lists .mos_content .mos_table td{border:1px solid #CCCCCC;}
+.mos_lists .mos_content .mos_table th{border:1px solid #CCCCCC;}
+.mos_lists .mos_content .mos_table .mos_t_one{width:156px;}
+.mos_lists .mos_content .mos_table .mos_t_two{width:206px;}
+.mos_lists .mos_content .mos_table .mos_t_three{width:156px;}
+.mos_lists .mos_content .mos_table .mos_t_four{width:126px;}
+.mos_lists .mos_content .mos_table .mos_t_five{width:146px;}
+.mos_lists .mos_content .mos_table .mos_first_line{height:29px;}
+.mos_error{width:100%;font-size:16px;font-weight:bold;font-family:'Microsoft Yahei,simsun';margin:12px auto;text-align:center
+;}
+/*
+*  public style end
+*/

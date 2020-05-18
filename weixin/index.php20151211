@@ -1,0 +1,424 @@
+<?php
+
+include '../init.php';
+//定义您的标识
+define("TOKEN", "weixin"); //请将 "weixin" 改为您命名的 TOKEN
+$wechatObj = new wechat();
+if
+ (isset($_GET['echostr'])) {
+    $wechatObj->valid();
+} else {
+    $wechatObj->responseMsg();
+}
+
+class wechat {
+
+    public function valid() {
+        $echoStr = $_GET["echostr"];
+        //有效签名，选项
+        if
+        ($this->checkSignature()) {
+            echo $echoStr;
+            exit;
+        }
+    }
+
+    private function checkSignature() {
+        $signature = $_GET["signature"];
+        $timestamp = $_GET["timestamp"];
+        $nonce = $_GET["nonce"];
+        $token = TOKEN;
+        $tmpArr = array($token, $timestamp, $nonce);
+        sort($tmpArr, SORT_STRING);
+        $tmpStr = implode($tmpArr);
+        $tmpStr = sha1($tmpStr);
+
+        if
+        ($tmpStr == $signature) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function responseMsg() {
+        //接收数据
+        //使用 get 亦或 post 数据，取决于不同环境
+        $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
+        //获取 post 数据
+        if (!empty($postStr)) {
+            //用 SimpleXML 解析 post 过来的 XML 数据
+            $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
+            $type = trim($postObj->MsgType);
+            //判断数据类型
+            switch ($type) {
+                case "text":
+                    $resultStr = $this->receiveText($postObj);
+                    break;
+                case "image":
+                    $resultStr = $this->receiveImg($postObj);
+                    break;
+                case "event":
+                    $resultStr = $this->receiveEvent($postObj);
+                    break;
+                default:
+                    $resultStr = "unknow msg type: " . $type;
+                    break;
+            }
+//             $resultStr =  mb_convert_encoding($resultStr,"UTF-8","GBK");
+           // var_dump($resultStr);
+            echo $resultStr; //输出结果
+        } else {
+            echo "";
+            exit;
+        }
+    }
+
+    private function receiveText($object) {
+        $funcFlag = 0;
+        $keyword = trim($object->Content); //获取消息内容
+        $resultStr = "";
+        $contentStr = "";
+        $resultStr = $this->transmitText($object, $contentStr, $funcFlag);
+        return $resultStr;
+    }
+
+    private function receiveImg($object) {
+        $mediaid = "";
+        $picurl = 'http://www.phoebelife.com/upload/weixin.jpg';
+        $resultStr = $this->transmitImg($object, $picurl, $mediaid);
+        return $resultStr;
+    }
+
+    private function receiveEvent($object) {
+        $title = "";
+        $description = "";
+        $url = "";
+        switch ($object->Event) {
+            case "subscribe":
+                //关注後自动推送消息
+                $url = "http://www.phoebelife.com/index.php?go=mobile.index.index&openid=" . $object->FromUserName;
+                $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>2</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[唯有您，惟有礼]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://www.phoebelife.com/upload/weixin.jpg]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[感谢关注菲生活，点我加粉丝绑定菲生活卡，祝您购物愉快哦！]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://www.phoebelife.com/upload/weixin.jpg]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    </Articles>
+                    </xml>";
+                break;
+            case "CLICK":
+                $resultStr = $this->functionClike($object);
+                break;
+        }
+        return $resultStr;
+    }
+
+    private function transmitText($object, $content, $flag = 0) {
+        //返回文本消息模板
+        $textTpl = "<xml>
+                    <ToUserName><![CDATA[%s]]></ToUserName>
+                    <FromUserName><![CDATA[%s]]></FromUserName>
+                    <CreateTime>%s</CreateTime>
+                    <MsgType><![CDATA[text]]></MsgType>
+                    <Content><![CDATA[%s]]></Content>
+                    <FuncFlag>%d</FuncFlag>
+                    </xml>";
+        //格式化消息模板
+        $resultStr = sprintf($textTpl, $object->FromUserName, $object->ToUserName, time(), $content, $flag);
+        return $resultStr;
+    }
+
+    private function transmitImg($object, $picurl, $mediaid, $flag = 0) {
+        $imgTpl = "<xml>
+                 <ToUserName><![CDATA[%s]]></ToUserName>
+                 <FromUserName><![CDATA[%s]]></FromUserName>
+                 <CreateTime>%s</CreateTime>
+                 <MsgType><![CDATA[image]]></MsgType>
+                 <PicUrl><![CDATA[%s]]></PicUrl>
+                 <MediaId><![CDATA[%s]]></MediaId>
+                 <MsgId>%s</MsgId>
+                 </xml>";
+        //格式化消息模板
+        $resultStr = sprintf($imgTpl, $object->FromUserName, $object->ToUserName, time(), $picurl, $mediaid, $flag);
+        return $resultStr;
+    }
+
+    private function transmitLink($object, $title, $description, $url, $flag = 0) {
+        $linkTpl = "<xml>
+                <ToUserName><![CDATA[%s]]></ToUserName>
+                <FromUserName><![CDATA[%s]]></FromUserName>
+                <CreateTime>%s</CreateTime>
+                <MsgType><![CDATA[link]]></MsgType>
+                <Title><![CDATA[%s]]></Title>
+                <Description><![CDATA[%s]]></Description>
+                <Url><![CDATA[%s]]></Url>
+                <MsgId>%s</MsgId>
+                </xml>";
+        //格式化消息模板
+        $resultStr = sprintf($linkTpl, $object->FromUserName, $object->ToUserName, time(), $title, $description, $url, $flag);
+        return $resultStr;
+    }
+
+    private function transmitImgText($object, $title, $description, $picurl, $url) {
+        $imgtextTpl = "<xml>
+                    <ToUserName><![CDATA[%s]]></ToUserName>
+                    <FromUserName><![CDATA[%s]]></FromUserName>
+                    <CreateTime>%s</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>1</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[%s]]></Title>
+                    <Description><![CDATA[%s]]></Description>
+                    <PicUrl><![CDATA[%s]]></PicUrl>
+                    <Url><![CDATA[%s]]></Url>
+                    </item>
+                    </Articles>
+                    </xml> ";
+        //格式化消息模板
+        $resultStr = sprintf($imgtextTpl, $object->FromUserName, $object->ToUserName, time(), $title, $description, $picurl, $url);
+        return $resultStr;
+    }
+
+    private function functionClike($object) {
+        switch ($object->EventKey) {
+            case "MEMBER_ADD":
+                $resultStr = $this->member_add($object);
+                break;
+            case "MEMBER_RIGHTS":
+                $resultStr = $this->member_rights($object);
+                break;
+            case "MEMBER":
+                $resultStr = $this->member($object);
+                break;
+            case "SCRATCH_CARD":
+                $resultStr = $this->scratch_card($object);
+                break;
+            case "GOODS":
+                $resultStr = $this->goods($object);
+                break;
+            case "GOODSHOME":
+                $resultStr = $this->goodshome($object);
+                break;
+			case "ADDRESS":
+                $resultStr = $this->address($object);
+                break;
+            case "PAYMENT":
+                $resultStr = $this->payment($object);
+                break;
+        }
+       // $resultStr = $this->member_add($object);
+        return $resultStr;
+    }
+    private function payment($object){
+          $url = "http://www.phoebelife.com/payment/wechat/js_api_call.php?o=" . $object->FromUserName;
+          $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>2</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[微信支付测试]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://www.phoebelife.com/upload/weili.jpg]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[微信支付测试，微信支付测试，微信支付测试]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    </Articles>
+                    </xml>";
+        return $resultStr;
+    }
+	private function address($object){
+        $contentStr = "";
+        $resultStr = $this->transmitText($object,$contentStr, $funcFlag=0);
+        return $resultStr;
+    }
+    private function member_add($object) {
+        $data = UtilSend::isMember($object->FromUserName);
+        if ($data) {
+            $resultStr = $this->istMeber($object,$data);
+        } else {
+            $resultStr = $this->notMeber($object);
+        }
+        return $resultStr;
+    }
+    private function member($object){
+        $data = UtilSend::isMember($object->FromUserName);
+        if ($data) {
+            $balance = $point = 0.00;
+            $coupon = array();
+            $result = UtilApi::getMember($data->cardno);
+            if($result->code == "A00006") {
+                $datacard = $result->data;
+                $balance = $datacard->user_balance;
+                $point = $datacard->user_point;
+                $coupon = UtilSend::getCoupon($data->mobile);
+            }
+
+            $url = "http://www.phoebelife.com/index.php?go=mobile.member.info&openid=" . $object->FromUserName;
+            $picurl = 'http://www.phoebelife.com/upload/weixin.jpg';
+            $couponurl = "http://www.phoebelife.com/index.php?go=membership.coupon.index&openid=" . $object->FromUserName;
+
+            $couponStr = "";
+            $j = 3;
+            if(!empty($coupon)){
+                foreach ($coupon as $key => $value) {
+                    $str = $value->batch_name."
+面值：".$value->amount."(每桌每餐限用一张)
+券码：".$value->coupon_pwd."
+有效期：".$value->time."
+至".$value->exp_date;
+                    $couponStr .="<item>
+                    <Title><![CDATA[".$str."]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[".$couponurl."]]></Url>
+                    </item>";
+                    $j++;
+                }
+            }
+            $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>".$j."</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[出示手机号即可行使权益]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[".$picurl."]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[储值余额：".$balance."]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[积分余额：".$point."]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    ".$couponStr."
+                    </Articles>
+                    </xml>";
+            return $resultStr;
+        } else {
+            return $this->notMeber($object);
+        }
+    }
+    private function member_rights($object) {
+$contentStr = '1、扫码加入会员，输入菲生活卡卡号和背面密码区密码，激活菲生活卡；
+2、我的帐户里显示卡内余额和消费积分；
+3、点击菲生活商城，进入后选择商品，填写配送地址下单，用卡内余额支付；
+4、礼品配送到家，任何疑问可以打400-033-0923热线咨询'; //返回消息内容
+        $resultStr = $this->transmitText($object,$contentStr, $funcFlag=0);
+        return $resultStr;
+    }
+    private function scratch_card($object){
+        $data = UtilSend::scratch_card($object->FromUserName);
+        if ($data) {
+            $description = "您有一个张刮刮卡！请进入刮刮卡活动中心刮奖..";
+        }else{
+            $description = "谢谢您的关注！您目前拥护有0张刮刮卡，详情请进入刮刮卡活动中心..";
+        }
+        $title = "欢迎进入菲生活商城";
+        $url = "http://www.phoebelife.com/index.php?go=mobile.goods.lists&openid=" . $object->FromUserName;
+        $picurl = 'http://www.phoebelife.com/upload/guaguaka.png';
+        $resultStr = $this->transmitImgText($object, $title, $description, $picurl, $url);
+        return $resultStr;
+    }
+    private function notMeber($object) {
+        $contentStr = "<a href='http://www.phoebelife.com/index.php?go=mobile.index.index&openid=" . $object->FromUserName."'>亲,加入会员请点击这里</a>";
+        $resultStr = $this->transmitText($object,$contentStr, $funcFlag=0);
+        return $resultStr;
+    }
+
+    private function istMeber($object,$data) {
+        $contentStr = "您已经是粉丝会员了。
+手机号：".$data->mobile."
+<a href='http://www.phoebelife.com/index.php?go=mobile.member.info&openid=" . $object->FromUserName."'>请查看您的会员卡</a>";
+        $resultStr = $this->transmitText($object,$contentStr, $funcFlag=0);
+        return $resultStr;
+    }
+
+    private function goods($object){
+          $url = "http://www.phoebelife.com/index.php?go=mobile.goods.lists&openid=" . $object->FromUserName;
+          $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>2</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[菲生活商城]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://www.phoebelife.com/upload/weili.jpg]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[2015，很高兴遇见你，关注菲生活，赠君好礼！]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    </Articles>
+                    </xml>";
+        return $resultStr;
+    }
+
+    private function goodshome($object){
+        $url = "http://www.phoebelife.com/index.php?go=mobile.index.brandinfo&openid=" . $object->FromUserName;
+        $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>2</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[品牌介绍]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://www.phoebelife.com/upload/weixin.jpg]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[    我们是专业从事会员系统开发，会员积分 管理，积分商城换礼的大型电子商务公司。旗下有“菲生活网”、“餐云”众多品牌，我司以帮助企业建立客户忠诚度体系为目标，提供从发展会员，会员营销，会员忠诚度维护整套解决方案。以积分和礼品为载体，帮助企业提升客户忠诚度，提高客情关系，同时为推广企业品牌形象，促销企业品牌产品，作出建议性方案和实战性操作。
+“菲生活VIP卡”以当前送礼低调而特意不显示卡面金额，更显收礼者高贵而低调的品味，卡片可以通过400电话，官网及微信二微码三种渠道兑换心意礼品，卡片和手机捆绑实现余额，充值，消费等即时查询功能，有效地实现了实体卡片和系统后台的完美结合。]]></Title>
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    </Articles>
+                    </xml>";
+        return $resultStr;
+    }
+
+}
+
+?>

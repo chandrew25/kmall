@@ -1,0 +1,1017 @@
+﻿$axure.loadCurrentPage({
+  "url":"商品详情.html",
+  "generationDate":new Date(1395018284945.97),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"a7b196c6a24840939d61c8e4e43b5681",
+    "type":"Axure:Page",
+    "name":"商品详情",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFEEEEEE},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+      "onLoad":{
+        "description":"OnLoad",
+        "cases":[{
+            "description":"Case 1",
+            "isNewIfGroup":false,
+            "actions":[{
+                "action":"wait",
+                "description":"Wait 2000 ms",
+                "waitTime":2000},
+{
+                "action":"setPanelState",
+                "description":"Set (Dynamic Panel) to State2 slide left in 2000ms",
+                "panelsToStates":[{
+                    "panelPath":["5705f064a38148a2819155324cbc4cf4"],
+                    "stateInfo":{
+                      "setStateType":"diagram",
+                      "stateNumber":2,
+                      "stateValue":{
+                        "exprType":"stringLiteral",
+                        "value":"1",
+                        "stos":[]},
+                      "loop":false,
+                      "showWhenSet":false,
+                      "options":{
+                        "animateIn":{
+                          "easing":"slideLeft",
+                          "duration":2000},
+                        "compress":false}}}]}]}]}},
+    "diagram":{
+      "objects":[{
+          "id":"3c62afb7abc8457b89f5aafa06c2fc1e",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":6,
+              "y":5},
+            "size":{
+              "width":315,
+              "height":315},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFFFFF}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"5040e34394794c21b5310bd8aa303fe0",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":6,
+                  "y":5},
+                "size":{
+                  "width":315,
+                  "height":315},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/首页/u0.png"}},
+{
+          "id":"5705f064a38148a2819155324cbc4cf4",
+          "label":"",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":13,
+              "y":12},
+            "size":{
+              "width":10,
+              "height":10}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onPanelStateChange":{
+              "description":"OnPanelStateChange",
+              "cases":[{
+                  "description":"Case 1<br> (If state of This equals State1)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":true,
+                          "isFocused":false,
+                          "isTarget":false}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["5705f064a38148a2819155324cbc4cf4"],
+                      "panelIndex":0}},
+                  "actions":[{
+                      "action":"wait",
+                      "description":"Wait 2000 ms",
+                      "waitTime":2000},
+{
+                      "action":"setPanelState",
+                      "description":"Set (Dynamic Panel) to State2 slide left in 2000ms show if hidden",
+                      "panelsToStates":[{
+                          "panelPath":["5705f064a38148a2819155324cbc4cf4"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "animateIn":{
+                                "easing":"slideLeft",
+                                "duration":2000},
+                              "compress":false}}}]}]},
+{
+                  "description":"Case 2<br> (Else If state of This equals State2)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":true,
+                          "isFocused":false,
+                          "isTarget":false}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["5705f064a38148a2819155324cbc4cf4"],
+                      "panelIndex":1}},
+                  "actions":[{
+                      "action":"wait",
+                      "description":"Wait 2000 ms",
+                      "waitTime":2000},
+{
+                      "action":"setPanelState",
+                      "description":"Set (Dynamic Panel) to State3 slide left in 2000ms",
+                      "panelsToStates":[{
+                          "panelPath":["5705f064a38148a2819155324cbc4cf4"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":3,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "animateIn":{
+                                "easing":"slideLeft",
+                                "duration":2000},
+                              "compress":false}}}]}]},
+{
+                  "description":"Case 3<br> (Else If state of This equals State3)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":true,
+                          "isFocused":false,
+                          "isTarget":false}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["5705f064a38148a2819155324cbc4cf4"],
+                      "panelIndex":2}},
+                  "actions":[{
+                      "action":"wait",
+                      "description":"Wait 2000 ms",
+                      "waitTime":2000},
+{
+                      "action":"setPanelState",
+                      "description":"Set (Dynamic Panel) to State1 slide left in 2000ms show if hidden",
+                      "panelsToStates":[{
+                          "panelPath":["5705f064a38148a2819155324cbc4cf4"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "animateIn":{
+                                "easing":"slideLeft",
+                                "duration":2000},
+                              "compress":false}}}]}]}]}},
+          "scrollbars":"none",
+          "fitToContent":true,
+          "propagate":false,
+          "diagrams":[{
+              "id":"4580dff4dbab40a8b3c6fbff3de25482",
+              "label":"State1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"9d81cd27b13b419ca04382e2b16f6465",
+                  "label":"",
+                  "parentDynamicPanel":"5705f064a38148a2819155324cbc4cf4",
+                  "panelIndex":0,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":300,
+                      "height":300}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"96b53438e6584303b9602f5d06018a5f",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"5705f064a38148a2819155324cbc4cf4",
+                      "panelIndex":0,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":300,
+                          "height":300}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/首页/u22.jpg"}}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+}},
+{
+              "id":"6cb888a7225644ca815b8dc805f27d8e",
+              "label":"State2",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"5a3c5bd3ad674672964fcb8c0e8ac7cf",
+                  "label":"",
+                  "parentDynamicPanel":"5705f064a38148a2819155324cbc4cf4",
+                  "panelIndex":1,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":300,
+                      "height":300}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"8b7f7d79fc124fcba5602e1bafd45b0d",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"5705f064a38148a2819155324cbc4cf4",
+                      "panelIndex":1,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":300,
+                          "height":300}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/商品详情/u5.jpg"}}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+}},
+{
+              "id":"ce5817e47e67494e96d55cc6c2a05f34",
+              "label":"State3",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"aaaadcf7c1b3456ba6d7f91b662fdc7b",
+                  "label":"",
+                  "parentDynamicPanel":"5705f064a38148a2819155324cbc4cf4",
+                  "panelIndex":2,
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":300,
+                      "height":300}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"fb5ad1e3089a4ae39cac946a41aee006",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"5705f064a38148a2819155324cbc4cf4",
+                      "panelIndex":2,
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "size":{
+                          "width":300,
+                          "height":300}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/商品详情/u7.jpg"}}],
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "image":null,
+                "imageHorizontalAlignment":"near",
+                "imageVerticalAlignment":"near",
+                "imageRepeat":"auto"},
+              "adaptiveStyles":{
+}}]},
+{
+          "id":"b6ecb3069d4c41b9aa76c5cce7ae575c",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"18px",
+            "fontWeight":"200",
+            "location":{
+              "x":15,
+              "y":330},
+            "size":{
+              "width":285,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"c5cc8bf6afe04960b72c78dfea490eff",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"18px",
+                "fontWeight":"200",
+                "location":{
+                  "x":15,
+                  "y":330},
+                "size":{
+                  "width":285,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"897d1d42a81c4d8dbeb76c639debdffd",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"14px",
+            "fontWeight":"200",
+            "lineSpacing":"18px",
+            "location":{
+              "x":19,
+              "y":567},
+            "size":{
+              "width":285,
+              "height":198}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"0c97b1c8478b43dbbc6963357ce096ad",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"14px",
+                "fontWeight":"200",
+                "lineSpacing":"18px",
+                "location":{
+                  "x":19,
+                  "y":567},
+                "size":{
+                  "width":285,
+                  "height":198}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"37edcaf5ac0e4649b71ea01b54142668",
+          "label":"",
+          "type":"horizontalLine",
+          "styleType":"horizontalLine",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":10,
+              "y":459},
+            "size":{
+              "width":305,
+              "height":10},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF999999}},
+          "adaptiveStyles":{
+},
+          "images":{
+            "start~":"resources/images/transparent.gif",
+            "end~":"resources/images/transparent.gif",
+            "line~":"images/首页/u30_line.png"}},
+{
+          "id":"471837a55de249e79e91cbec37c3e436",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Medium', 'Heiti SC Medium', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"700",
+            "location":{
+              "x":12,
+              "y":362},
+            "size":{
+              "width":49,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ffab7b2bc12948e5820e09ca1c119c69",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Medium', 'Heiti SC Medium', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"700",
+                "location":{
+                  "x":12,
+                  "y":362},
+                "size":{
+                  "width":49,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"16fbb58b56c84e5c8f1e787918ea2982",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"20px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFCC0000,
+              "opacity":1},
+            "location":{
+              "x":63,
+              "y":359},
+            "size":{
+              "width":68,
+              "height":23}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ea09b416d3194e93acb6918a490444b7",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"20px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFCC0000,
+                  "opacity":1},
+                "location":{
+                  "x":63,
+                  "y":359},
+                "size":{
+                  "width":68,
+                  "height":23}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"1ad5fae661144fe39c7cab1aaa60ce42",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "location":{
+              "x":12,
+              "y":382},
+            "size":{
+              "width":93,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"7326d86aae204e93af0bedce53a62a29",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "location":{
+                  "x":12,
+                  "y":382},
+                "size":{
+                  "width":93,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"7d8973bcb82d4dc88160d1f7998077b8",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFFF9900},
+            "location":{
+              "x":180,
+              "y":471},
+            "size":{
+              "width":120,
+              "height":36},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFFFFF}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"2aa04b0aebcf41c79c257dfe779e6d7b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFF9900},
+                "location":{
+                  "x":180,
+                  "y":471},
+                "size":{
+                  "width":120,
+                  "height":36},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open 结算 in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"结算.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/商品详情/u20.png"}},
+{
+          "id":"8bd39a0d0b5148098251e94fa70cf513",
+          "label":"",
+          "type":"horizontalLine",
+          "styleType":"horizontalLine",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":13,
+              "y":385},
+            "size":{
+              "width":90,
+              "height":10}},
+          "adaptiveStyles":{
+},
+          "images":{
+            "start~":"resources/images/transparent.gif",
+            "end~":"resources/images/transparent.gif",
+            "line~":"images/首页/u60_line.png"}},
+{
+          "id":"8763d4e1082d455b9aae51ccdac8b3b8",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "location":{
+              "x":13,
+              "y":408},
+            "size":{
+              "width":211,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"092628eca30e433e91d24a8b79817511",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "location":{
+                  "x":13,
+                  "y":408},
+                "size":{
+                  "width":211,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"906cafed11d34014a83ade0758f99821",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "location":{
+              "x":20,
+              "y":532},
+            "size":{
+              "width":97,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"0d684d82726d4c2ba83d8dc2190bacf8",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "location":{
+                  "x":20,
+                  "y":532},
+                "size":{
+                  "width":97,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"4e53d4e9fa434d2c8ac7a1a7dfc6956b",
+          "label":"",
+          "type":"horizontalLine",
+          "styleType":"horizontalLine",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":10,
+              "y":512},
+            "size":{
+              "width":305,
+              "height":10},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF999999}},
+          "adaptiveStyles":{
+},
+          "images":{
+            "start~":"resources/images/transparent.gif",
+            "end~":"resources/images/transparent.gif",
+            "line~":"images/首页/u30_line.png"}},
+{
+          "id":"873c03002c064ae09d3d323e0908a3c7",
+          "label":"",
+          "type":"horizontalLine",
+          "styleType":"horizontalLine",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":10,
+              "y":555},
+            "size":{
+              "width":305,
+              "height":10},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF999999}},
+          "adaptiveStyles":{
+},
+          "images":{
+            "start~":"resources/images/transparent.gif",
+            "end~":"resources/images/transparent.gif",
+            "line~":"images/首页/u30_line.png"}},
+{
+          "id":"0c3103e7a8da474ea077991d8530ba3c",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "location":{
+              "x":269,
+              "y":527},
+            "size":{
+              "width":29,
+              "height":29}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"5c48f82e92674944b55419feafcc3e34",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                "location":{
+                  "x":269,
+                  "y":527},
+                "size":{
+                  "width":29,
+                  "height":29}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/商品详情/u29.png"}},
+{
+          "id":"d9e2204fba0e42bfaaf5977e87bb99a1",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "location":{
+              "x":13,
+              "y":438},
+            "size":{
+              "width":49,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d6cc4a9912ed417e911a118e1e4f2dc4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "location":{
+                  "x":13,
+                  "y":438},
+                "size":{
+                  "width":49,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"bd51984f7a914acb9627369e61ff73bc",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":58,
+              "y":432},
+            "size":{
+              "width":110,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"50af10d01d3f4a1097fdebad3d720ca8",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "location":{
+              "x":170,
+              "y":439},
+            "size":{
+              "width":103,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"4436be2a71b74f018535068a37a02bb2",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "location":{
+                  "x":170,
+                  "y":439},
+                "size":{
+                  "width":103,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "3c62afb7abc8457b89f5aafa06c2fc1e":{
+      "scriptId":"u0"},
+    "5040e34394794c21b5310bd8aa303fe0":{
+      "scriptId":"u1"},
+    "5705f064a38148a2819155324cbc4cf4":{
+      "scriptId":"u2"},
+    "9d81cd27b13b419ca04382e2b16f6465":{
+      "scriptId":"u3"},
+    "96b53438e6584303b9602f5d06018a5f":{
+      "scriptId":"u4"},
+    "5a3c5bd3ad674672964fcb8c0e8ac7cf":{
+      "scriptId":"u5"},
+    "8b7f7d79fc124fcba5602e1bafd45b0d":{
+      "scriptId":"u6"},
+    "aaaadcf7c1b3456ba6d7f91b662fdc7b":{
+      "scriptId":"u7"},
+    "fb5ad1e3089a4ae39cac946a41aee006":{
+      "scriptId":"u8"},
+    "b6ecb3069d4c41b9aa76c5cce7ae575c":{
+      "scriptId":"u9"},
+    "c5cc8bf6afe04960b72c78dfea490eff":{
+      "scriptId":"u10"},
+    "897d1d42a81c4d8dbeb76c639debdffd":{
+      "scriptId":"u11"},
+    "0c97b1c8478b43dbbc6963357ce096ad":{
+      "scriptId":"u12"},
+    "37edcaf5ac0e4649b71ea01b54142668":{
+      "scriptId":"u13"},
+    "471837a55de249e79e91cbec37c3e436":{
+      "scriptId":"u14"},
+    "ffab7b2bc12948e5820e09ca1c119c69":{
+      "scriptId":"u15"},
+    "16fbb58b56c84e5c8f1e787918ea2982":{
+      "scriptId":"u16"},
+    "ea09b416d3194e93acb6918a490444b7":{
+      "scriptId":"u17"},
+    "1ad5fae661144fe39c7cab1aaa60ce42":{
+      "scriptId":"u18"},
+    "7326d86aae204e93af0bedce53a62a29":{
+      "scriptId":"u19"},
+    "7d8973bcb82d4dc88160d1f7998077b8":{
+      "scriptId":"u20"},
+    "2aa04b0aebcf41c79c257dfe779e6d7b":{
+      "scriptId":"u21"},
+    "8bd39a0d0b5148098251e94fa70cf513":{
+      "scriptId":"u22"},
+    "8763d4e1082d455b9aae51ccdac8b3b8":{
+      "scriptId":"u23"},
+    "092628eca30e433e91d24a8b79817511":{
+      "scriptId":"u24"},
+    "906cafed11d34014a83ade0758f99821":{
+      "scriptId":"u25"},
+    "0d684d82726d4c2ba83d8dc2190bacf8":{
+      "scriptId":"u26"},
+    "4e53d4e9fa434d2c8ac7a1a7dfc6956b":{
+      "scriptId":"u27"},
+    "873c03002c064ae09d3d323e0908a3c7":{
+      "scriptId":"u28"},
+    "0c3103e7a8da474ea077991d8530ba3c":{
+      "scriptId":"u29"},
+    "5c48f82e92674944b55419feafcc3e34":{
+      "scriptId":"u30"},
+    "d9e2204fba0e42bfaaf5977e87bb99a1":{
+      "scriptId":"u31"},
+    "d6cc4a9912ed417e911a118e1e4f2dc4":{
+      "scriptId":"u32"},
+    "bd51984f7a914acb9627369e61ff73bc":{
+      "scriptId":"u33"},
+    "50af10d01d3f4a1097fdebad3d720ca8":{
+      "scriptId":"u34"},
+    "4436be2a71b74f018535068a37a02bb2":{
+      "scriptId":"u35"}}});

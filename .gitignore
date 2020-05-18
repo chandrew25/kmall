@@ -1,0 +1,14 @@
+/upload
+/home/*/view/default/tmp
+/log
+/attachment
+/model
+Config_Db.php
+.idea/ikmall.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/
+pcard/
+pcard.zip

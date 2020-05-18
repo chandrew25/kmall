@@ -1,0 +1,30 @@
+.act{background:url(images/bg/act_mbg.jpg) no-repeat center top;margin:0px auto;}
+.act .act_con{width:964px;margin:0px auto;}
+.act .act_con .ac_banner{width:964px;height:610px;overflow:hidden;}
+.act .act_con .act_con_main{width:964px;height:1512px;background:url(images/bg/actbg.jpg) repeat-y;overflow:hidden;}
+.act .act_con .act_con_main .act_procedure{width:891px;height:166px;margin:0px auto;margin-top:20px;}
+.act .act_con .act_con_main .blue_line{width:890px;height:3px;overflow:hidden;background:url(images/bg/blue_line.png);margin:0px auto;}
+.act .act_con .act_con_main .act_pone{width:891px;margin:0px auto;overflow:hidden;}
+.act .act_con .act_con_main .act_pone .act_pone_img{float:left;margin-left:51px;_margin-left:25.5px;}
+.act .act_con .act_con_main .act_pone .act_pone_info{float:left;margin-left:83px;margin-top:69px;height:271px;width:278px;background:url(images/bg/tipbg.png);overflow:hidden;}
+.act .act_con .act_con_main .act_ptwo{width:891px;margin:0px auto;overflow:hidden;}
+.act .act_con .act_con_main .act_ptwo .act_ptwo_info{float:left;margin-left:65px;_margin-left:32.5px;margin-top:70px;height:271px;width:278px;background:url(images/bg/tipbg.png);overflow:hidden;}
+.act .act_con .act_con_main .act_ptwo .act_ptwo_img{float:left;margin-left:69px;height:418px;width:451px;} 
+.act .act_con .act_con_main .act_pthr{width:891px;margin:0px auto;overflow:hidden;} 
+.act .act_con .act_con_main .act_pthr .act_pthr_img{float:left;margin-left:51px;_margin-left:25.5px;}
+.act .act_con .act_con_main .act_pthr .act_pthr_info{float:left;margin-left:88px;margin-top:70px;height:271px;width:278px;background:url(images/bg/tipbg.png);overflow:hidden;}
+.act_title{margin:0px auto;margin-top:42px;width:242px;height:20px;line-height:20px;font-size:14px;font-family:"微软雅黑";color:#2CA1FF;}
+.act_detail{width:242px;height:122px;margin:0px auto;margin-top:20px;}
+.act_detail p{text-indent:4px;font-family:"微软雅黑";margin:1px auto;}
+.color_red{color:red;}
+.act_price{font-size:16px;}
+.go_order{width:109px;height:28px;margin:0px auto;margin-top:4px;cursor:pointer;}
+.act .act_con .act_bottom{width:964px;height:9px;background:#33A8E7;overflow:hidden;}  
+.actfooter{ background:#333333;height:143px;overflow:hidden;}
+.actfooter .copyright{margin:0px auto;margin-top:54px;width:964px;text-align:center;} 
+.actfooter .copyright p{font-family:"微软雅黑";font-size:14px;margin:2px auto;color:white;}
+
+
+.footer{ background:url(images/bg/act_bbg.jpg) repeat-x;height:152px;overflow:hidden;}
+.footer .copyright{margin:0px auto;margin-top:54px;width:964px;text-align:center;} 
+.footer .copyright p{font-family:"微软雅黑";font-size:14px;margin:2px auto;color:white;}

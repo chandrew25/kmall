@@ -1,0 +1,165 @@
+.address_list{
+	width: 620px;
+	margin-left: 20px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.address_list_s{
+	width: 620px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.address_list_sl{
+	width: 620px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.address_list_slin{
+	height: 72px;
+	line-height: 72px;
+	font-family: "宋体";
+	font-size: 28px;
+	color: #666666;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.address_list_sr{
+	width: 620px;
+	line-height: 72px;
+	font-family: "宋体";
+	font-size: 30px;
+	color: #000;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	border-bottom: 1px solid #D9D9D9;
+}
+.address_list_sr input{
+	width: 500px;
+	/*padding-left: 10px;*/
+	padding-right: 10px;
+	height: 70px;
+	/*margin-left: 15px;*/
+	/*border: 1px solid #d9d9d9;*/
+	border:0px;
+	border-radius: 5px;
+	line-height: 70px;
+	font-family: "宋体";
+	font-size: 30px;
+	color: #000;
+	outline: none;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.address_list_srn{
+	font-family: "Arial";
+	font-size: 36px;
+}
+.address_list_srj{
+	font-family: "Arial";
+	font-size: 36px;
+	color: #ff0000;
+}
+.address_list_sinput{
+	/*padding-top: 20px;
+	padding-bottom: 20px;*/
+}
+.address_line{
+	width: 620px;
+	height: 1px;
+	background-color: #d9d9d9;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.zf_btn_line{
+	width: 620px;
+	height: 80px;
+	margin-left: 20px;
+	margin-top: 20px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.zf_btn{
+	width: 600px;
+	height: 80px;
+	border-radius: 5px;
+	background-color: #ff8f0f;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.zf_btn a{
+	width: 600px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-family: "宋体";
+	font-size: 36px;
+	color: #ffffff;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.select_ipt{
+	width: 418px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 70px;
+	margin-left: 15px;
+	border: 1px solid #D9D9D9;
+	border-radius: 5px;
+	line-height: 72px;
+	font-family: "宋体";
+	font-size: 28px;
+	color: #666;
+	outline: medium none;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.bnt{float: left;widows: 100%;margin-left: 20px;}
+.bnt .commerce_commit_btn{
+	width: 600px;
+	height: 80px;
+	padding: 0;
+	border: none;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	background: url("images/commerce/commit_btn.jpg") no-repeat;
+	font-family: "微软雅黑";
+	font-size: 30px;
+	color: #ffffff;
+	line-height: 80px;
+	cursor: pointer;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.sex{
+	float: left;
+	width: 120px;
+}
+.sex img{
+	float: left;
+	margin-top: 5px;
+}
+.gender{
+	float: left;
+	width: 54px;
+	height: 50px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.ok{
+	background: url("images/member/sex_ok.jpg") no-repeat;
+}
+.on{
+	background: url("images/member/sex_on.jpg") no-repeat;
+}

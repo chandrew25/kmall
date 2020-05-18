@@ -1,0 +1,26 @@
+.main{width:100%;height:1757px;background:url(images/guide/bg.jpg) top center;}
+.content{width:1052px;height:100%;margin:0px auto;zoom:1;position:relative;}
+.guide_con{width:100%;height:1464px;}
+.guide_con .gcc{width:964px;height:100%;margin:0px auto;}
+.guide_con .gcc .gcc_pt{float:left;width:100%;}
+.guide_con .gcc .gcc_p1{margin-top:405px;height:323px;}
+.guide_con .gcc .gcc_p2{margin-top:36px;height:325px;}
+.guide_con .gcc .gcc_p3{margin-top:54px;}
+.guide_con .gcc .gcc_pt .gcc_spec{width:836px;height:315px;margin:0px auto;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_img{width:389px;height:100%;float:left;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info{width:447px;height:100%;float:left;zoom:1;position:relative;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info .gccs_title{float:left;margin-top:98px;width:100%;height:24px;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info .gccs_desc{float:left;width:303px;height:145px;margin-top:18px;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info .gccs_desc p{font-size:14px;color:white;font-family:"Microsoft YaHei,simsun";height:20px;margin:4px auto;line-height:20px;text-indent:3em;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info .gccs_order{float:left;width:124px;height:145px;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info .gccs_order .gccso_price{float:left;margin-top:67px;width:100%;height:35px;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info .gccs_order .gccso_buy{float:left;margin-top:7px;height:36px;width:100%;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info .gccs_order .gccso_buy .gccsob_img{width:100%;height:30px;}
+.guide_con .gcc .gcc_pt .gcc_spec .gccs_info .gccs_order .gccso_buy .gccsob_shadow{width:100%;height:6px;background:url(images/guide/shadow.png);}
+
+.guide_items{width:100%;height:293px;background:url(images/guide/items.jpg) top center;position:relative;}
+.guide_items .g_ilink{display:block;position:absolute;height:238px;top:26px;}
+.guide_items .air_mouse{width:160px;left:52px;}
+.guide_items .td_glasses{width:320px;left:261px;}
+.guide_items .remote{width:164px;left:628px;}
+.guide_items .s_remote{width:164px;left:844px;}

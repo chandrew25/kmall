@@ -1,0 +1,540 @@
+﻿$axure.loadCurrentPage({
+  "url":"收货地址.html",
+  "generationDate":new Date(1395018285697.72),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"70a8c35055914a5e9c598e763352aef9",
+    "type":"Axure:Page",
+    "name":"收货地址",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFEEEEEE},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"061b370f2885453f962ac168dbb37ccf",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":15,
+              "y":11},
+            "size":{
+              "width":25,
+              "height":25},
+            "borderWidth":"-1",
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF000000}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"c3f0b3c26e1d4cb4af99e8c05082cd60",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":15,
+                  "y":11},
+                "size":{
+                  "width":25,
+                  "height":25},
+                "borderWidth":"-1",
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open Back in Current Window",
+                      "target":{
+                        "targetType":"backUrl",
+                        "includeVariables":false},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/结算/u4.png"}},
+{
+          "id":"b78598e81e0c4752a2b083d41d21ca6b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"18px",
+            "fontWeight":"200",
+            "location":{
+              "x":125,
+              "y":14},
+            "size":{
+              "width":73,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"0a6eef27d97e4fb6b544d2c55f5ef394",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"18px",
+                "fontWeight":"200",
+                "location":{
+                  "x":125,
+                  "y":14},
+                "size":{
+                  "width":73,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"e20b3d69d54f4e0b9f256d0d727311cb",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":5,
+              "y":43},
+            "size":{
+              "width":310,
+              "height":147}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ef2b27992a89427eaffb8a669cf091a4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":5,
+                  "y":43},
+                "size":{
+                  "width":310,
+                  "height":147}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/收货地址/u4.png"}},
+{
+          "id":"d6e8e31e68eb484cb61160264b108546",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "lineSpacing":"24px",
+            "location":{
+              "x":46,
+              "y":90},
+            "size":{
+              "width":205,
+              "height":48}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"9cb1282d8e8a4993a597615b706531ed",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "lineSpacing":"24px",
+                "location":{
+                  "x":46,
+                  "y":90},
+                "size":{
+                  "width":205,
+                  "height":48}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"b3f25c778e014eaba8ac417b70f1a56a",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "lineSpacing":"24px",
+            "location":{
+              "x":50,
+              "y":147},
+            "size":{
+              "width":184,
+              "height":24}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"c58e4f068a344cd7b314e5a5f681cb03",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "lineSpacing":"24px",
+                "location":{
+                  "x":50,
+                  "y":147},
+                "size":{
+                  "width":184,
+                  "height":24}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"21e13f93eb1c4b73833297fc83b50ed1",
+          "label":"",
+          "type":"horizontalLine",
+          "styleType":"horizontalLine",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":9,
+              "y":70},
+            "size":{
+              "width":300,
+              "height":10},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF999999}},
+          "adaptiveStyles":{
+},
+          "images":{
+            "start~":"resources/images/transparent.gif",
+            "end~":"resources/images/transparent.gif",
+            "line~":"images/我的订单/u4_line.png"}},
+{
+          "id":"1c0b0022b7e74d5ea52952fca7f1164f",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'SimSun-ExtB', 'SimSun-ExtB'",
+            "fontSize":"18px",
+            "fontWeight":"400",
+            "fontStyle":"normal",
+            "location":{
+              "x":45,
+              "y":51},
+            "size":{
+              "width":136,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"01c0facc25214153b8612e85202e606b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'SimSun-ExtB', 'SimSun-ExtB'",
+                "fontSize":"18px",
+                "fontWeight":"400",
+                "fontStyle":"normal",
+                "location":{
+                  "x":45,
+                  "y":51},
+                "size":{
+                  "width":136,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open 新增收货地址 in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"新增收货地址.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"75b806bbfa1a46f89187288bc63cd1fd",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'LucidaSans', 'Lucida Sans'",
+            "fontSize":"28px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF999999,
+              "opacity":1},
+            "location":{
+              "x":112,
+              "y":494},
+            "size":{
+              "width":86,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"da3462d44d464df69656fc40e191b195",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'LucidaSans', 'Lucida Sans'",
+                "fontSize":"28px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF999999,
+                  "opacity":1},
+                "location":{
+                  "x":112,
+                  "y":494},
+                "size":{
+                  "width":86,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"e5d42ff5ebb54e719393981ad4ea37d6",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF999999,
+              "opacity":1},
+            "location":{
+              "x":107,
+              "y":525},
+            "size":{
+              "width":97,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"85795e2f12d7499e8535b21fd999f7c3",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF999999,
+                  "opacity":1},
+                "location":{
+                  "x":107,
+                  "y":525},
+                "size":{
+                  "width":97,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"0942380aa5ab48f39c1842e772fb2e9a",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":18,
+              "y":103},
+            "size":{
+              "width":22,
+              "height":22},
+            "borderWidth":"-1",
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF000000}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"3af0b0b3dc8f4bfe91b1dad9d5237435",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":18,
+                  "y":103},
+                "size":{
+                  "width":22,
+                  "height":22},
+                "borderWidth":"-1",
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/收货地址/u17.png"}},
+{
+          "id":"722e77e767e4433bba596b95c9c916c9",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "baseStyle":"627587b6038d43cca051c114ac41ad32",
+            "location":{
+              "x":280,
+              "y":121},
+            "size":{
+              "width":29,
+              "height":29}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d7b0abb35e2846b68bc702a22b4e4e46",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "baseStyle":"627587b6038d43cca051c114ac41ad32",
+                "location":{
+                  "x":280,
+                  "y":121},
+                "size":{
+                  "width":29,
+                  "height":29}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open 新增收货地址 in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"新增收货地址.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/商品详情/u29.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "061b370f2885453f962ac168dbb37ccf":{
+      "scriptId":"u0"},
+    "c3f0b3c26e1d4cb4af99e8c05082cd60":{
+      "scriptId":"u1"},
+    "b78598e81e0c4752a2b083d41d21ca6b":{
+      "scriptId":"u2"},
+    "0a6eef27d97e4fb6b544d2c55f5ef394":{
+      "scriptId":"u3"},
+    "e20b3d69d54f4e0b9f256d0d727311cb":{
+      "scriptId":"u4"},
+    "ef2b27992a89427eaffb8a669cf091a4":{
+      "scriptId":"u5"},
+    "d6e8e31e68eb484cb61160264b108546":{
+      "scriptId":"u6"},
+    "9cb1282d8e8a4993a597615b706531ed":{
+      "scriptId":"u7"},
+    "b3f25c778e014eaba8ac417b70f1a56a":{
+      "scriptId":"u8"},
+    "c58e4f068a344cd7b314e5a5f681cb03":{
+      "scriptId":"u9"},
+    "21e13f93eb1c4b73833297fc83b50ed1":{
+      "scriptId":"u10"},
+    "1c0b0022b7e74d5ea52952fca7f1164f":{
+      "scriptId":"u11"},
+    "01c0facc25214153b8612e85202e606b":{
+      "scriptId":"u12"},
+    "75b806bbfa1a46f89187288bc63cd1fd":{
+      "scriptId":"u13"},
+    "da3462d44d464df69656fc40e191b195":{
+      "scriptId":"u14"},
+    "e5d42ff5ebb54e719393981ad4ea37d6":{
+      "scriptId":"u15"},
+    "85795e2f12d7499e8535b21fd999f7c3":{
+      "scriptId":"u16"},
+    "0942380aa5ab48f39c1842e772fb2e9a":{
+      "scriptId":"u17"},
+    "3af0b0b3dc8f4bfe91b1dad9d5237435":{
+      "scriptId":"u18"},
+    "722e77e767e4433bba596b95c9c916c9":{
+      "scriptId":"u19"},
+    "d7b0abb35e2846b68bc702a22b4e4e46":{
+      "scriptId":"u20"}}});

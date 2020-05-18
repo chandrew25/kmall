@@ -1,0 +1,565 @@
+﻿$axure.loadCurrentPage({
+  "url":"支付.html",
+  "generationDate":new Date(1395018285174.9),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"b08e314641c542a6ae647e0161b57eda",
+    "type":"Axure:Page",
+    "name":"支付",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFEEEEEE},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"1c8190278a4544f1b361cf0aa4c38813",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'SimHei', 'SimHei'",
+            "fontSize":"18px",
+            "location":{
+              "x":57,
+              "y":57},
+            "size":{
+              "width":190,
+              "height":21}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"7686bfcf59ee4f47994d494ebe1488c1",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'SimHei', 'SimHei'",
+                "fontSize":"18px",
+                "location":{
+                  "x":57,
+                  "y":57},
+                "size":{
+                  "width":190,
+                  "height":21}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"b9b8f43676314b97a6707851cfc54147",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'SimHei', 'SimHei'",
+            "fontSize":"14px",
+            "location":{
+              "x":120,
+              "y":22},
+            "size":{
+              "width":86,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"f9c36f21f2cf43f2b83c7e4be2cd2898",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'SimHei', 'SimHei'",
+                "fontSize":"14px",
+                "location":{
+                  "x":120,
+                  "y":22},
+                "size":{
+                  "width":86,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"9ade8d95a7314eefad2a3d65656c7f9a",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"54px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF000000,
+              "opacity":1},
+            "location":{
+              "x":64,
+              "y":90},
+            "size":{
+              "width":181,
+              "height":62}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"8715edc652674518ac5968586da849a4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"54px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000,
+                  "opacity":1},
+                "location":{
+                  "x":64,
+                  "y":90},
+                "size":{
+                  "width":181,
+                  "height":62}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"716f928064e84e4692bdc0f0ffabb67f",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":4,
+              "y":175},
+            "size":{
+              "width":310,
+              "height":85}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b614c39baa694081974c53f2929480ef",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":4,
+                  "y":175},
+                "size":{
+                  "width":310,
+                  "height":85}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/支付/u6.png"}},
+{
+          "id":"289ebd51fbe04e9ea4b942b09b6be669",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'SimHei', 'SimHei'",
+            "fontSize":"18px",
+            "lineSpacing":"28px",
+            "location":{
+              "x":13,
+              "y":184},
+            "size":{
+              "width":55,
+              "height":56}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"7b766eaffae24801829953053f3d93eb",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'SimHei', 'SimHei'",
+                "fontSize":"18px",
+                "lineSpacing":"28px",
+                "location":{
+                  "x":13,
+                  "y":184},
+                "size":{
+                  "width":55,
+                  "height":56}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"f06a54fcc75e4d96b1d4d23da9da6409",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"18px",
+            "fontWeight":"200",
+            "location":{
+              "x":122,
+              "y":3},
+            "size":{
+              "width":73,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"11374c6051fd472abe7ac935b5b26d0e",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"18px",
+                "fontWeight":"200",
+                "location":{
+                  "x":122,
+                  "y":3},
+                "size":{
+                  "width":73,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"d11680fd0ac64283be114214b0205bfb",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'SimHei', 'SimHei'",
+            "fontSize":"16px",
+            "lineSpacing":"24px",
+            "location":{
+              "x":250,
+              "y":190},
+            "size":{
+              "width":49,
+              "height":24}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"bc24833d51194e9488b8add9028fae39",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'SimHei', 'SimHei'",
+                "fontSize":"16px",
+                "lineSpacing":"24px",
+                "location":{
+                  "x":250,
+                  "y":190},
+                "size":{
+                  "width":49,
+                  "height":24}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"916e5caff81a4659b7dd0230c1d1f617",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'SimHei', 'SimHei'",
+            "fontSize":"16px",
+            "location":{
+              "x":134,
+              "y":220},
+            "size":{
+              "width":169,
+              "height":18}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"5dc950906a1f445cb99d9229ca62b4e5",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'SimHei', 'SimHei'",
+                "fontSize":"16px",
+                "location":{
+                  "x":134,
+                  "y":220},
+                "size":{
+                  "width":169,
+                  "height":18}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"62b7bc6261134cd098c72e9034930339",
+          "label":"ButtonBigSecondary",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'SimSun', 'SimSun'",
+            "fontSize":"24px",
+            "fontWeight":"400",
+            "baseStyle":"e327ff603fa44748ad8b15dc502bb678",
+            "stateStyles":{
+              "mouseDown":{
+                "baseStyle":"2d6526093b9d4eadb0b62a6b44451b38"}},
+            "fill":{
+              "fillType":"solid",
+              "color":0xFF99CC33},
+            "location":{
+              "x":4,
+              "y":277},
+            "size":{
+              "width":310,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b99ee0fa18944c35a4495bce5bc0936a",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'SimSun', 'SimSun'",
+                "fontSize":"24px",
+                "fontWeight":"400",
+                "baseStyle":"e327ff603fa44748ad8b15dc502bb678",
+                "stateStyles":{
+                  "mouseDown":{
+                    "baseStyle":"2d6526093b9d4eadb0b62a6b44451b38"}},
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFF99CC33},
+                "location":{
+                  "x":4,
+                  "y":277},
+                "size":{
+                  "width":310,
+                  "height":50}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open 订单详情 in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"订单详情.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/支付/buttonbigsecondary_u16.png",
+            "mouseDown~":"images/结算/buttonbigsecondary_u14_mouseDown.png"}},
+{
+          "id":"070b7f4cc8c7432796a04f4c87cba926",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "fill":{
+              "fillType":"solid",
+              "color":0xFF666666},
+            "location":{
+              "x":14,
+              "y":6},
+            "size":{
+              "width":55,
+              "height":30},
+            "cornerRadiusTopLeft":"5"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"834d4990917d4adca1e670a2309ee022",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFF666666},
+                "location":{
+                  "x":14,
+                  "y":6},
+                "size":{
+                  "width":55,
+                  "height":30},
+                "cornerRadiusTopLeft":"5"},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open Back in Current Window",
+                      "target":{
+                        "targetType":"backUrl",
+                        "includeVariables":false},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/支付/u18.png"}},
+{
+          "id":"9a781a06d5f3433a9a9ce933a0a15d38",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"15px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF666666,
+              "opacity":1},
+            "location":{
+              "x":20,
+              "y":410},
+            "size":{
+              "width":275,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ac01c9e5d2d543bea782c676cd9a4a39",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"15px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF666666,
+                  "opacity":1},
+                "location":{
+                  "x":20,
+                  "y":410},
+                "size":{
+                  "width":275,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "1c8190278a4544f1b361cf0aa4c38813":{
+      "scriptId":"u0"},
+    "7686bfcf59ee4f47994d494ebe1488c1":{
+      "scriptId":"u1"},
+    "b9b8f43676314b97a6707851cfc54147":{
+      "scriptId":"u2"},
+    "f9c36f21f2cf43f2b83c7e4be2cd2898":{
+      "scriptId":"u3"},
+    "9ade8d95a7314eefad2a3d65656c7f9a":{
+      "scriptId":"u4"},
+    "8715edc652674518ac5968586da849a4":{
+      "scriptId":"u5"},
+    "716f928064e84e4692bdc0f0ffabb67f":{
+      "scriptId":"u6"},
+    "b614c39baa694081974c53f2929480ef":{
+      "scriptId":"u7"},
+    "289ebd51fbe04e9ea4b942b09b6be669":{
+      "scriptId":"u8"},
+    "7b766eaffae24801829953053f3d93eb":{
+      "scriptId":"u9"},
+    "f06a54fcc75e4d96b1d4d23da9da6409":{
+      "scriptId":"u10"},
+    "11374c6051fd472abe7ac935b5b26d0e":{
+      "scriptId":"u11"},
+    "d11680fd0ac64283be114214b0205bfb":{
+      "scriptId":"u12"},
+    "bc24833d51194e9488b8add9028fae39":{
+      "scriptId":"u13"},
+    "916e5caff81a4659b7dd0230c1d1f617":{
+      "scriptId":"u14"},
+    "5dc950906a1f445cb99d9229ca62b4e5":{
+      "scriptId":"u15"},
+    "62b7bc6261134cd098c72e9034930339":{
+      "scriptId":"u16"},
+    "b99ee0fa18944c35a4495bce5bc0936a":{
+      "scriptId":"u17"},
+    "070b7f4cc8c7432796a04f4c87cba926":{
+      "scriptId":"u18"},
+    "834d4990917d4adca1e670a2309ee022":{
+      "scriptId":"u19"},
+    "9a781a06d5f3433a9a9ce933a0a15d38":{
+      "scriptId":"u20"},
+    "ac01c9e5d2d543bea782c676cd9a4a39":{
+      "scriptId":"u21"}}});

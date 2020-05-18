@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <button type="click" name="菲生活介绍" key="event1"></button>
+    <button type="view" name="菲生活商城" url="http://www.phoebelife.com"></button>
+    <button name="手机商城">
+        <subButton type="click" name="手机商城介绍" key="event2"></subButton>
+        <subButton type="view" name="手机商城" url="http://www.phoebelife.com/mobile"></subButton>
+    </button>
+</menu>

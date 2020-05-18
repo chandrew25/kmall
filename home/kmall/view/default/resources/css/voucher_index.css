@@ -1,0 +1,44 @@
+.center{
+	width: 1000px;
+	margin: 0 auto;
+}
+.brand{
+	float: left;
+	width: 1000px;
+	height: 426px;
+}
+.brand img{
+	float: left;
+	width: 1000px;
+	height: 426px;
+}
+.lists{
+	float: left;
+	width: 999px;
+	margin-left: 1px;
+	background-color: #81099f;
+}
+.li{
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 960px;
+	height: 148px;
+}
+.li img{
+	float: left;
+	width: 960px;
+	height: 148px;
+}
+.li3{
+	margin-bottom: 20px;
+	background-image: url("images/voucher/li3.jpg");
+}
+.li3_ck{
+	float: right;
+	width: 172px;
+	height: 53px;
+	margin-top: 45px;
+	margin-right: 19px;
+	display: block;
+}

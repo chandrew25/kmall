@@ -1,0 +1,22 @@
+.main{margin-top:2px;margin-bottom:10px;overflow:hidden;}
+.main .navi_left{width:190px;float:left;overflow:hidden;}
+.main .navi_left .box1{border:#999 1px solid;overflow:hidden;}
+.main .navi_left .box1 .title{height:30px;line-height:30px;font-size:15px;font-weight:bold;background:url(images/title_bg.jpg);text-indent:10px;}
+.main .navi_left .box1 .items{white-space:nowrap;}
+.main .navi_left .box1 .items li{height:25px;line-height:25px;text-indent:10px;}
+.main .navi_left .box1 .items .tt{height:30px;line-height:30px;background:#E5E5E5;font-size:14px;font-weight:bold;}
+.main .navi_left .box1 .items li a{color:#666;}
+.main .navi_left .box2{border:#CCC 1px solid;overflow:hidden;margin:5px 0px 0px 0px;padding:8px 0px 8px 0px;}
+.main .navi_left .box2 .recommand{width:95%;margin:8px auto;}
+.main .content{width:762px;float:right;overflow:hidden;border:#999 1px solid;}
+.main .content .passage{width:95%;margin:0px auto;}
+.main .content .passage .head{border-bottom:#999 1px solid;height:40px;}
+.main .content .passage .head .title{font-size:16px;font-family:"microsoft yahei";padding:0px 0px 0px 20px;line-height:40px;float:left;width:700px;white-space:nowrap;overflow:hidden;}
+.main .content .passage .head .more{margin:15px 0px 0px 0px;float:right;}
+.main .content .passage .time_share{oveflow:hidden;height:35px;}
+.main .content .passage .time_share .time{height:35px;line-height:35px;color:#999;margin:0px 0px 0px 20px;float:left;_display:inline;}
+.main .content .passage .time_share .share{float:right;height:35px;overflow:hidden;}
+.main .content .passage .time_share .share .txt{float:left;line-height:35px;}
+.main .content .passage .time_share .share .plugin{float:left;margin:10px 0px 0px 0px;}
+.main .content .passage .main_passage{padding:0px 0px 10px 0px;line-height:24px;}
+.main .content .passage .main_passage p{font-family:'宋体';font-size:14px;text-indent:2em;margin:18px auto;}

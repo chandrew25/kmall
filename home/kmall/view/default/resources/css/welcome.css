@@ -1,0 +1,35 @@
+.container{
+	float: left;
+	width: 100%;
+	height: 100%;
+	background-color: #ed225b;
+}
+.main{
+	margin: 0 auto;
+	width: 100%;
+	min-height: 760px;
+	background-image: url("images/voucher/index.jpg"); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.frm{
+	margin: 0 auto;
+	width: 1000px;
+	height: 760px;
+	position: relative;
+}
+.login{
+	float: right;
+	width: 171px;
+	height: 54px;
+	margin-top: 547px;
+	margin-right: 70px;
+	cursor: pointer;
+}
+.index{
+	float: right;
+	width: 195px;
+	height: 60px;
+	margin-top: 674px;
+	margin-right: -240px;
+}

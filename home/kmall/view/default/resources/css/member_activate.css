@@ -1,0 +1,38 @@
+.activate_title{
+	text-indent:10px;
+}
+#activate_tbl{
+	margin:30px auto 30px 120px;
+	border-collapse:separate;
+	border-spacing:5px;
+}
+#activate_tbl span{
+	color:#989898;
+	line-height:25px;
+}
+#activate_tbl font{
+	color:#990000;
+	margin-left:5px;
+}
+.inputBg {
+    background: url("images/user/inputbg.gif") repeat-x left top; border: 1px solid rgb(179, 179,179); height: 18px;
+}
+#validate_img{
+	width:65px;
+	height:20px;
+	border:0px;
+	margin-left:5px;
+	cursor:pointer;
+	vertical-align:text-bottom;
+}
+.td_r{
+	text-align:right;
+	vertical-align:top;
+}
+#activate_submit{
+    border:0px;
+    width: 115px; 
+    height: 40px;
+	cursor:pointer;
+	background: url("images/member/activate.jpg") no-repeat;
+}

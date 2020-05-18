@@ -1,0 +1,119 @@
+<?php
+/**
+ +---------------------------------------<br/>
+ * 控制器:renren登录<br/>
+ +---------------------------------------
+ * @category kmall
+ * @package open.api.login
+ * @author 924197212@qq.com
+ */
+class OpenLoginRenren extends OpenLogin
+{
+    /**
+     * 登录logintype_id
+     */
+    const ID='3';
+    /**
+     * 获取授权接口地址
+     */
+    const LOGINURL="https://graph.renren.com/oauth/authorize";
+    /**
+     * 获取ACCESS TOKEN接口地址
+     */
+    const LOGINTOKEN="https://graph.renren.com/oauth/token";
+    /**
+     * 获取个人信息接口地址
+     */
+    const LOGINAPI='https://api.renren.com/restserver.do';
+    /**
+     * 回调地址
+     */
+    const CALLBACKPATH="open/login/renr/callback.php";
+    /**
+     * response_type
+     */
+    const RESPONSETYPE="code";
+    /**
+     * grant_type
+     */
+    const GRANTTYPE="authorization_code";
+
+    /**
+     * 单例化
+     */
+    private static $newInstance;
+
+    public static function new_instance()
+    {
+        if (self::$newInstance==null)
+        {
+            self::$newInstance=new OpenLoginRenren();
+        }
+        return self::$newInstance;
+    }
+
+    /**
+     * 登录
+     */
+    public function login()
+    {
+        HttpSession::init();
+        $app = Logintype::get_by_id(self::ID);
+        $params = array();
+        $params["client_id"] = $app->app_key;
+        $_SESSION['state'] = md5(uniqid(rand(), TRUE));
+        $params["state"] = $_SESSION['state'];
+        $params["response_type"] = self::RESPONSETYPE;
+        $params["redirect_uri"] = Gc::$url_base.self::CALLBACKPATH;
+        $sendurl = self::LOGINURL;
+        $dialog_url = $this->spliceUrl($sendurl,$params,self::ID);
+        header('Location:'.$dialog_url);
+    }
+
+    /**
+     * 回调
+     * $param $code
+     */
+    public function callBack($code)
+    {
+        //获取access_token
+        $app = Logintype::get_by_id(self::ID);
+        //post提交请求
+        $params = array();
+        $params["client_id"] = $app->app_key;
+        $params["client_secret"] = $app->app_secret;
+        $params["grant_type"] = self::GRANTTYPE;
+        $params["code"] = $code;
+        $params["redirect_uri"] = Gc::$url_base.self::CALLBACKPATH;
+        $sendurl = self::LOGINTOKEN;
+        $response = $this->postApi($sendurl,$params);
+        if(!$response){
+            echo "<h3>error: 获取access_token失败！</h3>";
+            return;
+        }
+        $srt = json_decode($response);
+        //access_token
+        $access_token = $srt->access_token;
+        //Step3：使用Access Token来获取用户信息
+        $infoparams = array();
+        $infoparams["access_token"] = $access_token;
+        $infoparams["format"] = "JSON";
+        $infoparams["v"] = "1.0";
+        $infoparams["method"] = "users.getInfo";
+        $sendurl = self::LOGINAPI;
+        $infostr  = $this->postApi($sendurl,$infoparams);
+        if(!$infostr){
+            echo "<h3>error: 获取用户信息失败！</h3>";
+            return;
+        }
+        $info = json_decode($infostr);
+        //openid
+        $openid = $info["0"]->uid;
+        $member_name = $info["0"]->name;
+        //设置session
+        if($openid&&$member_name){
+            $this->setSession($openid,self::ID,$member_name);
+        }
+    }
+}
+?>

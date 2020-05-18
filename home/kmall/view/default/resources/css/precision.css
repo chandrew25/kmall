@@ -1,0 +1,71 @@
+/*
+* public style begin
+* fxf 924197212@qq.com
+* 2013-5-20
+*/
+/*main container*/
+.main{background:url(images/precision/bg.jpg) no-repeat center top white;margin:0px auto;height:auto;}
+.content{width:964px;margin:0px auto;overflow:hidden;zoom:1;position:relative;}
+/*banner style*/
+.prec_banner{width:100%;height:494px;margin:0px auto;margin-top:500px;float:left;}
+/*blank style*/
+.prec_blank{width:100%;height:29px;overflow:hidden;margin:0px auto;float:left;}
+/*produc info style*/
+.prec_p_show{width:100%;height:304px;float:left;}
+.prec_p_show .prec_p_info{width:446px;height:100%;float:left;margin-left:20px;_margin-left:10px;}
+.prec_p_show .prec_p_info .prec_p_i_title{margin-top:13px;height:40px;width:100%;line-height:40px;font-size:24px;color:#3C6D7C;font-weight:bold;font-family:"Microsoft YaHei,simsun";}
+.prec_p_show .prec_p_info .prec_p_i_msg{height:32px;width:100%;}
+.prec_p_show .prec_p_info .prec_p_i_msg img{margin:7px 0px 0px 11px;}
+.prec_p_show .prec_p_info .prec_p_i_detail{margin-top:8px;width:100%;}
+.prec_p_show .prec_p_info .prec_p_i_detail li{height:30px;line-height:30px;width:100%;font-family:"Arial,simsun";font-size:18px;color:#3C6D7C;width:432px;margin-left:14px;}
+.prec_p_show .prec_p_info .prec_add_cart{display:block;width:137px;height:33px;margin-left:12px;margin-top:18px;}
+
+/*color type style*/
+.prec_p_list{width:100%;height:296px;position:relative;float:left;}
+.prec_p_list .prec_p_l_info{position:absolute;height:24px;line-height:24px;width:200px;left:18px;top:8px;font-family:"Microsoft YaHei,simsun";font-size:14px;color:#FF2F2F;}
+.prec_p_list .prec_p_l_pic{width:320px;height:200px;float:left;margin-top:46px;}
+.prec_p_list .prec_p_l_pic .prec_p_l_p_img{width:236px;height:160px;margin:0px auto;}
+.prec_p_list .prec_p_l_pic .prec_p_l_p_info{width:100%;height:40px;line-height:40px;text-align:center;font-size:18px;font-family:"Microsoft YaHei,simsun";}
+.prec_p_list .prec_p_l_line{width:2px;height:296px;overflow:hidden;float:left;}
+
+/*product specifications style*/
+.prec_name_style{text-align:left;width:85px;float:left;}
+.prec_value_style{margin-left:10px;_margin-left:5px;float:left;width:300px;}
+.prec_colon{float:left;}
+.prec_name_style_price{color:#FF0000;font-size:24px;}
+
+/*use method style*/
+.prec_use{width:954px;height:383px;border:5px solid #CCCC99;background:#F7F1D9;float:left;}
+.prec_use .prec_use_title{margin-top:31px;width:733px;height:25px;float:left;margin-left:25px;display:inline;}
+.prec_use .prec_use_message{margin-left:32px;width:726px;height:327px;float:left;display:inline;}
+.prec_use .prec_use_message p{font-size:18px;font-weight:bold;font-family:SimHei;line-height:45px;}
+.prec_use .prec_use_img{width:181px;height:292px;;margin-left:13px;margin-top:35px;float:left;display:inline;}
+
+/*font-color style*/
+.prec_color_red{color:#E94D63;}
+.prec_color_yellow{color:#BB9243;}
+.prec_color_blue{color:#3C74E1;}
+
+/*
+*  public style end
+*/
+
+/*custom block style and background*/
+.prec_pic_first{margin-left:30px;float:left;width:456px;height:69px;margin-top:123px;}
+.prec_ps_first{background:url(images/precision/bg1.jpg) repeat-y;}
+.prec_pl_first{background:url(images/precision/bg2.jpg) repeat-y;}
+.prec_p_i_msg_first{background:#99C9D7;}
+.prec_pic_second{margin-left:30px;float:left;width:456px;height:69px;margin-top:21px;}
+.prec_ps_second{background:url(images/precision/bg3.jpg) repeat-y;}
+.prec_pl_second{background:url(images/precision/bg4.jpg) repeat-y;}
+.prec_p_i_msg_second{background:#DCD5B9;}
+
+
+
+
+
+
+
+
+
+

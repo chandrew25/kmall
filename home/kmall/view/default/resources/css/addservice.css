@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{margin:2px auto;overflow:hidden;width:964px;margin-bottom:10px;}
+#main .navi_left{width:202px;float:left;overflow:hidden;margin:0px 5px 0px 0px;border:1px solid #BCC1C5;}
+#main .navi_left ul{width:200px;background:white;}
+
+#main .navi_left ul li{overflow:hidden;}
+#main .navi_left ul li .title{font-size:15px;font-family:"microfost yahei";font-weight:bold;color:white;background:url(images/title_bg.jpg);height:27px;margin:0px auto;width:194px;padding:5px 0px 0px 15px;;line-height:27px;}
+#main .navi_left ul li .title .words{line-height:27px;margin-left:10px;_margin-left:5px;font-size:14px;float:left;}
+#main .navi_left ul li .title .arrow{margin:5px 10px 0px 0px;float:right;_margin-right:5px;}
+#main .navi_left ul li .box{width:198px;margin:0;border-left:#999 1px solid;border-right:#999 1px solid;border-bottom:none;}
+#main .navi_left ul li .box li{margin:0px 0px 0px 10px;line-height:25px;}
+#main .content{width:752px;float:right;overflow:hidden;border:1px solid #BCC1C5;background:white;}
+#main .content .banner{overflow:hidden;}
+#main .content .service{overflow:hidden;}
+#main .content .service .title{font-size:16px;font-family:"microsoft yahei";line-height:46px;padding:0px 0px 0px 24px;border-bottom:1px solid #CCC;}
+#main .content .service .details{margin:5px 0px 0px 0px;}
+#main .content .service .details li{background:#E8E8E8;width:371px;height:131px;margin:0px 5px 5px 0px;float:left;}
+#main .content .service .details li .pic{float:left;width:25%;padding:16px 0px 0px 12px;}
+#main .content .service .details li .title{height:31px;border:none;float:right;margin:10px 0px 0px 0px;width:60%;}
+#main .content .service .details li .title .words{line-height:31px;font-size:14px;float:left;}
+#main .content .service .details li .title .arrow{margin:8px 15px 0px 0px;float:right;}
+#main .content .service .details li .intro{float:right;width:60%;padding:5px 10px 0px 0px;}

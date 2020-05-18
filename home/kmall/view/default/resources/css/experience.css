@@ -1,0 +1,30 @@
+/*
+* public style begin
+* fxf 924197212@qq.com
+* 2013-5-29
+*/
+/*main container*/
+.main{background:url(images/experience/bg.jpg) no-repeat center top #E3E4E6;margin:0px auto;height:auto;border-top:2px solid #9E9FA1;}
+.content{width:964px;margin:0px auto;overflow:hidden;zoom:1;position:relative;}
+/*banner style*/
+.expe_banner{width:100%;height:463px;margin:0px auto;margin-top:1px;float:left;}
+/*first content style*/
+.show_con{width:962px;height:584px;border:1px solid #CCCCCC;background:white;margin:0px auto;margin-top:334px;float:left;position:relative;}
+.show_con .s_c_pic{width:920px;height:397px;margin:0px auto;margin-top:40px;border:1px solid #E3E4E6;}
+.show_con .s_c_pic img{width:918px;height:395px;border:1px solid white;}
+.show_con .s_c_pic .s_c_p_show{display:block;}
+.show_con .s_c_pic .s_c_p_hide{display:none;}
+.show_con .s_c_hot{width:922px;height:84px;margin:0px auto;margin-top:15px;}
+.show_con .s_c_hot .s_c_h_hover{width:145px;height:84px;float:left;margin-right:10px;display:inline;}
+.show_con .s_c_hot .s_c_h_hover img{width:145px;height:84px;}
+.show_con .s_c_hot .s_c_h_hover .schh_hot{width:139px;height:78px;border:3px solid #6CCEF5;}
+.show_con .s_c_hot .s_c_h_hoverf{margin-left:1px;}
+.show_con .s_c_hot .s_c_h_hoverl{margin-right:1px;}
+.show_con .s_c_headerleft{width:364px;height:54px;position:absolute;top:-29px;left:10px;}
+.show_con .s_c_headerright{width:348px;height:43px;position:absolute;top:-16px;left:584px;}
+/*map style*/
+.map_con{width:962px;height:622px;border:1px solid #CCCCCC;background:white;margin:48px auto;margin-bottom:24px;float:left;position:relative;}
+.m_c_pic{width:922px;height:399px;margin:0px auto;margin-top:40px;}
+.map_con .m_c_header{width:364px;height:54px;position:absolute;top:-29px;left:10px;}
+.m_c_intro{width:922px;margin:10px auto;}
+.m_c_intro p{width:100%;height:32px;line-height:32px;margin-left:2px;font-size:14px;font-family:'Microsoft Yahei','simsun';color:#707070}

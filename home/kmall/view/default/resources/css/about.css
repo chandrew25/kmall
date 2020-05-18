@@ -1,0 +1,9 @@
+.main{margin-top:2px;margin-bottom:2px;overflow:hidden;width:948px;background:white;}
+.main .pageFlack{height:229px;width:100%;margin-bottom:2px;}
+.main .content{width:100%;;border-top:#999 1px solid;}
+.main .content .passage{width:95%;margin:0px auto;}
+.main .content .passage .head{border-bottom:#1C1C1C 1px solid;height:23px;line-height:28px;}
+.main .content .passage .head .title{font-size:14px;font-family:"microsoft yahei";}
+.main .content .passage .main_passage{padding:0px 0px 10px 0px;line-height:24px;}
+.main .content .passage .main_passage p{font-family:'宋体';font-size:12px;text-indent:2em;margin:18px auto;}
+.main .content .passage .main_passage p img{border: 1px solid #EEEEEE;padding:3px;}

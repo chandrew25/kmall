@@ -1,0 +1,19 @@
+.clear{ clear:both;}
+.manage{ margin:auto; width:1000px; background-color:#FFFFFF; margin-bottom:-10px;}
+.manage .left{ width:735px; height:485px; float:left; display:inline;}
+.manage .right{ width:265px; height:485px; float:right; display:inline; background-color:#D7E3EF;}
+.manage .right .find{ width:100%; height:235px; text-align:center;}
+.manage .right .find span{ font:24px '微软雅黑'; margin-top:25px; display:block;}
+.manage .right .find select{ margin-top:20px; width:150px; height:20px; text-align: center; line-height:20px; border:1px solid #CCCCCC; color:#999999;}
+.manage .right .find .btnbyadd{width:68px; height:20px; line-height:20px; margin:15px auto; color:#FFF; background-image:url(images/city/btn.jpg); cursor: pointer;}
+.manage .right .find .bor{ width:222px; height:30px; border:1px solid #CCCCCC; margin:auto;}
+.manage .right .find input{ float:left; display:inline; width:165px; height:30px; line-height:30px; border:0; color:#999999; padding-left:5px;}
+.manage .right .find .btnbyname{ float:left; display:inline; width:52px; height:30px; background-color:#F27B0C; color:#FFF; text-align:center; line-height:30px; cursor: pointer;}
+.manage .right .big{ width:204px; height:164px; margin:auto; background-image:url(images/city/big.png);}
+
+
+
+
+
+
+

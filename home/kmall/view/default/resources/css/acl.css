@@ -1,0 +1,347 @@
+.btnSubmit {
+    background: url("images/user/btnD.png") repeat scroll 0 0 transparent;
+	border:0px;
+    font-size: 14px;
+    letter-spacing: 1mm;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer; 
+    width: 121px; 
+    height: 27px;
+}
+/*提示消息*/
+.notice{
+	color:red;
+	margin-left:5px;
+}
+/* 注册点击按钮样式
+----------------------------------*/
+#register_submit{
+	border:0px;
+    font-size: 14px;
+    letter-spacing: 1mm;
+    color: #FFFFFF;     
+    font-weight: bold;
+    width: 121px; 
+    height:27px;
+}
+.register_submit_abled{
+	cursor:pointer;
+    background: url("images/user/register_up.jpg") repeat scroll 0 0 transparent;
+}
+.register_submit_disabled{
+	cursor:default;
+    background: url("images/user/register_down.jpg") repeat scroll 0 0 transparent;
+}
+
+/* 注册页面企业信息和个人信息的标题
+----------------------------------*/
+.user_info{
+	width:100%;
+	height:32px;
+}
+.user_info td{
+	color:#636363;
+	width:474px;
+	line-height:30px;
+	font-size:15px;
+	font-weight:bold;
+	text-align:right;
+}
+.user_info td span{
+	font-weight:normal;
+}
+.user_info_border{
+	width:100%;
+	height:2px;
+	font-size:0;
+	line-height:0;
+}
+.user_info_border td{
+	height:1px;
+}
+
+/* 公共样式
+----------------------------------*/
+li {
+    margin: 0px; padding: 0px; border: currentColor; list-style-type: none;
+}    
+dl {
+    margin: 0px; padding: 0px; border: currentColor; list-style-type: none;
+}
+dt {
+    margin: 0px; padding: 0px; border: currentColor; list-style-type: none;
+}
+dd {
+    margin: 0px; padding: 0px; border: currentColor; list-style-type: none;
+}
+form {
+    margin: 0px; padding: 0px; border: currentColor; list-style-type: none;
+}
+img {
+    margin: 0px; padding: 0px; border: currentColor; list-style-type: none;
+}
+p {
+    margin: 0px; padding: 0px; border: currentColor; list-style-type: none;
+}       
+.block {
+    width: 1000px; height: auto;
+}       
+.f_l {
+    float: left;
+}
+.f_r {
+    float: right;
+}
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center;
+}
+.tr {
+    text-align: right;
+}
+.dis {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.none {
+    display: none;
+}
+
+.clearfix:after {
+    height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+* + html .clearfix {
+    height: 1%;
+}         
+.box {
+    background: rgb(241, 241, 241); overflow: hidden; padding-bottom: 2px;
+}
+.box_1 {
+    border: 1px solid rgb(234, 215, 207); background-color: rgb(255, 255, 255);
+}
+
+.boxCenterList {
+    padding: 8px;
+}   
+h5 {
+    padding: 0px 10px 0px 0px; height: 26px; text-align: right; color: rgb(129, 76, 59); line-height: 26px; font-size: 12px; background-color: rgb(248, 242, 239);
+}
+
+h6 {
+    background: rgb(242, 227, 223); border: 1px solid rgb(255, 255, 255); height: 23px; text-align: right; color: rgb(129, 76, 59); 
+
+line-height: 23px; padding-right: 10px; font-size: 12px;
+}
+h6 span {
+    padding-left: 15px; float: left;
+}
+.blank {
+    height: 8px; line-height: 8px; clear: both; visibility: hidden;
+}
+.blank5 {
+    height: 5px; line-height: 5px; clear: both; visibility: hidden;
+}
+.AreaL {
+    width: 200px; margin-right: 10px; float: left;
+}
+.AreaR {
+    width: 750px; float: left;
+}
+
+#topNav a {
+    color: rgb(129, 76, 59); text-decoration: none;
+}
+#mainNav {
+    padding: 0px 25px; width: 910px;
+}
+
+
+#ur_here {
+    background: url("images/user/uh_bg.gif") repeat-x left top; border-width: medium 1px 1px;      
+border-style: none solid solid; border-color: currentColor rgb(235, 217, 209) rgb(235, 217, 209); padding: 0px 12px;  height: 36px; line-height: 36px;
+}         
+.boxCenterList li a {
+    color: rgb(63, 63, 63); text-decoration: none;
+}     
+.boxCenterList li a:hover {
+    color: rgb(255, 102, 0); text-decoration: none;
+}     
+.centerPadd {
+    padding: 5px 8px 8px; overflow: hidden;
+}
+ 
+.centerPadd .goodsBox {
+    background: rgb(255, 255, 255); padding: 12px 0px 0px 17px; border: 1px solid rgb(240, 227, 222); _padding: 12px 0px 0px 0px;
+}
+.centerPadd .goodsBox .more {
+    margin: 0px 8px 8px 0px; text-align: right; clear: both;
+}  
+
+.helpTitBg dl {
+    margin-right: 30px; float: left; _width: 130px; _margin-right: 20px;
+}
+
+.helpTitBg dt a {
+    color: rgb(185, 136, 119); font-weight: bold; text-decoration: none;
+}
+
+.boxCenterList ul {
+    height: 1%; margin-bottom: 5px;
+}
+.boxCenterList li {
+    width: 120px; float: left;
+}
+.boxCenterList li.goodsimg {
+    width: 48px; margin-right: 10px;
+}
+.boxCenterList li.goodsimg img {
+    width: 48px; height: 48px; display: block;
+}
+
+#history li {
+    width: 100%;
+}
+#clear_history a {
+    padding: 0px; color: rgb(63, 63, 63); text-decoration: none; float: right; cursor: pointer;
+}
+.colle a {
+    padding: 0px; color: rgb(63, 63, 63); text-decoration: none;
+}
+.colle a:hover {
+    padding: 0px; color: rgb(255, 102, 0); text-decoration: none;
+}      
+.ie6 {
+    height: 1%; padding-left: 25px; _padding-left: 15px;
+}
+      
+.captcha {
+    top: 3px; margin-left: 0px; position: relative; cursor: pointer;
+}     
+.box_1 .userCenterBox {
+    border: 4px solid rgb(252, 248, 247); background-color: rgb(255, 255, 255);
+}
+.loginregister {
+    font-family: "宋体",Verdana, Arial; font-size: 12px;width:964px;margin:10px auto;margin-bottom:20px;
+}
+.usBox {
+    background: rgb(242, 242, 242); padding: 15px; border: 1px solid rgb(226, 226, 226); width: 934px; text-align:left;
+}
+.usBox_1 {
+    background: rgb(255, 255, 255); padding:50px 100px; width:400px;text-align: left;
+}
+.usTxt{
+    background: url("images/user/ur_bg1.gif") no-repeat 0px 50%; padding:50px 0px 50px 100px; width:200px;line-height: 23px;
+}
+.us_Submit {
+    background: url("images/user/bnt_ur_log.gif"); border:0; width: 115px; height: 40px;
+}
+.us_Submit_reg {
+    background: url("images/user/bnt_ur_reg.gif"); border: currentColor; width: 113px; height: 40px;
+}
+
+.usTxt img {
+    margin-top: 15px;
+}
+.usBox_2 {
+    background: rgb(255, 255, 255); padding: 43px 153px 60px 123px; text-align: left;
+}
+/*
+注册登录标题
+*/
+.logtitle,.regtitle{
+	height:30px;
+	overflow:hidden;
+	color:#737373;
+	font-size:19px;
+	font-weight:bold;
+	line-height:30px;
+}
+.logtitle img,.regtitle img{
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.box_1 .userCenterBox .userMenu a img {
+    margin-right: 3px;
+}
+
+.screeBox {
+    padding: 10px;
+}
+.screeBox a {
+    color: rgb(64, 64, 64);
+}
+.screeBox span {
+    background: rgb(230, 206, 197); margin: 0px 3px; padding: 3px 5px;
+}
+.sort a {
+    bottom: 5px; position: relative;
+}
+.sort input {
+    top: 3px; position: relative;
+}   
+
+.group {
+    background: rgb(242, 242, 242); padding: 8px;
+}
+.group li {
+    background: rgb(255, 255, 255); padding: 8px; float: left;
+}                  
+.quotation {
+    margin: 20px auto; text-align: center;
+}
+.pagebar {
+    height: 20px; float: right;
+}
+.pagebar img {
+    top: 2px; position: relative;
+}
+.pagebar a {
+    margin: 0px 2px; color: rgb(129, 76, 59); text-decoration: none; float: left; display: block;
+}
+.pagebar a:hover {
+    color: rgb(255, 90, 106); text-decoration: none;
+}
+.pagebar .page_now {
+    background: rgb(255, 255, 255); margin: 0px 5px; color: rgb(255, 90, 106); font-weight: bold; float: left; display: block;
+}
+#pager a {
+    color: rgb(129, 76, 59); text-decoration: none;
+}
+#bottomNav {
+    width: 958px;
+}
+.bNavList {
+    background: rgb(247, 240, 239); padding: 0px 12px; border: 1px solid rgb(255, 255, 255); height: 27px; line-height: 27px;
+}
+.links {
+    background: rgb(247, 240, 239); padding: 0px 12px; border: 1px solid rgb(255, 255, 255);
+}
+.bNavList a {
+    color: rgb(129, 76, 59); text-decoration: none;
+}
+.links a {
+    color: rgb(129, 76, 59); text-decoration: none;
+}
+.bNavList img {
+    top: 8px; _position: relative;
+}
+.links img {
+    margin: 5px; width: 88px; height: 30px;
+}
+
+#footer .text a {
+    color: rgb(64, 64, 64); text-decoration: none;
+}
+           
+.point li {
+    width: 300px; float: left;
+}
+.inputBg {
+    background: url("images/user/inputbg.gif") repeat-x left top; border: 1px solid rgb(179, 179,179); height: 18px;
+}

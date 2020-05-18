@@ -1,0 +1,105 @@
+.content_no{
+	position: absolute;
+    width: 108px;
+    height: 160px;
+    text-align: center;  
+    top: 50%;  
+    left: 50%;
+    margin-top:-70px;
+    margin-left: -54px;
+    color: #ccc;
+}
+.content_no img{
+	width: 108px;
+	height: 139px;
+}
+.coupon_li{
+	float: left;
+	width: 630px;
+	height: 110px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.b{
+	float: left;
+	height: 2px;
+	background-color: #45B1D8;
+}
+.b1{
+	width: 626px;
+	margin-left: 2px;
+}
+.b2{
+	width: 622px;
+	margin-left: 4px;
+}
+.b3{
+	width: 618px;
+	margin-left: 6px;
+}
+.coupon_main{
+	float: left;
+	width: 614px;
+	height: 98px;
+	margin-left: 8px;
+	background-color: #45B1D8;
+}
+.coupon_main_b{
+	float: left;
+	width: 600px;
+	height: 94px;
+	margin-left: 6px;
+	border: 2px solid #3EA0C6;
+	border-radius: 5px;
+	color: #fff;
+}
+.coupon_name{
+	float: left;
+	width: 50px;
+	height: 94px;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 31px;
+	text-align: center;
+	border-right: 2px solid #3EA0C6;
+}
+.coupon_info{
+	float: left;
+	width: 496px;
+	height: 94px;
+}
+.coupon_remarks{
+	float: left;
+	width: 496px;
+	height: 30px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 16px;
+}
+.coupon_pwd{
+	float: left;
+	width: 496px;
+	height: 40px;
+	line-height: 30px;
+	font-size: 22px;
+	text-align: center;
+
+}
+.coupon_time{
+	float: left;
+	width: 496px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 15px;
+}
+.coupon_amount{
+	float: left;
+	width: 50px;
+	height: 94px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 47px;
+	text-align: center;
+	border-left: 2px solid #3EA0C6;
+}

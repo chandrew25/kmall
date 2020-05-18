@@ -1,0 +1,263 @@
+/*楼层展示*/
+.f1 .bt .t{color:#D0213A;}
+.f1 .bline .i{width:275px;background-color:#D0213A;}
+.f2 .bt .t{color:#B58F7A;}
+.f2 .bline .i{width:250px;background-color:#B58F7A;}
+.f3 .bt .t{color:#95D0B2;}
+.f3 .bline .i{width:365px;background-color:#95D0B2;}
+/*链接图片*/
+.linkimg{margin-top:10px;    display:block;}
+.pimgs{width: 180px;height: 178px;}
+.pimgm{width: 238px;height: 238px;}
+/*楼层跳转*/
+.floor{position:fixed;z-index:1000;width:110px;bottom:80px;overflow:hidden;right: 50px;}
+.floor .i{height:64px;background:url(images/index/i_top.png) no-repeat;}
+.floor .t{height:32px;line-height:32px;color:#fff;background-color:#FF972B;text-align:center;font-size:16px;cursor:pointer;font-weight:bold;}
+.floor .t.f{background-color:#FF6600;}
+.floor .l{height:5px;background:url(images/index/i_bar.png) no-repeat;}
+
+.navbar .catologs .catologs_list{display:block}
+
+.imagebox{position:relative;z-index:1;overflow:hidden;float: right;height:340px;width:800px; float:right;}
+.imagebox .imgw img{width:800px;height:340px;float:left;}
+.imagebox .btnw{position:absolute;right:10px;bottom:10px;text-align:center;opacity:0.8;filter:alpha(opacity=80);}
+.imagebox .btnw a{width:20px;height:20px;line-height:20px;margin:0px 0px 0px 8px;float:left;cursor:pointer;display:block;text-decoration:none;font-size:14px;font-weight:bold;box-shadow:1px 1px 2px #000;border:1px solid #fff;}
+.imagebox .btnw a:hover{text-decoration:none;}
+.imagebox .btnw a.f{background-color:#E82D2D;color:#fff;}
+.imagebox .btnw a.b{background-color:#9E9C9B;color:#fff;}
+
+.box{
+	width:980px;
+	margin:0 auto;
+	margin-top:10px;
+	padding:0 9px 10px 10px;
+	background-color:#fff;
+	border-bottom:1px solid #D6D6D6;
+	border-right:1px solid #D6D6D6;
+}
+
+.focus_box{
+	height:340px;
+	border-top:1px solid #666;
+}
+
+ 
+.focus_box .imagebox img{
+	height:336px;
+	width:800px;
+}
+
+.hot_sell_box{ 
+	background-image:url(images/kmall/bar_bg.jpg);
+	background-repeat:no-repeat;
+}
+.hot_sell_box .tipbar{
+	height:35px;	
+	margin-bottom:10px;	
+}
+.hot_sell_box .hot_item{
+	height:250px;
+	width:180px;
+	margin-right:10px;
+	float:left;
+}
+.hot_sell_box .hot_item img{
+	width:180px;
+	height:180px;
+}
+.hot_sell_box .hot_item p a:hover{
+	color:#333;
+}
+.hot_sell_box .hot_right{
+	width:220px;
+	height:250px;
+	float:left;
+}
+.hot_sell_box .hot_item p{
+	color:#333;
+	margin-top:6px;
+    height: 40px;
+}
+.hot_sell_box .hot_item .today_price_tag{
+	background-color:#1FC0B0;
+	color:#fff;
+	font-size:12px;
+	padding:2px 4px;
+}
+.hot_sell_box .hot_item .today_price{
+	color:#ff0000;
+	padding:2px 4px;
+}
+	
+.brand_box{ 
+	padding:4px 10px;
+}
+.brand_box .brand_lists{
+	height:110px;
+	float:left; 
+	margin-left:10px;
+}
+.brand_box .btn_move{
+	border:1px solid #FAFAFA;
+	height:110px; 
+	width:30px;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#F8F8F8;
+	float:left;
+	cursor:pointer;
+}
+.brand_box .btn_move:hover{
+	background-color:#F4F4F4;
+}
+.brand_box .btn_move .btn_move_in{
+	border:1px solid #CECECE;
+	height:108px;
+	width:28px;
+	text-align:center;
+	line-height:108px;		
+}
+
+.brand_box .btn_move.move_prv{
+	background-image:url(images/kmall/move_prv.jpg);       
+}
+.brand_box .btn_move.move_next{
+	background-image:url(images/kmall/move_next.jpg);
+    float: right;
+}
+.brand_box .brand_item{
+	border:1px solid #FAFAFA;
+	height:100px; 
+	width:107px;
+	float:left;
+	margin-right:10px; 
+	padding:5px;
+}
+.brand_box .brand_item img{
+	width:107px;
+	height:70px;
+}
+.brand_box .brand_item div{
+	text-align:center;
+	background-color:#F4F4F4;
+	margin-top:10px;
+}
+.img_box{
+    width: 180px;
+    height: 180px;
+}
+.floor_box{
+/*	height:676px;*/
+}
+.floor_box .floor_tip_bar{
+	height:40px;
+	background-image:url(images/kmall/line.png);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	margin-bottom:10px;
+}
+.floor_box .floor_tip_bar .floor_title{
+	border-bottom:1px solid #D0213A;
+	color:#D0213A;
+	display:inline-block;
+	height:39px; 
+	line-height:39px;
+	float:left;
+	font-size:14px;
+}
+.floor_box .floor_tip_bar .more ,.hot_sell_box .tipbar .more{
+	background-repeat:no-repeat;
+	background-position:right;
+	background-image:url(images/kmall/more.png);
+	float:right;
+	height:40px;
+	line-height:42px;
+	width:40px;
+}
+.hot_sell_box .tipbar .more{
+	height:30px;
+	line-height:32px;
+	background-image:url(images/kmall/more2.png);
+	color:#fff;
+}
+.floor_box .floor_tip_bar .floor_title span{
+	font-size:16px;
+	font-weight:bold;
+}
+.floor_box .top_item{
+	display:block;
+	margin-bottom:10px;
+}
+.floor_box .top_item img{
+	width:980px;
+	height:370px;
+}
+.floor_box .floor_item{
+	width:237px;
+	height:237px;
+	margin-right:8px;
+	float:left;
+	position:relative;
+}
+.floor_box .floor_item img{
+	width: 237px;
+	height: 237px;
+}
+.floor_box .floor_item.last{
+margin:0;
+margin-left:2px;
+}
+
+.banner_box{
+	height:100px;
+	margin-top:10px;
+	border-bottom:1px solid #D6D6D6;
+	border-right:1px solid #D6D6D6;
+}
+.banner_box img{
+	width:1000px;
+	height:100px;
+}
+.floor_box .floor_item img{
+	position:absolute;
+	top:0;
+	width:237px;
+	height:237px;
+}
+.floor_box .floor_item div{
+	position:absolute;
+	bottom:0;
+	width:227px;
+	height:40px;
+	line-height:40px;
+	font-size:16px; 
+	color:#333;     
+    padding: 0px 5px;
+	z-index:2;
+	display: none;
+}
+.floor_box .floor_item div a:hover{
+	color:#333;
+}
+.floor_box .floor_item div.op_bg{
+	background-color:#fff;
+	opacity:0.6;
+	z-index:1;
+}
+.floor_box .floor_item div .right{
+	color:#ff0000;
+} 
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

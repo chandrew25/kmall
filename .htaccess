@@ -1,0 +1,12 @@
+### Better Life START ###
+options -Indexes
+DirectoryIndex index.html index.htm index.php index.php3
+ErrorDocument 403 /
+ErrorDocument 404 /
+<IfModule mod_rewrite.c>
+       RewriteEngine On
+       RewriteCond $1 !^(index\.php|public|robots\.txt)
+	RewriteRule ^index\.html$ index.php
+#       RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+### Better Life END ###

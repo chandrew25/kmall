@@ -1,0 +1,56 @@
+.page{background: url(images/extend/icon_page.gif) no-repeat left 0px !important;}
+.page_add{background: url(images/extend/icon_page.gif) no-repeat left -20px !important;}
+.page_edit{background: url(images/extend/icon_page.gif) no-repeat left -40px !important;}
+.page_delete{background: url(images/extend/icon_page.gif) no-repeat left -60px !important;}
+.page_find{background: url(images/extend/icon_page.gif) no-repeat left -80px !important;}
+.page_gear{background: url(images/extend/icon_page.gif) no-repeat left -100px !important;}
+.page_attach{background: url(images/extend/icon_page.gif) no-repeat left -120px !important;}
+.page_link{background: url(images/extend/icon_page.gif) no-repeat left -140px !important;}
+.page_goto{background: url(images/extend/icon_page.gif) no-repeat left -160px !important;}
+.page_key{background: url(images/extend/icon_page.gif) no-repeat left -180px !important;}
+.page_save{background: url(images/extend/icon_page.gif) no-repeat left -200px !important;}
+.page_refresh{background: url(images/extend/icon_page.gif) no-repeat left -220px !important;}
+.page_excel{background: url(images/extend/icon_page.gif) no-repeat left -240px !important;}
+.page_word{background: url(images/extend/icon_page.gif) no-repeat left -260px !important;}
+
+.table{background: url(images/extend/icon_table.gif) no-repeat left 0px !important;}
+.table_add{background: url(images/extend/icon_table.gif) no-repeat left -20px !important;}
+.table_edit{background: url(images/extend/icon_table.gif) no-repeat left -40px !important;}
+.table_delete{background: url(images/extend/icon_table.gif) no-repeat left -60px !important;}
+.table_find{background: url(images/extend/icon_table.gif) no-repeat left -80px !important;}
+.table_gear{background: url(images/extend/icon_table.gif) no-repeat left -100px !important;}
+.table_attach{background: url(images/extend/icon_table.gif) no-repeat left -120px !important;}
+.table_link{background: url(images/extend/icon_table.gif) no-repeat left -140px !important;}
+.table_goto{background: url(images/extend/icon_table.gif) no-repeat left -160px !important;}
+.table_key{background: url(images/extend/icon_table.gif) no-repeat left -180px !important;}
+.table_save{background: url(images/extend/icon_table.gif) no-repeat left -200px !important;}
+.table_refresh{background: url(images/extend/icon_table.gif) no-repeat left -220px !important;}
+.table_row_insert{background: url(images/extend/icon_table.gif) no-repeat left -240px !important;}
+.table_row_delete{background: url(images/extend/icon_table.gif) no-repeat left -260px !important;}
+
+.tag{background: url(images/extend/icon_tag.gif) no-repeat left 0px !important;}
+.tag_add{background: url(images/extend/icon_tag.gif) no-repeat left -20px !important;}
+.tag_edit{background: url(images/extend/icon_tag.gif) no-repeat left -40px !important;}
+.tag_delete{background: url(images/extend/icon_tag.gif) no-repeat left -60px !important;}
+
+.mail{background: url(images/extend/icon_mail.gif) no-repeat left 0px !important;}
+.mail_add{background: url(images/extend/icon_mail.gif) no-repeat left -20px !important;}
+.mail_edit{background: url(images/extend/icon_mail.gif) no-repeat left -40px !important;}
+.mail_delete{background: url(images/extend/icon_mail.gif) no-repeat left -60px !important;}
+.mail_find{background: url(images/extend/icon_mail.gif) no-repeat left -80px !important;}
+.mail_open{background: url(images/extend/icon_mail.gif) no-repeat left -100px !important;}
+.mail_attach{background: url(images/extend/icon_mail.gif) no-repeat left -120px !important;}
+.mail_link{background: url(images/extend/icon_mail.gif) no-repeat left -140px !important;}
+.mail_goto{background: url(images/extend/icon_mail.gif) no-repeat left -160px !important;}
+
+.feed{background: url(images/extend/icon_feed.gif) no-repeat left 0px !important;}
+.feed_add{background: url(images/extend/icon_feed.gif) no-repeat left -20px !important;}
+.feed_edit{background: url(images/extend/icon_feed.gif) no-repeat left -40px !important;}
+.feed_delete{background: url(images/extend/icon_feed.gif) no-repeat left -60px !important;}
+.feed_find{background: url(images/extend/icon_feed.gif) no-repeat left -80px !important;}
+.feed_link{background: url(images/extend/icon_feed.gif) no-repeat left -100px !important;}
+.feed_goto{background: url(images/extend/icon_feed.gif) no-repeat left -120px !important;}
+.feed_key{background: url(images/extend/icon_feed.gif) no-repeat left -140px !important;}
+.feed_save{background: url(images/extend/icon_feed.gif) no-repeat left -160px !important;}
+.x-grid3-header-offset {width: auto;}
+.ux-grid-hd-group-cell {background: url(../../common/js/ajax\ext/resources/images/default/grid/grid3-hrow.gif) repeat-x bottom;}

@@ -1,0 +1,21 @@
+﻿.main{background:#fff;overflow:hidden;font-family:microsoft yahei;font-size:12px;}
+.main .a{text-decoration:underline;cursor:pointer;}
+
+.main .msuccess{width:400px;height:80px;margin:0px auto;overflow:hidden;}
+.main .msuccess .mst{height:20px;line-height:20px;margin:40px 0px 0px 0px;font-size:15px;text-align:center;}
+
+.main .merror{width:550px;height:150px;margin:0px 0px 0px 250px;overflow:hidden;}
+.main .merror .met{height:50px;line-height:60px;font-weight:bold;font-size:15px;color:#636466;}
+.main .merror .mec li{width:100%;float:left;margin:5px 0px 0px 0px;text-indent:10px;}
+.main .merror .mec li span{color:#AA050B;}
+.main .merror .meb{text-align:center;margin:10px 0px 0px 0px;}
+.main .merror .meb span{font-size:14px;font-weight:bold;}
+
+.main .mform{width:450px;height:120px;margin:30px 0px 0px 360px;overflow:hidden;}
+.main .mform li{width:100%;float:left;margin:5px 0px 0px;overflow:hidden;}
+.main .mform li .fname{width:100px;text-align:right;float:left;line-height:24px;}
+.main .mform li .ftext{width:170px;float:left;height:22px;margin:0px 0px 0px 10px;border:1px solid #A7A7A7;*display:inline;}
+.main .mform li .ftext input{width:158px;border:1px solid;border-color:#DFDFDF #fff #fff #DFDFDF;float:left;padding:3px 5px 1px;line-height:14px;}
+.main .mform li .fnotice{width:150px;float:left;margin:0px 0px 0px 10px;color:#d00;line-height:24px;*display:inline;}
+.main .mform li .fsubmit{width:120px;float:left;margin:10px 0px 0px 110px;*display:inline;}
+.main .mform li .fsubmit input{width:90px;height:30px;font-family:microsoft yahei;font-size:14px;}

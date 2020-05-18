@@ -1,0 +1,72 @@
+
+.f_l{float:left;}
+.f_r{float:right;}
+.tl{ text-align:left;}
+.tc{ text-align:center;}
+.tr{ text-align:right;}
+.dis{display:block;}
+.inline{display:inline;}
+.none{display:none;}                   
+
+.clearfix:after{
+content:"."; display:block; height:0; clear:both;
+visibility:hidden;
+}
+*html .clearfix{
+ height:1%;
+}
+*+html .clearfix{
+ height:1%;
+}
+/*英文强制换行*/
+.word{word-break:break-all;}
+
+  /*边框*/
+  .B_blue{border:1px solid #c5e4ff;}
+  .B_input{border:1px solid #0f97ed;}
+  .inputBg{border:1px solid #b3b3b3; background:url(images/user/inputbg.gif) repeat-x left top; height:18px;}
+  /*字体颜色*/
+  .f1{color:#ff6666;}
+  .f2{color:#006bd0; font-weight:bold; margin-right:15px;}
+  .f3{color:#9e9e9e;}
+  .f4{color:#fe596a;}
+  .f4_b{color:#fe596a; font-weight:bold;}
+  .f5{ font-size:14px; font-weight:bold;}
+  .f6{color:#D70702;}
+  .market{ font-size:14px; text-decoration:line-through;}
+  .shop{color:#fe596a; font-size:14px; font-weight:600;}
+  .market_s{text-decoration:line-through;}
+  .shop_s{color:#fe596a;}   
+  /*模块容器*/
+  .box{background:#f1f1f1; padding-bottom:2px; overflow:hidden;}
+  .box_1{border:1px solid #D70702; background-color:#fff;}         
+  background-color:#edf8fe;  overflow:hidden;
+  }
+  .boxCenterList{padding:8px;}
+  /*模块标题*/    
+  h3.border{border:1px solid #c5e4ff; border-bottom:none;}
+  h3 img{position:relative; top:7px;}                         
+  h5{height:26px; line-height:26px; text-align:right; background-color:#edf7ff; font-size:12px;
+  color:#56a5ee; padding:0 10px 0 0;
+  }                                                              
+  h6{height:23px; line-height:23px; text-align:right; font-size:12px; background:#FF9621; color:white;
+  border:1px solid #fff; padding-right:10px;
+  }
+  h6 span{float:left; padding-left:15px;}
+
+  /*页面留白*/
+  .blank{height:8px; line-height:8px; clear:both; visibility:hidden;}
+  .blank5{height:5px; line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
+  /*布局*/
+  .AreaL{width:200px; float:left; margin-right:10px;}
+  .AreaR{width:750px; float:left;}
+/*输入错误提示*/
+.notice{
+	color:#f00;
+}
+
+#content{margin:0px auto;}
+.block{width:964px; height:auto;background:white;margin:0px auto;}
+.btnAddrSend{background:#FF9621; width:129px; height:24px;text-align:center; line-height:21px;color:#fff;border:none; cursor:pointer;}   
+.btnAddrSendnew{background:#FF9621; width:112px; height:25px;text-align:center; line-height:21px;color:#fff;border:none; cursor:pointer;}
+.btnAddrDel{background:#FF9621; width:57px; height:24px;text-align:center; line-height:21px;color:#fff;border:none; cursor:pointer;}

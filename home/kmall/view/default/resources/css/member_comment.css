@@ -1,0 +1,58 @@
+/*表格标题*/
+.tbl_title{
+	position:relative;
+	width:728px;
+	height:40px;
+	margin:0px auto;
+	border: 1px solid #DADADA;
+	overflow:hidden;
+}
+.tbl_title_query{
+	position:absolute;
+	right:20px;
+	top:6px;
+}
+.tbl_title_select{
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+/*订单编号/商品名称*/
+.product_nameno{
+	width:220px;
+	white-space:nowrap;
+	overflow:hidden;
+	padding:0px 5px;
+	text-align:left;
+}
+.product_nameno a{
+	color:#00c;
+}
+/*表格评论*/
+.comment_wrapper{
+	margin:0px 5px;
+	text-align:left;
+}
+.comment_product{
+	
+}
+/*诚信等级*/
+.rank{
+	height:15px;
+	background:url("images/member/rank.jpg") repeat-x;
+}
+.rank1{
+	width:16px;
+}
+.rank2{
+	width:32px;
+}
+.rank3{
+	width:48px;
+}
+.rank4{
+	width:64px;
+}
+.rank5{
+	width:80px;
+}

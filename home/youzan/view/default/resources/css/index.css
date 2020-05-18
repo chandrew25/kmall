@@ -1,0 +1,122 @@
+.content_no{
+	position: absolute;
+    width: 640px;
+    text-align: center;
+    top: 50%;
+    margin-top:-259px;
+
+}
+.container{
+    overflow: visible;
+}
+.list_outer{
+	width: 640px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.list_s{
+	width: 640px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.list_s_img{
+	width: 202px;
+	height: 202px;
+    margin-left: 20px;
+    margin-top: 20px;
+	/*border: 1px solid #d9d9d9;*/
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.list_s_img img{
+	width: 202px;
+	height: 202px;
+    border: 0;
+}
+.list_s_con{
+	width: 396px;
+	margin-left: 20px;
+    margin-top: 22px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.list_s_cont{
+	width: 396px;
+	min-height: 154px;
+	line-height: 40px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	color: #666;
+	font-size: 32px;
+	font-family: "宋体";
+}
+.list_s_cont a{
+	font-family: "宋体";
+	font-size: 28px;
+	color: #333333;
+}
+.list_s_conct{
+	width: 396px;
+	font-family: "宋体";
+	font-size: 24px;
+	color: #cccccc;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.list_s_conct_red{
+	line-height: 46px;
+	font-size: 36px;
+	color: #ff0000;
+}
+.list_s_concb{
+	width: 396px;
+	line-height: 46px;
+	font-family: "宋体";
+	font-size: 24px;
+	color: #cccccc;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.list_line{
+	width: 640px;
+	height: 1px;
+    margin-top: 20px;
+	background-color: #d9d9d9;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+.list_blank{
+    width: 640px;
+    height: 105px;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+.brand1{
+	float: left;
+	width: 640px;
+	height: 728px;
+}
+.brand2{
+	float: left;
+	width: 640px;
+	height: 636px;
+}
+.brand3{
+	float: left;
+	width: 640px;
+	height: 651px;
+}
+.brand4{
+	float: left;
+	width: 640px;
+	height: 952px;
+}

@@ -1,0 +1,94 @@
+﻿$axure.loadCurrentPage({
+  "url":"iphone5.html",
+  "generationDate":new Date(1395018284301.84),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"60c44bd3a24148f086fcffaffedbeb1e",
+    "type":"Axure:Page",
+    "name":"iphone5",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"42286acea68f4bf6a4a1c01f0b2c82c0",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":1,
+              "y":-14},
+            "size":{
+              "width":441,
+              "height":682},
+            "borderWidth":"-1"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"9c8cc5500dc044e1837c7e369df7f5ba",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":1,
+                  "y":-14},
+                "size":{
+                  "width":441,
+                  "height":682},
+                "borderWidth":"-1"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/iphone5/u0.jpg"}},
+{
+          "id":"20f3b5933bba434fb5a30117846549f6",
+          "label":"",
+          "type":"inlineFrame",
+          "styleType":"inlineFrame",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":63,
+              "y":100},
+            "size":{
+              "width":320,
+              "height":460}},
+          "adaptiveStyles":{
+},
+          "target":{
+            "targetType":"page",
+            "url":"菲生活微商城.html",
+            "includeVariables":true}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "42286acea68f4bf6a4a1c01f0b2c82c0":{
+      "scriptId":"u0"},
+    "9c8cc5500dc044e1837c7e369df7f5ba":{
+      "scriptId":"u1"},
+    "20f3b5933bba434fb5a30117846549f6":{
+      "scriptId":"u2"}}});

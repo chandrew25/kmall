@@ -1,0 +1,38 @@
+.main{overflow:hidden;background:#fff;}
+/* padding:30px 0px 20px; */
+.mshow{float:left;width:740px;min-height:400px;text-align:center;overflow:hidden;margin-top: 25px;}
+.mcon{float:right;width:430px;margin-right:30px;overflow:hidden;}
+.mcon .box{background-color:#fff;margin-top:20px;border:1px solid #FFD4A3;border-top:0px;padding-bottom:10px;overflow:hidden;}
+.mcon .box .title{line-height:45px;font-size:18px;text-align:center;}
+.mcon .box .title .t{height:45px;float:left;width:213px;border-top:2px solid #FFD4A3;background-color:#FFF4E7;border-bottom:1px solid #FFD4A3;cursor:pointer;}
+.mcon .box .title .t.f{border-top:2px solid #FF9A31;background-color:#fff;border-bottom-color:#fff;cursor:default;}
+.mcon .box .title .l{height:48px;float:left;width:2px;background-color:#FFD4A3;}
+.mcon .box .con{width:100%;float:left;height: 385px;}
+.mcon .box .con td{padding:5px 0px;}
+.mcon .box .con .msg{height:20px;line-height:24px;color: #f10707;}
+.mcon .box .con .name{line-height:35px;text-align:right;font-size:15px;margin-right:5px;}
+.mcon .box .con .txt{width:230px;height:33px;line-height:33px;padding:0px 5px;font-size:14px;border:1px solid #FFD4A3;background-color:#FFF4E7;}
+.mcon .box .con .txt.v{width:60px;float:left;}
+.mcon .box .con .vimg{float:left;margin-left:6px;width:70px;height:35px;}
+.mcon .box .con .vmsg{float:left;margin:8px 0px 0px 6px;text-decoration:underline;cursor:pointer;}
+.mcon .box .con .chk{float:left;margin-top:2px;width:13px;height:13px;}
+.mcon .box .con .cht{float:left;margin-left:5px;}
+.mcon .link{line-height:20px;margin:8px 0px 0px 30px;}
+.mcon .link li{float:left;margin-right:10px;}
+.btn_login{width:137px;height:42px;background:url(images/auth/btn_login.png) no-repeat;cursor:pointer;}
+.btn_register{width:137px;height:42px;background:url(images/auth/btn_register.png) no-repeat;cursor:pointer;}
+.btnSmsSend{
+    cursor: pointer;
+    background-color: #ff9600;
+    color: #fff;
+    padding: 5px 8px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 0px;
+    height: 30px;
+    cursor:pointer;
+}
+.verifyPass{
+  display: none;
+}
+.btn_forgetPassword{width: 160px;height: 35px;cursor:pointer;text-align: center;line-height: 35px;font-size: 16px;color: #fff;background-color: #ff9600;border-radius: 5px;}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operationGroups>
+<!--    <operationGroup id="member" name="会员操作">
+        <operation gridname="memberGrid" id="btnSave" name="添加会员" />
+        <operation gridname="memberGrid" id="btnUpdate" name="修改会员" />
+        <operation gridname="memberGrid" id="btnRemove" name="删除会员" />
+        <operation gridname="memberGrid" id="btnImport" name="导入" />
+        <operation gridname="memberGrid" id="btnExport" name="导出" />
+        <operation gridname="memberGrid" id="tvpView" name="查看会员" />    
+        <operation gridname="memberGrid" id="btnEdit" name="修改积分" />
+        <operation gridname="addressGrid" id="btnSave" name="添加会员收货人地址信息" />
+        <operation gridname="addressGrid" id="btnUpdate" name="修改会员收货人地址信息" />
+        <operation gridname="addressGrid" id="btnRemove" name="删除会员收货人地址信息" />
+    </operationGroup>
+
+    <operationGroup id="rank" name="会员等级操作"></operationGroup>
+    <operationGroup id="comment" name="会员评论操作">
+        <operation gridname="commentGrid" id="btnSave" name="添加会员评论" />
+        <operation gridname="commentGrid" id="btnUpdate" name="修改会员评论" />
+        <operation gridname="commentGrid" id="btnRemove" name="删除会员评论" />
+        <operation gridname="commentGrid" id="btnImport" name="导入" />
+        <operation gridname="commentGrid" id="btnExport" name="导出" />
+        <operation gridname="commentGrid" id="tvpView" name="查看会员" />    
+    </operationGroup>
+    <operationGroup id="productyup" name="商品已上架">
+        <operation gridname="productGrid" id="btnUpdate" name="修改商品信息" />
+        <operation gridname="productGrid" id="btnDown" name="商品下架" />
+        <operation gridname="productGrid" id="btnRemove" name="删除商品" />
+        <operation gridname="productGrid" id="btnImport" name="导入" />
+        <operation gridname="productGrid" id="btnExport" name="导出" />
+        <operation gridname="productGrid" id="tvpView" name="查看商品" />
+        <operation gridname="productGrid" id="preview" name="预览" />
+        <operation gridname="productGrid" id="importProductIntro" name="介绍和规格导入" />
+        <operation gridname="productGrid" id="tattribute" name="选择属性" />
+        <operation gridname="seriesimgGrid" id="btnSave" name="添加商品图片" />
+        <operation gridname="seriesimgGrid" id="btnUpdate" name="修改商品图片" />
+        <operation gridname="seriesimgGrid" id="btnRemove" name="删除商品图片" />
+    </operationGroup>-->
+    
+    <operationGroup id="order" name="全部订单操作">
+        <operation gridname="orderGrid" id="btnSave" name="添加订单" />
+        <operation gridname="orderGrid" id="btnUpdate" name="修改订单" />
+<!--        <operation gridname="orderGrid" id="btnCheck" name="采购审核" />
+        <operation gridname="orderGrid" id="btnKefuConfirm" name="客服确认" />-->
+        <operation gridname="orderGrid" id="btnSend" name="确认发货" />
+        <operation gridname="orderGrid" id="btnSign" name="确认签收" />
+        <operation gridname="orderGrid" id="btnSettle" name="确认支付" />
+        <operation gridname="orderGrid" id="btnReturn" name="确认退货" />
+        <operation gridname="orderGrid" id="btnRefund" name="确认退款" />
+        <operation gridname="orderGrid" id="btnUneffect" name="订单无效" />
+        <operation gridname="orderGrid" id="printDelivery" address="admin.print.delivery" name="打印配送单" />
+        <operation gridname="orderGrid" id="printInvoice" address="admin.print.invoice" name="打印发票" />
+        <operation gridname="orderGrid" id="printExpress" address="admin.print.express" name="打印快递单" />
+        <operation gridname="orderGrid" id="btnReturn" name="确认退货" />
+        <operation gridname="orderGrid" id="tvpView" name="查看订单" />
+        <operation gridname="kstmSayGrid" id="btnSave" name="添加顾客留言" />
+        <operation gridname="kstmSayGrid" id="btnUpdate" name="答复顾客" />
+        <operation gridname="invoiceGrid" id="btnSave" name="添加发票" />
+        <operation gridname="invoiceGrid" id="btnUpdate" name="修改发票" />
+        <operation gridname="invoiceGrid" id="btnRemove" name="删除发票" />
+    </operationGroup>
+    
+<!--    
+    <operationGroup id="invoice" name="订单发票">
+        <operation gridname="commentGrid" id="btnSave" name="添加会员评论" />
+        <operation gridname="commentGrid" id="btnUpdate" name="修改会员评论" />
+        <operation gridname="commentGrid" id="btnRemove" name="删除会员评论" />
+        <operation gridname="commentGrid" id="btnImport" name="导入" />
+        <operation gridname="commentGrid" id="btnExport" name="导出" />
+        <operation gridname="commentGrid" id="tvpView" name="查看会员" />    
+    </operationGroup>
+   <operationGroup id="invoice" name="订单发票">
+
+    </operationGroup>
+    
+    
+    <operationGroup id="productnup" name="商品未上架">
+        <operation gridname="commentGrid" id="btnSave" name="新增上架商品" />
+        <operation gridname="commentGrid" id="btnUpdate" name="商品上架" />
+        <operation gridname="commentGrid" id="btnRemove" name="删除商品" />
+        <operation gridname="commentGrid" id="tvpView" name="查看商品" />    
+    </operationGroup>
+    <operationGroup id="productydown" name="商品已下架">
+    
+    </operationGroup>
+
+    <operationGroup id="ptype" name="商品类型">
+        <operation gridname="commentGrid" id="btnSave" name="添加会员评论" />
+        <operation gridname="commentGrid" id="btnUpdate" name="修改会员评论" />
+        <operation gridname="commentGrid" id="btnRemove" name="删除会员评论" />
+        <operation gridname="commentGrid" id="btnImport" name="导入" />
+        <operation gridname="commentGrid" id="btnExport" name="导出" />
+        <operation gridname="commentGrid" id="tvpView" name="查看会员" />    
+    </operationGroup>
+    <operationGroup id="attribute" name="商品属性表">
+        <operation gridname="commentGrid" id="btnSave" name="添加会员评论" />
+        <operation gridname="commentGrid" id="btnUpdate" name="修改会员评论" />
+        <operation gridname="commentGrid" id="btnRemove" name="删除会员评论" />
+        <operation gridname="commentGrid" id="btnImport" name="导入" />
+        <operation gridname="commentGrid" id="btnExport" name="导出" />
+        <operation gridname="commentGrid" id="tvpView" name="查看会员" />    
+    </operationGroup>
+    
+    <operationGroup id="brand" name="品牌">
+ 
+    </operationGroup>
+
+    <operationGroup id="brandptype" name="品牌归属分类">
+        <operation gridname="commentGrid" id="btnSave" name="添加会员评论" />
+        <operation gridname="commentGrid" id="btnUpdate" name="修改会员评论" />
+        <operation gridname="commentGrid" id="btnRemove" name="删除会员评论" />
+        <operation gridname="commentGrid" id="btnImport" name="导入" />
+        <operation gridname="commentGrid" id="btnExport" name="导出" />
+        <operation gridname="commentGrid" id="tvpView" name="查看会员" />    
+    </operationGroup>
+
+    
+
+    <menuGroup id="supplierMgr" name="合作管理" iconCls="navdesign3">
+        <menu id="supplier" name="供应商管理" address="index.php?go=admin.supplier.supplier" />
+        <menu id="contract" name="合同管理" address="index.php?go=admin.supplier.contract" />
+    </menuGroup>
+    <menuGroup id="erpMgr" name="仓库管理" iconCls="productNav">
+        <menu id="addGoods" name="商品入库" title="入库管理" address="index.php?go=admin.storage.addGoods" />
+        <menu id="goods" name="库存管理" title="商品管理" address="index.php?go=admin.storage.goods" />
+        <menu id="outGoods" name="商品出库" address="index.php?go=admin.storage.outGoods" />
+        <menu id="goodsLog" name="库存明细" title="库存明细" address="index.php?go=admin.log.goodslog" />
+    </menuGroup>
+    <menuGroup id="dicNav" name="系统设置" iconCls="orderNav">
+        <menu id="admin" name="管理员" address="index.php?go=admin.member.admin" />
+        <menu id="deliverytype" name="配送方式" address="index.php?go=admin.dic.deliverytype" />
+        <menu id="paymenttype" name="支付方式" address="index.php?go=admin.dic.paymenttype" />
+        <menu id="logintype" name="登录方式" address="index.php?go=admin.dic.logintype" />
+        <menu id="region" name="地区" address="index.php?go=admin.dic.region" />
+        <menu id="quantifier" name="量词" address="index.php?go=admin.dic.quantifier" />
+    </menuGroup>
+    <menuGroup id="reportNav" name="统计报表" iconCls="memberNav" show="true">
+        <menu id="buysortmoney" name="购物额排名" address="index.php?go=admin.report.buysortmoney" />
+        <menu id="buysortcount" name="购买率排名" address="index.php?go=admin.report.buysortcount" />
+        <menu id="sellsortmoney" name="销售额排名" address="index.php?go=admin.report.sellsortmoney" />
+        <menu id="ordersort" name="订单统计排名" address="index.php?go=admin.report.ordersort" />
+    </menuGroup>
+    <menuGroup id="cmsNav" name="内容发布" iconCls="brandNav">
+        <menu id="news" name="新闻" address="index.php?go=admin.cms.news" />
+        <menu id="helpcenter" name="帮助中心" address="index.php?go=admin.cms.helpcenter" />
+    </menuGroup>
+    <menuGroup id="pageNav" name="页面设置" iconCls="orderNav">
+        <menu id="indexset" name="首页设置" address="index.php?go=admin.page.indexpage" />
+        <menu id="ads" name="广告" address="index.php?go=admin.kmall.ads" />
+    </menuGroup>
+    <menuGroup id="vocational" name="业务系统" iconCls="orderNav">
+        <menu id="appdown" name="应用下载" address="index.php?go=admin.kmall.appdown" />
+        <menu id="bulkpurchase" name="大宗采购" address="index.php?go=admin.kmall.bulkpurchase" />
+    </menuGroup>-->
+</operationGroups>

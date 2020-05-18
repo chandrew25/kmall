@@ -1,0 +1,88 @@
+
+/* 商务定制三级页面左边主要内容样式
+----------------------------------*/
+#business_wrapper{
+	width:745px;
+	display:inline;
+	float:left;
+}
+#business_title{
+	height:18px;
+	display:inline;
+	float:left;
+}
+#business_border{	
+	width:745px;
+	height:3px;
+	margin-top:8px;
+	display:inline;
+	float:left;
+}
+#business_border_red{
+	width:97px;
+	height:3px;
+	display:inline;
+	float:left;
+}
+#business_border_grey{
+	width:648px;
+	height:3px;
+	display:inline;
+	float:left;
+}
+#business_details_wrapper{
+	width:726px;
+	margin:19px 0 0 9px;
+	display:inline;
+	float:left; 
+	font-family:"宋体",Verdana, Arial;
+	font-size:16px;
+	line-height: 1.5em;
+	
+}
+#business_name{
+	width:726px;
+	height:18px;
+	line-height:18px;
+	font-size:16px;
+	font-weight:bold;
+	color:#333;
+	text-align:center;
+	display:inline;
+	float:left;
+}
+#business_details{
+	border-style:solid;
+	border-width:1px 0 0 0;
+	width:100%;
+	padding:6px 0px;
+	margin-top:19px;
+	display:inline;
+	float:left;          
+}
+
+/* 以下css为测试用，页面动态化后将从数据库中读取内容和样式
+----------------------------------*/
+#business_details dt{
+	width:636px;
+	height:30px;
+	line-height:30px;
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+	display:inline;
+	float:left;
+}
+#business_details dt span{
+	font-weight:normal;
+}
+#business_details dd{
+	width:636px;
+	margin:0;
+	padding:0;
+	line-height:30px;
+	font-size:12px;
+	color:#333;
+	display:block;
+	float:left;
+}

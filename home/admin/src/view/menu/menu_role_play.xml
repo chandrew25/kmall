@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roleplayers>
+    <roleplayer id="SUPERADMIN">
+        <menuGroups>
+            <menuGroup id="memberNav" name="会员管理" iconCls="memberNav" show="true" >
+                <menu id="member" name="会员" address="index.php?go=admin.member.member" />
+                <!--<menu id="rank" name="会员等级" address="index.php?go=admin.member.rank" />-->
+                <menu id="comment" name="会员评论" address="index.php?go=admin.member.comment" />
+            </menuGroup>
+            <menuGroup id="productNav" name="商品管理" iconCls="productNav">
+                <menu id="ptype" name="商品分类" address="index.php?go=admin.dic.ptype" />
+                <!-- <menu id="goods" name="货品表" address="index.php?go=admin.product.goods" /> -->
+                <menu id="brand" name="品牌管理" address="index.php?go=admin.brand.brand" />
+                <menu id="attribute" name="规格列表" address="index.php?go=admin.product.attribute" />
+                <menu id="productyup" name="商品已上架" address="index.php?go=admin.product.product" />
+                <!-- <menu id="productnup" name="商品未上架" address="index.php?go=admin.product.productnup" /> -->
+                <menu id="productydown" name="商品已下架" address="index.php?go=admin.product.productydown" />
+                <menu id="activity" name="活动" address="index.php?go=admin.activity.activity" />
+                <!-- <menu id="brandptype" name="品牌归属分类" address="index.php?go=admin.brand.brandptype" /> -->
+            </menuGroup>
+            <menuGroup id="pmtNav" name="促销管理" iconCls="promotionNav">
+                <menu id="seckill" name="商品秒杀" address="index.php?go=admin.product.seckill" />
+                <menu id="coupon" name="优惠券类型" address="index.php?go=admin.promanage.coupon" />
+                <menu id="couponitems" name="优惠券交易流水" address="index.php?go=admin.promanage.couponitems" />
+                <menu id="voucher" name="票卡券类型" address="index.php?go=admin.voucher.voucher" />
+                <menu id="voucheritemslog" name="票卡券交易流水" address="index.php?go=admin.voucher.voucheritemslog" />
+                <!--<menu id="ads" name="广告" address="index.php?go=admin.kmall.ads" />-->
+            </menuGroup>
+            <menuGroup id="orderNav" name="订单管理" iconCls="orderNav">
+                <menu id="order" name="全部订单" address="index.php?go=admin.shop.order" />
+                <menu id="ordersettle" name="待支付" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=5&amp;pay_status=0" />
+                <menu id="ordersend" name="待发货" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=0" />
+                <menu id="ordersign" name="待签收" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=1" />
+                <menu id="orderfinish" name="已完成" address="index.php?go=admin.shop.order&amp;status=finish" />
+                <menu id="orderreturnd" name="退换货" address="index.php?go=admin.shop.returnd" />
+                <menu id="orderrecycle" name="回收站" address="index.php?go=admin.shop.order&amp;status=dead" />
+                <menu id="invoice" name="订单发票" address="index.php?go=admin.shop.invoice" />
+                <menu id="kuaidi100" name="快递单" address="http://www.kuaidi100.com/" />
+            </menuGroup>
+            <menuGroup id="supplierMgr" name="合作管理" iconCls="friendNav">
+                <menu id="supplier" name="供应商管理" address="index.php?go=admin.supplier.supplier" />
+                <menu id="contract" name="合同管理" address="index.php?go=admin.supplier.contract" />
+            </menuGroup>
+            <menuGroup id="erpMgr" name="仓库管理" iconCls="warehouseNav">
+                <menu id="addGoods" name="商品入库" title="入库管理" address="index.php?go=admin.storage.addGoods" />
+                <menu id="goods" name="库存管理" title="商品管理" address="index.php?go=admin.storage.warehousegoods" />
+                <menu id="outGoods" name="商品出库" address="index.php?go=admin.storage.outGoods" />
+                <menu id="goodsLog" name="库存明细" title="库存明细" address="index.php?go=admin.log.goodslog" />
+            </menuGroup>
+            <menuGroup id="dicNav" name="商店配置" iconCls="systemNav">
+                <menu id="admin" name="管理员" address="index.php?go=admin.member.admin" />
+                <menu id="banner" name="广告栏目" address="index.php?go=admin.kmall.banner" />
+                <menu id="deliverytype" name="配送方式" address="index.php?go=admin.dic.deliverytype" />
+                <menu id="paymenttype" name="支付方式" address="index.php?go=admin.dic.paymenttype" />
+                <menu id="logintype" name="登录方式" address="index.php?go=admin.dic.logintype" />
+                <menu id="country" name="国家馆" address="index.php?go=admin.dic.country" />
+                <menu id="region" name="地区" address="index.php?go=admin.dic.region" />
+                <menu id="quantifier" name="量词" address="index.php?go=admin.dic.quantifier" />
+                <menu id="department" name="部门" address="index.php?go=admin.dic.department" />
+            </menuGroup>
+            <menuGroup id="logNav" name="日志管理" iconCls="logNav">
+                <menu id="jifenlog" name="券日志" address="index.php?go=admin.log.jifenlog" />
+                <menu id="deliverylog" name="收发货记录" address="index.php?go=admin.log.deliverylog" />
+                <menu id="orderlog" name="订单日志" address="index.php?go=admin.log.orderlog" />
+                <menu id="paylog" name="收退款记录" address="index.php?go=admin.log.paylog" />
+                <menu id="contractlog" name="合同日志" address="index.php?go=admin.log.contractlog" />
+            </menuGroup>
+            <menuGroup id="reportNav" name="统计报表" iconCls="statisticNav" show="true">
+                <menu id="buysortmoney" name="购物额排名" address="index.php?go=admin.report.buysortmoney" />
+                <menu id="buysortcount" name="购买率排名" address="index.php?go=admin.report.buysortcount" />
+                <menu id="sellsortmoney" name="销售额排名" address="index.php?go=admin.report.sellsortmoney" />
+                <menu id="ordersort" name="订单统计排名" address="index.php?go=admin.report.ordersort" />
+                <menu id="newmemberchart" name="商品分类销售统计" address="index.php?go=admin.echarts.newmemberchart" />
+            </menuGroup>
+            <menuGroup id="cmsNav" name="内容发布" iconCls="cmsNav">
+                <menu id="news" name="新闻" address="index.php?go=admin.cms.news" />
+                <menu id="helpcenter" name="帮助中心" address="index.php?go=admin.cms.helpcenter" />
+            </menuGroup>
+            <!-- <menuGroup id="pageNav" name="页面设置" iconCls="pageNav">
+                <menu id="indexset" name="首页设置" address="index.php?go=admin.page.indexpage" />
+            </menuGroup> -->
+            <!-- <menuGroup id="vocational" name="业务系统" iconCls="proNav"> -->
+               <!-- <menu id="appdown" name="应用下载" address="index.php?go=admin.kmall.appdown" />
+                <menu id="bulkpurchase" name="大宗采购" address="index.php?go=admin.kmall.bulkpurchase" />-->
+            <!-- </menuGroup> -->
+        </menuGroups>
+    </roleplayer>
+    <roleplayer id="MANAGER">
+        <menuGroups>
+            <menuGroup id="memberNav" name="会员管理" iconCls="memberNav" show="true" >
+                <menu id="member" name="会员" address="index.php?go=admin.member.member" />
+                <!--<menu id="rank" name="会员等级" address="index.php?go=admin.member.rank" />-->
+                <menu id="comment" name="会员评论" address="index.php?go=admin.member.comment" />
+            </menuGroup>
+            <menuGroup id="productNav" name="商品管理" iconCls="productNav">
+                <menu id="ptype" name="商品分类" address="index.php?go=admin.dic.ptype" />
+                <menu id="brand" name="品牌管理" address="index.php?go=admin.brand.brand" />
+                <menu id="attribute" name="规格列表" address="index.php?go=admin.product.attribute" />
+                <menu id="productyup" name="商品已上架" address="index.php?go=admin.product.product" />
+                <!-- <menu id="productnup" name="商品未上架" address="index.php?go=admin.product.productnup" /> -->
+                <menu id="productydown" name="商品已下架" address="index.php?go=admin.product.productydown" />
+                <!-- <menu id="brandptype" name="品牌归属分类" address="index.php?go=admin.brand.brandptype" /> -->
+            </menuGroup>
+            <menuGroup id="pmtNav" name="促销管理" iconCls="promotionNav">
+                <menu id="seckill" name="商品秒杀" address="index.php?go=admin.product.seckill" />
+                <menu id="coupon" name="优惠券类型" address="index.php?go=admin.promanage.coupon" />
+                <menu id="couponitems" name="优惠券交易流水" address="index.php?go=admin.promanage.couponitems" />
+                <menu id="voucher" name="票卡券类型" address="index.php?go=admin.voucher.voucher" />
+                <menu id="voucheritemslog" name="票卡券交易流水" address="index.php?go=admin.voucher.voucheritemslog" />
+                <!-- <menu id="ads" name="广告" address="index.php?go=admin.kmall.ads" /> -->
+            </menuGroup>
+            <menuGroup id="orderNav" name="订单管理" iconCls="orderNav">
+                <menu id="order" name="全部订单" address="index.php?go=admin.shop.order" />
+                <menu id="ordersettle" name="待支付" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=5&amp;pay_status=0" />
+                <menu id="ordersend" name="待发货" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=0" />
+                <menu id="ordersign" name="待签收" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=1" />
+                <menu id="orderfinish" name="已完成" address="index.php?go=admin.shop.order&amp;status=finish" />
+                <menu id="orderreturnd" name="退换货" address="index.php?go=admin.shop.returnd" />
+                <menu id="orderrecycle" name="回收站" address="index.php?go=admin.shop.order&amp;status=dead" />
+                <menu id="invoice" name="订单发票" address="index.php?go=admin.shop.invoice" />
+                <menu id="kuaidi100" name="快递单" address="http://www.kuaidi100.com/" />
+            </menuGroup>
+            <menuGroup id="supplierMgr" name="合作管理" iconCls="friendNav">
+                <menu id="supplier" name="供应商管理" address="index.php?go=admin.supplier.supplier" />
+                <menu id="contract" name="合同管理" address="index.php?go=admin.supplier.contract" />
+            </menuGroup>
+            <menuGroup id="erpMgr" name="仓库管理" iconCls="warehouseNav">
+                <menu id="addGoods" name="商品入库" title="入库管理" address="index.php?go=admin.storage.addGoods" />
+                <menu id="goods" name="库存管理" title="商品管理" address="index.php?go=admin.storage.warehousegoods" />
+                <menu id="outGoods" name="商品出库" address="index.php?go=admin.storage.outGoods" />
+                <menu id="goodsLog" name="库存明细" title="库存明细" address="index.php?go=admin.log.goodslog" />
+            </menuGroup>
+            <menuGroup id="dicNav" name="商店配置" iconCls="systemNav">
+                <menu id="admin" name="管理员" address="index.php?go=admin.member.admin" />
+                <menu id="deliverytype" name="配送方式" address="index.php?go=admin.dic.deliverytype" />
+                <menu id="paymenttype" name="支付方式" address="index.php?go=admin.dic.paymenttype" />
+                <menu id="logintype" name="登录方式" address="index.php?go=admin.dic.logintype" />
+                <menu id="country" name="国家馆" address="index.php?go=admin.dic.country" />
+                <menu id="region" name="地区" address="index.php?go=admin.dic.region" />
+                <menu id="quantifier" name="量词" address="index.php?go=admin.dic.quantifier" />
+                <menu id="department" name="部门" address="index.php?go=admin.dic.department" />
+            </menuGroup>
+            <menuGroup id="logNav" name="日志管理" iconCls="logNav">
+                <menu id="jifenlog" name="券日志" address="index.php?go=admin.log.jifenlog" />
+                <menu id="deliverylog" name="收发货记录" address="index.php?go=admin.log.deliverylog" />
+                <menu id="orderlog" name="订单日志" address="index.php?go=admin.log.orderlog" />
+                <menu id="paylog" name="收退款记录" address="index.php?go=admin.log.paylog" />
+                <menu id="contractlog" name="合同日志" address="index.php?go=admin.log.contractlog" />
+            </menuGroup>
+            <menuGroup id="reportNav" name="统计报表" iconCls="statisticNav" show="true">
+                <menu id="buysortmoney" name="购物额排名" address="index.php?go=admin.report.buysortmoney" />
+                <menu id="buysortcount" name="购买率排名" address="index.php?go=admin.report.buysortcount" />
+                <menu id="sellsortmoney" name="销售额排名" address="index.php?go=admin.report.sellsortmoney" />
+                <menu id="ordersort" name="订单统计排名" address="index.php?go=admin.report.ordersort" />
+            </menuGroup>
+            <menuGroup id="cmsNav" name="内容发布" iconCls="cmsNav">
+                <menu id="news" name="新闻" address="index.php?go=admin.cms.news" />
+                <menu id="helpcenter" name="帮助中心" address="index.php?go=admin.cms.helpcenter" />
+            </menuGroup>
+            <!-- <menuGroup id="pageNav" name="页面设置" iconCls="pageNav">
+                <menu id="indexset" name="首页设置" address="index.php?go=admin.page.indexpage" />
+            </menuGroup> -->
+            <!-- <menuGroup id="vocational" name="业务系统" iconCls="proNav">
+                <menu id="appdown" name="应用下载" address="index.php?go=admin.kmall.appdown" /> -->
+                <!--<menu id="bulkpurchase" name="大宗采购" address="index.php?go=admin.kmall.bulkpurchase" />-->
+            <!-- </menuGroup> -->
+        </menuGroups>
+    </roleplayer>
+    <roleplayer id="NORMAL">
+        <menuGroups>
+            <menuGroup id="memberNav" name="会员管理" iconCls="memberNav" show="true" >
+                <menu id="member" name="会员" address="index.php?go=admin.member.member" />
+                <!--<menu id="rank" name="会员等级" address="index.php?go=admin.member.rank" />-->
+                <menu id="comment" name="会员评论" address="index.php?go=admin.member.comment" />
+            </menuGroup>
+            <menuGroup id="productNav" name="商品管理" iconCls="productNav">
+                <menu id="ptype" name="商品分类" address="index.php?go=admin.dic.ptype" />
+                <menu id="brand" name="品牌管理" address="index.php?go=admin.brand.brand" />
+                <menu id="attribute" name="规格列表" address="index.php?go=admin.product.attribute" />
+                <menu id="productyup" name="商品已上架" address="index.php?go=admin.product.product" />
+                <!-- <menu id="productnup" name="商品未上架" address="index.php?go=admin.product.productnup" /> -->
+                <menu id="productydown" name="商品已下架" address="index.php?go=admin.product.productydown" />
+                <!-- <menu id="brandptype" name="品牌归属分类" address="index.php?go=admin.brand.brandptype" /> -->
+            </menuGroup>
+            <menuGroup id="pmtNav" name="促销管理" iconCls="promotionNav">
+                <menu id="seckill" name="商品秒杀" address="index.php?go=admin.product.seckill" />
+                <menu id="coupon" name="优惠券类型" address="index.php?go=admin.promanage.coupon" />
+                <menu id="couponitems" name="优惠券交易流水" address="index.php?go=admin.promanage.couponitems" />
+                <menu id="voucher" name="票卡券类型" address="index.php?go=admin.voucher.voucher" />
+                <menu id="voucheritemslog" name="票卡券交易流水" address="index.php?go=admin.voucher.voucheritemslog" />
+                <!-- <menu id="ads" name="广告" address="index.php?go=admin.kmall.ads" /> -->
+            </menuGroup>
+            <menuGroup id="orderNav" name="订单管理" iconCls="orderNav">
+                <menu id="order" name="全部订单" address="index.php?go=admin.shop.order" />
+                <menu id="ordersettle" name="待支付" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=5&amp;pay_status=0" />
+                <menu id="ordersend" name="待发货" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=0" />
+                <menu id="ordersign" name="待签收" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=1" />
+                <menu id="orderfinish" name="已完成" address="index.php?go=admin.shop.order&amp;status=finish" />
+                <menu id="orderreturnd" name="退换货" address="index.php?go=admin.shop.returnd" />
+                <menu id="orderrecycle" name="回收站" address="index.php?go=admin.shop.order&amp;status=dead" />
+                <menu id="invoice" name="订单发票" address="index.php?go=admin.shop.invoice" />
+                <menu id="kuaidi100" name="快递单" address="http://www.kuaidi100.com/" />
+            </menuGroup>
+            <menuGroup id="supplierMgr" name="合作管理" iconCls="friendNav">
+                <menu id="supplier" name="供应商管理" address="index.php?go=admin.supplier.supplier" />
+                <menu id="contract" name="合同管理" address="index.php?go=admin.supplier.contract" />
+            </menuGroup>
+            <menuGroup id="erpMgr" name="仓库管理" iconCls="warehouseNav">
+                <menu id="addGoods" name="商品入库" title="入库管理" address="index.php?go=admin.storage.addGoods" />
+                <menu id="goods" name="库存管理" title="商品管理" address="index.php?go=admin.storage.warehousegoods" />
+                <menu id="outGoods" name="商品出库" address="index.php?go=admin.storage.outGoods" />
+                <menu id="goodsLog" name="库存明细" title="库存明细" address="index.php?go=admin.log.goodslog" />
+            </menuGroup>
+            <menuGroup id="dicNav" name="商店配置" iconCls="systemNav">
+                <menu id="deliverytype" name="配送方式" address="index.php?go=admin.dic.deliverytype" />
+                <menu id="paymenttype" name="支付方式" address="index.php?go=admin.dic.paymenttype" />
+                <menu id="logintype" name="登录方式" address="index.php?go=admin.dic.logintype" />
+                <menu id="country" name="国家馆" address="index.php?go=admin.dic.country" />
+                <menu id="region" name="地区" address="index.php?go=admin.dic.region" />
+                <menu id="quantifier" name="量词" address="index.php?go=admin.dic.quantifier" />
+                <menu id="department" name="部门" address="index.php?go=admin.dic.department" />
+            </menuGroup>
+            <menuGroup id="logNav" name="日志管理" iconCls="logNav">
+                <menu id="jifenlog" name="券日志" address="index.php?go=admin.log.jifenlog" />
+                <menu id="deliverylog" name="收发货记录" address="index.php?go=admin.log.deliverylog" />
+                <menu id="orderlog" name="订单日志" address="index.php?go=admin.log.orderlog" />
+                <menu id="paylog" name="收退款记录" address="index.php?go=admin.log.paylog" />
+                <menu id="contractlog" name="合同日志" address="index.php?go=admin.log.contractlog" />
+            </menuGroup>
+            <menuGroup id="reportNav" name="统计报表" iconCls="statisticNav" show="true">
+                <menu id="buysortmoney" name="购物额排名" address="index.php?go=admin.report.buysortmoney" />
+                <menu id="buysortcount" name="购买率排名" address="index.php?go=admin.report.buysortcount" />
+                <menu id="sellsortmoney" name="销售额排名" address="index.php?go=admin.report.sellsortmoney" />
+                <menu id="ordersort" name="订单统计排名" address="index.php?go=admin.report.ordersort" />
+            </menuGroup>
+            <menuGroup id="cmsNav" name="内容发布" iconCls="cmsNav">
+                <menu id="news" name="新闻" address="index.php?go=admin.cms.news" />
+                <menu id="helpcenter" name="帮助中心" address="index.php?go=admin.cms.helpcenter" />
+            </menuGroup>
+            <!-- <menuGroup id="pageNav" name="页面设置" iconCls="pageNav">
+                <menu id="indexset" name="首页设置" address="index.php?go=admin.page.indexpage" />
+            </menuGroup> -->
+            <!-- <menuGroup id="vocational" name="业务系统" iconCls="proNav">
+                <menu id="appdown" name="应用下载" address="index.php?go=admin.kmall.appdown" /> -->
+                <!--<menu id="bulkpurchase" name="大宗采购" address="index.php?go=admin.kmall.bulkpurchase" />-->
+            <!-- </menuGroup> -->
+        </menuGroups>
+    </roleplayer>
+    <roleplayer id="BUYER">
+        <menuGroups>
+            <menuGroup id="orderNav" name="订单管理" iconCls="orderNav">
+                <menu id="order" name="全部订单" address="index.php?go=admin.shop.order" />
+                <menu id="ordersettle" name="待支付" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=5&amp;pay_status=0" />
+                <menu id="ordersend" name="待发货" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=0" />
+                <menu id="ordersign" name="待签收" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=1" />
+                <menu id="orderfinish" name="已完成" address="index.php?go=admin.shop.order&amp;status=finish" />
+                <menu id="orderreturnd" name="退换货" address="index.php?go=admin.shop.returnd" />
+                <menu id="orderrecycle" name="回收站" address="index.php?go=admin.shop.order&amp;status=dead" />
+                <menu id="invoice" name="订单发票" address="index.php?go=admin.shop.invoice" />
+                <menu id="kuaidi100" name="快递单" address="http://www.kuaidi100.com/" />
+            </menuGroup>
+            <menuGroup id="reportNav" name="统计报表" iconCls="statisticNav" show="true">
+                <menu id="buysortmoney" name="购物额排名" address="index.php?go=admin.report.buysortmoney" />
+                <menu id="buysortcount" name="购买率排名" address="index.php?go=admin.report.buysortcount" />
+                <menu id="sellsortmoney" name="销售额排名" address="index.php?go=admin.report.sellsortmoney" />
+                <menu id="ordersort" name="订单统计排名" address="index.php?go=admin.report.ordersort" />
+            </menuGroup>
+        </menuGroups>
+    </roleplayer>
+    <roleplayer id="FINANCE">
+        <menuGroups>
+            <menuGroup id="orderNav" name="订单管理" iconCls="orderNav">
+                <menu id="order" name="全部订单" address="index.php?go=admin.shop.order" />
+                <menu id="ordersend" name="待发货" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=0" />
+                <menu id="ordersign" name="待签收" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=1" />
+                <menu id="ordersettle" name="待支付" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=5&amp;pay_status=0" />
+                <menu id="orderfinish" name="已完成" address="index.php?go=admin.shop.order&amp;status=finish" />
+                <menu id="orderreturnd" name="退换货" address="index.php?go=admin.shop.returnd" />
+                <menu id="orderrecycle" name="回收站" address="index.php?go=admin.shop.order&amp;status=dead" />
+                <menu id="invoice" name="订单发票" address="index.php?go=admin.shop.invoice" />
+                <menu id="kuaidi100" name="快递单" address="http://www.kuaidi100.com/" />
+            </menuGroup>
+            <menuGroup id="reportNav" name="统计报表" iconCls="statisticNav" show="true">
+                <menu id="buysortmoney" name="购物额排名" address="index.php?go=admin.report.buysortmoney" />
+                <menu id="buysortcount" name="购买率排名" address="index.php?go=admin.report.buysortcount" />
+                <menu id="sellsortmoney" name="销售额排名" address="index.php?go=admin.report.sellsortmoney" />
+                <menu id="ordersort" name="订单统计排名" address="index.php?go=admin.report.ordersort" />
+            </menuGroup>
+        </menuGroups>
+    </roleplayer>
+    <roleplayer id="WAREHOUSEKEEPER">
+        <menuGroups>
+            <menuGroup id="orderNav" name="订单管理" iconCls="orderNav">
+                <menu id="order" name="全部订单" address="index.php?go=admin.shop.order" />
+                <menu id="ordersettle" name="待支付" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=5&amp;pay_status=0" />
+                <menu id="ordersend" name="待发货" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=0" />
+                <menu id="ordersign" name="待签收" address="index.php?go=admin.shop.order&amp;status=active&amp;ship_status=1" />
+                <menu id="orderfinish" name="已完成" address="index.php?go=admin.shop.order&amp;status=finish" />
+                <menu id="orderreturnd" name="退换货" address="index.php?go=admin.shop.returnd" />
+                <menu id="orderrecycle" name="回收站" address="index.php?go=admin.shop.order&amp;status=dead" />
+                <menu id="invoice" name="订单发票" address="index.php?go=admin.shop.invoice" />
+                <menu id="kuaidi100" name="快递单" address="http://www.kuaidi100.com/" />
+            </menuGroup>
+            <menuGroup id="erpMgr" name="仓库管理" iconCls="warehouseNav">
+                <menu id="addGoods" name="商品入库" title="入库管理" address="index.php?go=admin.storage.addGoods" />
+                <menu id="goods" name="库存管理" title="商品管理" address="index.php?go=admin.storage.warehousegoods" />
+                <menu id="outGoods" name="商品出库" address="index.php?go=admin.storage.outGoods" />
+                <menu id="goodsLog" name="库存明细" title="库存明细" address="index.php?go=admin.log.goodslog" />
+            </menuGroup>
+            <menuGroup id="reportNav" name="统计报表" iconCls="statisticNav" show="true">
+                <menu id="buysortmoney" name="购物额排名" address="index.php?go=admin.report.buysortmoney" />
+                <menu id="buysortcount" name="购买率排名" address="index.php?go=admin.report.buysortcount" />
+                <menu id="sellsortmoney" name="销售额排名" address="index.php?go=admin.report.sellsortmoney" />
+                <menu id="ordersort" name="订单统计排名" address="index.php?go=admin.report.ordersort" />
+            </menuGroup>
+        </menuGroups>
+    </roleplayer>
+</roleplayers>

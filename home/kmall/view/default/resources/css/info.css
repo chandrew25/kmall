@@ -1,0 +1,41 @@
+body {background: none repeat scroll 0 0 #FFFFFF;}
+
+.ch_header{width:1000px;height:96px;margin:0px auto;}
+.ch_header .ch_logo{background:url(images/checkout/logo.png);width:274px;height:63px;float:left;display:inline;margin:17px 0px 0px 2px;}
+.ch_header .ch_progress{background:url(images/checkout/order_progress.jpg);width:657px;height:32px;float:right;display:inline;margin:46px 10px 0px 0px;}
+
+.info_content{width:998px;margin:10px auto;border:1px solid #DDD;}
+.info_content .inc_main{width:100%;height:172px;background:#FDF7F1;}
+.info_content .inc_main .inc_m_info{width:530px;height:100%;;margin:0px auto;}
+.info_content .inc_main .inc_m_info .incmi_top{width:100%;height:116px;}
+.info_content .inc_main .inc_m_info .incmi_top .incmit_img{width:80px;height:100%;float:left;}
+.info_content .inc_main .inc_m_info .incmi_top .incmit_img img{margin-top:25px;margin-left:21px;width:42px;height:42px;}
+.info_content .inc_main .inc_m_info .incmi_top .incmit_con{width:450px;height:100%;float:left;}
+.info_content .inc_main .inc_m_info .incmi_top .incmit_con .incmitc_tip{height:61px;}
+.info_content .inc_main .inc_m_info .incmi_top .incmit_con .incmitc_tip span{line-height:90px;font-size:24px;font-family:"Microsoft Yahei";font-weight:bold;}
+.info_content .inc_main .inc_m_info .incmi_top .incmit_con .incmitc_det{height:55px;}
+.info_content .inc_main .inc_m_info .incmi_top .incmit_con .incmitc_det span{line-height:55px;}
+.info_content .inc_main .inc_m_info .incmi_bot{width:100%;height:55px;border-top:1px solid #DDD;text-align:center;}
+.info_content .inc_main .inc_m_info .incmi_bot .incmib_con{line-height:50px;font-size:14px;font-family:"Microsoft Yahei";}
+.info_content .inc_main .inc_m_info .incmi_bot .incmib_conr{color:red;font-weight:bold;}
+.info_content .inc_oper{width:100%;height:147px;background:#F7F6F6;border-top:1px solid #DDD;}
+.info_content .inc_oper table{margin-left:50px;}
+.in_pay_img{width:123px;height:30px;border:1px solid #DDD;}
+.in_service_tip{margin-left:10px;}
+.in_service_tel{color:red;}
+
+.in_order_name{font-size:14px;}
+.in_order_name_left{font-size:14px;margin-left:24px;}
+.in_order_num{font-family:"Arial";color:red;font-size:14px;}
+.in_order_sign{font-family:"Microsoft Yahei";}
+
+#content{font-size:12px;height:180px;margin:0px auto;}
+.boxCenterList{width:400px;margin:0px auto;margin-top:48px;}
+.con_lists{margin:10px auto;font-size:12px;text-align:center;}
+.box_title{font-weight:bold;font-size:16px;text-align:center;}  
+.to_pay{background:black;width:60px;height:25px;text-align:center;float:left;}
+.to_detail{background:black;width:80px;height:25px;text-align:center;float:left;margin-left:10px;display:inline;}
+.to_pay a{color:white;font-weight:bold;font-size:14px;}
+.to_detail a{color:white;font-weight:bold;font-size:14px;}
+.clear_both{width:10px;overflow:hidden;clear:both;}
+.other_choice{height:30px;line-height:30px;width:400px;margin:0px auto;text-align:center;}

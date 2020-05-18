@@ -1,0 +1,26 @@
+/*表格标题*/
+.tbl_title{
+	position:relative;
+	width:728px;
+	height:40px;
+	margin:0px auto;
+	border: 1px solid #DADADA;
+	overflow:hidden;
+}
+.tbl_title_query{
+	position:absolute;
+	right:20px;
+	top:6px;
+}
+.customize_img_wrapper{
+	width:190px;
+	text-align:left;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.customize_img_wrapper img{
+	margin:0px 5px;
+	width:45px;
+	width:45px;
+	vertical-align:middle;
+}

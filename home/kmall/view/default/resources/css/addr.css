@@ -1,0 +1,49 @@
+body{ background-color:#FFFFFF;}
+.clear{ clear:both;}
+.manage{ margin:auto; width:1000px; background-color:#FFFFFF; margin-top:20px;}
+/*.manage .left_list{ width:195px; float:left; display:inline;}
+.manage .left_list .title{ height:40px; width:100%; background:url(../images/personal/bg_left.jpg) no-repeat; text-align:center;}
+.manage .left_list .title span{ font:18px "微软雅黑"; color:#FFFFFF; display:block; width:100%; height:100%; line-height:40px;}
+.manage .left_list .list{ width:193px; border:1px solid #D0D0D0; padding-bottom:5px;}
+.manage .left_list .list dl{ width:100%;}
+.manage .left_list .list dl dt{ font:14px "宋体"; height:37px; line-height:37px; width:100%; border-bottom:1px solid #D0D0D0; font-weight:bold;}
+.manage .left_list .list dl .dt_bg1{ background:url(images/personal/left_bg1.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl .dt_bg2{ background:url(images/personal/left_bg2.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl .dt_bg3{ background:url(images/personal/left_bg3.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl dt span{ margin-left:40px;}
+.manage .left_list .list dl dd{ width:100%; text-align:center; margin-bottom:2px;}
+.manage .left_list .list dl dd ul{ width:170px; margin-left:12px;}
+.manage .left_list .list dl dd ul li{ width:170px; height:33px; border-bottom:1px dashed #999999; line-height:33px; text-align:left; padding-left:30px;}
+.manage .left_list .list dl dd ul .click_li{ background:url(images/personal/li_bg.png) no-repeat 18px 14px;}
+.manage .left_list .list dl dd ul .click_li a{ color:#F00707;}*/
+
+.manage .right_list{ width:785px; float:right; display:inline;}
+.manage .right_list .title{ width:100%; height:30px; line-height:30px; margin-top:10px; border-bottom:1px solid #FF9933;}
+.manage .right_list .title .span_w{ font-weight:bold;}
+.manage .right_list .title .span_color{ color:#666666; margin-left:5px;}
+.manage .right_list .title .span_color span{color:#E60010;}
+.manage .right_list .add{ width:90px; height:30px; background-color:#FF972A; border:1px solid #CC6600; 
+text-align:center; line-height:30px; margin-top:10px; margin-left:14px; cursor:pointer;}
+.manage .right_list .add span{ color:#FFFFFF;}
+.manage .right_list .div_tab{ width:758px; border-top:1px dashed #999999; margin-top:10px; margin-left:10px;}
+.manage .right_list .div_tab table{ margin-left:5px; margin-top:10px;}
+.manage .right_list .div_tab table td{ height:35px;}
+.manage .right_list .div_tab table td span{display:block; width:100px; float: left; height:20px; line-height:20px; overflow:hidden; text-overflow:ellipsis;}
+.manage .right_list .div_tab .add_bc{ float:left; display:inline;width:66px; height:30px; background-color:#FF972A; margin-right:5px;
+ border:1px solid #CC6600; text-align:center; line-height:30px; margin-top:5px; margin-left:5px; cursor:pointer;color:#FFFFFF;}
+.manage .right_list .div_tab .update{ float:left; display:inline;width:66px; height:30px; background-color:#FF972A; margin-right:5px;
+ border:1px solid #CC6600; text-align:center; line-height:30px; margin-top:5px; margin-left:5px; cursor:pointer;color:#FFFFFF;}
+.manage .right_list .div_tab .del{ float:left; display:inline; width:66px; height:30px; background-color:#F1F1F1;
+ border:1px solid #CCCACA; text-align:center; line-height:30px; margin-top:5px; margin-left:5px; cursor:pointer;}
+ .manage .right_list .div_tab .back span{ float:left; display:inline; width:66px; height:30px; background-color:#F1F1F1;
+ border:1px solid #CCCACA; text-align:center; line-height:30px; margin-top:5px; margin-left:5px; cursor:pointer;}
+
+.manage .right_list .div_tab .span_f{color:#E60010; width:10px; height:10px; float:left; margin-top:3px;}
+.manage .right_list .div_tab .td_tl{ line-height:35px;}
+.manage .right_list .div_tab .bc{width:66px; height:30px; background-color:#FF972A; margin-right:5px;color:#FFFFFF;
+ border:1px solid #CC6600; text-align:center; line-height:30px; margin-top:5px; margin-left:85px; cursor:pointer;}
+.manage .right_list .div_tab table input{ height:22px; float :left; width:150px; line-height:22px; border:1px solid #DDDDDD; padding-left:10px;}
+.manage .right_list .div_tab table .input_name{ width:175px;}
+.manage .right_list .div_tab table .input_add{ width:320px;}
+.manage .right_list .div_tab table select{ height:22px; float :left; width:78px; border:1px solid #DDDDDD; margin-right:10px; text-align:center;}
+ 

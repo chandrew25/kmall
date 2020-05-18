@@ -1,0 +1,29 @@
+$(document).ready(function(){
+	//保存查询条件
+	if($("#queryText_value").val()==""){
+		$("#queryText").val(queryText_notice);
+		$("#queryText").addClass("hui_color");
+	}else{
+		$("#queryText").val($("#queryText_value").val());
+	}
+	if(!isNaN($("#comment_rank_value").val()))
+		$("#comment_rank").val($("#comment_rank_value").val());
+	//产品名称查询
+	//查询列表输入提示
+	$("#queryText").focus(function(){
+		if($("#queryText").val()==queryText_notice){
+			$("#queryText").removeClass("hui_color");
+			$("#queryText").val("");
+		}
+	}).blur(function(){
+		if($("#queryText").val()==""){
+			$("#queryText").addClass("hui_color");
+			$("#queryText").val(queryText_notice);
+		}
+	});
+	//评价等级查询
+	$("#comment_rank").change(function(e){
+		$(e.target).parents("form").submit();
+	});
+});
+var queryText_notice="产品名称";

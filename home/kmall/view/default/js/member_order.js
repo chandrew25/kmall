@@ -1,0 +1,26 @@
+$(document).ready(function(){
+	//保存查询条件
+	if($("#queryText_value").val()==""){
+		$("#queryText").val(queryText_notice);
+		$("#queryText").addClass("hui_color");
+	}else{
+		$("#queryText").val($("#queryText_value").val());
+	}
+	if($("#updateTime_value").val()!="")
+		$("#updateTime").val($("#updateTime_value").val());
+	if($("#ship_status_value").val()!="")
+		$("#ship_status").val($("#ship_status_value").val());
+	//查询列表输入提示
+	$("#queryText").focus(function(){
+		if($("#queryText").val()==queryText_notice){
+			$("#queryText").removeClass("hui_color");
+			$("#queryText").val("");
+		}
+	}).blur(function(){
+		if($("#queryText").val()==""){
+			$("#queryText").addClass("hui_color");
+			$("#queryText").val(queryText_notice);
+		}
+	});
+});
+var queryText_notice="商品名称、商品编号、订单编号";

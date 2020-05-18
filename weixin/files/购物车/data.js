@@ -1,0 +1,138 @@
+﻿$axure.loadCurrentPage({
+  "url":"购物车.html",
+  "generationDate":new Date(1395018285000.84),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"40f986cac7c1461a986a380acf5e3cb2",
+    "type":"Axure:Page",
+    "name":"购物车",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFEEEEEE},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"4b177cbb9e9f4269a5374be77887c4b6",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontSize":"16px",
+            "fontWeight":"200",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFFF3300},
+            "location":{
+              "x":80,
+              "y":54},
+            "size":{
+              "width":120,
+              "height":36},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFFFFF}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"29b93a8ab263473dbab14f4e78059fe1",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontSize":"16px",
+                "fontWeight":"200",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFF3300},
+                "location":{
+                  "x":80,
+                  "y":54},
+                "size":{
+                  "width":120,
+                  "height":36},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/购物车/u0.png"}},
+{
+          "id":"ec654434e2df4f6dac25756f72489fad",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+            "fontWeight":"200",
+            "location":{
+              "x":28,
+              "y":20},
+            "size":{
+              "width":79,
+              "height":13}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a62b07e9c6884a99a68998e5a70b44b5",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'STHeitiSC-Light', 'Heiti SC Light', 'Heiti SC'",
+                "fontWeight":"200",
+                "location":{
+                  "x":28,
+                  "y":20},
+                "size":{
+                  "width":79,
+                  "height":13}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "4b177cbb9e9f4269a5374be77887c4b6":{
+      "scriptId":"u0"},
+    "29b93a8ab263473dbab14f4e78059fe1":{
+      "scriptId":"u1"},
+    "ec654434e2df4f6dac25756f72489fad":{
+      "scriptId":"u2"},
+    "a62b07e9c6884a99a68998e5a70b44b5":{
+      "scriptId":"u3"}}});

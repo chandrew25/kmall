@@ -1,0 +1,17 @@
+.type_li{
+	float: left;
+	width: 620px;
+	height: 100px;
+	line-height: 100px;
+	margin-left: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.type_li_name{
+	float: left;
+	width: 610px;
+	height: 100px;
+	line-height: 100px;
+	margin-left: 10px;
+	font-size: 26px;
+	color: #666;
+}

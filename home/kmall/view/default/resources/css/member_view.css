@@ -1,0 +1,57 @@
+#member_info{
+	margin-left:10px;
+	line-height:25px;
+	overflow:hidden;
+}
+#member_pic_wrapper{
+	float:left;
+	overflow:hidden;
+	text-align:center;
+}
+#member_pic{
+	width:87px;
+	height:87px;
+}
+#member_details{
+	width:600px;
+	overflow:hidden;
+	float:left;
+	margin-left:30px;
+}
+#member_nickname{
+	font-size:14px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#member_check img{
+	vertical-align:middle;
+	margin:0px 5px;
+}
+#member_number{
+	margin:0px;
+	padding:0px;
+	width:420px;
+	overflow:hidden;
+}
+#member_number li{
+	width:150px;
+	float:left;
+	margin-right:10px;
+}
+/*表格标题*/
+.tbl_title{
+	width:730px;
+	margin:5px auto;
+	position:relative;
+	overflow:hidden;
+	line-height:25px;
+}
+.tbl_title_name{
+	font-size:14px;
+	font-weight:bold;
+}
+.tbl_title_see{
+	position:absolute;
+	right:0px;
+	top:0px;
+}

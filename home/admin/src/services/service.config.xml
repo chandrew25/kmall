@@ -1,0 +1,1941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+  <service name="ExtServicePagebuild">
+    <methods>
+      <method name="index">
+        <param name="len">1</param>
+      </method>
+      <method name="allstations">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceTaobaoorder">
+    <methods>
+      <method name="queryPageOrder">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceYixunorder">
+    <methods>
+      <method name="queryPageOrder">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceJingdongorder">
+    <methods>
+      <method name="queryPageOrder">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServicePtype">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="updatePtypeAttribute">
+        <param name="len">1</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePtype">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePtypeAttribute">
+        <param name="len">1</param>
+      </method>
+      <method name="exportPtype">
+        <param name="len">1</param>
+      </method>
+      <method name="addPtype">
+        <param name="formHandler">true</param>
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServicePtypeattr">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePtypeattr">
+        <param name="len">1</param>
+      </method>
+      <method name="exportPtypeattr">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceAttribute">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageAttribute">
+        <param name="len">1</param>
+      </method>
+      <method name="exportAttribute">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceGseriesimg">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageGseriesimg">
+        <param name="len">1</param>
+      </method>
+      <method name="exportGseriesimg">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceApp">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageApp">
+        <param name="len">1</param>
+      </method>
+      <method name="exportApp">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServicePublishgoods">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePublishgoods">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePublishgoods2">
+        <param name="len">1</param>
+      </method>
+      <method name="exportPublishgoods">
+        <param name="len">1</param>
+      </method>
+      <method name="changeIsPublish">
+        <param name="len">2</param>
+      </method>
+      <method name="addPublishGoods">
+        <param name="len">2</param>
+      </method>
+      <method name="publishGoodsUpdateProperties">
+        <param name="len">2</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceGtype">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageGtype">
+        <param name="len">1</param>
+      </method>
+      <method name="exportGtype">
+        <param name="len">1</param>
+      </method>
+       <method name="addGoodsType">
+        <param name="formHandler">true</param>
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceConfiles">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageConfiles">
+        <param name="len">1</param>
+      </method>
+      <method name="exportConfiles">
+        <param name="len">1</param>
+      </method>
+      <method name="queryConfiles">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceContractorder">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageContractorder">
+        <param name="len">1</param>
+      </method>
+      <method name="exportContractorder">
+        <param name="len">1</param>
+      </method>
+      <method name="queryByContractID">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceContractlog">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageContractlog">
+        <param name="len">1</param>
+      </method>
+      <method name="exportContractlog">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceProductlog">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageProductlog">
+        <param name="len">1</param>
+      </method>
+      <method name="exportProductlog">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+    <service name="ExtServiceGoodslog">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageGoodslog">
+                <param name="len">1</param>
+            </method>
+            <method name="exportGoodslog">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+    <service name="ExtServiceWarehouseGoods">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="goodsInWarehouse">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="outGoodsFromWarehouse">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageGoods">
+                <param name="len">1</param>
+            </method>
+            <method name="import">
+                <param name="len">1</param>
+            </method>
+            <method name="exportGoods">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+  <service name="ExtServiceGoods">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageGoods">
+        <param name="len">1</param>
+      </method>
+            <method name="import">
+                <param name="len">1</param>
+            </method>
+      <method name="exportGoods">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceContract">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageContract">
+        <param name="len">1</param>
+      </method>
+      <method name="exportContract">
+        <param name="len">1</param>
+      </method>
+      <method name="updateContractStatus">
+        <param name="len">2</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceSupplier">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageSupplier">
+        <param name="len">1</param>
+      </method>
+      <method name="exportSupplier">
+        <param name="len">1</param>
+      </method>
+      <method name="checkSupplier">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceConsult">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageConsult">
+        <param name="len">1</param>
+      </method>
+      <method name="exportConsult">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServicePaylog">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePaylog">
+        <param name="len">1</param>
+      </method>
+      <method name="exportPaylog">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceOrderlog">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageOrderlog">
+        <param name="len">1</param>
+      </method>
+      <method name="exportOrderlog">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceDeliverylog">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageDeliverylog">
+        <param name="len">1</param>
+      </method>
+      <method name="exportDeliverylog">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceCardproduct">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageCardproduct">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCardproduct">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceCouponproduct">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageCouponproduct">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCouponproduct">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceCptypeshow">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageCptypeshow">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCptypeshow">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceCbrand">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageCbrand">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCbrand">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceFastpick">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageFastpick">
+        <param name="len">1</param>
+      </method>
+      <method name="exportFastpick">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceAds">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageAds">
+        <param name="len">1</param>
+      </method>
+      <method name="exportAds">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceBrand">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageBrand">
+        <param name="len">1</param>
+      </method>
+      <method name="exportBrand">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceBproduct">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageBproduct">
+        <param name="len">1</param>
+      </method>
+      <method name="exportBproduct">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceBtypeshow">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageBtypeshow">
+        <param name="len">1</param>
+      </method>
+      <method name="exportBtypeshow">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceBtbrand">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageBtbrand">
+        <param name="len">1</param>
+      </method>
+      <method name="exportBtbrand">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceBtype">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageBtype">
+        <param name="len">1</param>
+      </method>
+      <method name="exportBtype">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceQuantifier">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageQuantifier">
+        <param name="len">1</param>
+      </method>
+      <method name="exportQuantifier">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceRegion">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageRegion">
+        <param name="len">1</param>
+      </method>
+      <method name="exportRegion">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceMagazine">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageMagazine">
+        <param name="len">1</param>
+      </method>
+      <method name="exportMagazine">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceMember">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="activeByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageMember">
+        <param name="len">1</param>
+      </method>
+      <method name="exportMember">
+        <param name="len">1</param>
+      </method>
+      <method name="updatejifen">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceAdmin">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageAdmin">
+        <param name="len">1</param>
+      </method>
+      <method name="exportAdmin">
+        <param name="len">1</param>
+      </method>
+      <method name="viewAdmin">
+        <param name="len">1</param>
+      </method>
+            <method name="revisePwd">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceAddress">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageAddress">
+        <param name="len">1</param>
+      </method>
+      <method name="exportAddress">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceComment">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageComment">
+        <param name="len">1</param>
+      </method>
+      <method name="exportComment">
+        <param name="len">1</param>
+      </method>
+            <method name="showByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="hideByIds">
+                <param name="len">1</param>
+            </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceProduct">
+    <methods>
+      <method name="queryPageProductNup">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageSelProduct">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageProductYdown">
+        <param name="len">1</param>
+      </method>
+      <method name="updateProductAttribute">
+        <param name="len">1</param>
+      </method>
+      <method name="updateProductGift">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageProductAttribute">
+        <param name="len">1</param>
+      </method>
+      <method name="productDown">
+        <param name="len">1</param>
+      </method>
+      <method name="productUp">
+        <param name="len">1</param>
+      </method>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageProduct">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageProductById">
+        <param name="len">1</param>
+      </method>
+      <method name ="exportEx">
+        <param name="len">1</param>
+      </method>
+      <method name="exportProduct">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCardProduct">
+        <param name="len">1</param>
+      </method>
+      <method name ="selectProduct">
+        <param name="len">0</param>
+      </method>
+      <method name ="saveToPtypeShow">
+        <param name="len">2</param>
+      </method>
+            <method name="addProduct">
+                <param name="len">1</param>
+            </method>
+            <method name="updateProduct">
+                <param name="len">1</param>
+            </method>
+    </methods>
+  </service>
+
+  <service name="ExtServicePtypeshow">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePtypeshow">
+        <param name="len">1</param>
+      </method>
+      <method name="exportPtypeshow">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServicePbtype">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name ="exportEx">
+        <param name="len">1</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePbtype">
+        <param name="len">1</param>
+      </method>
+      <method name="exportPbtype">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServicePtcolumn">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePtcolumn">
+        <param name="len">1</param>
+      </method>
+      <method name="exportPtcolumn">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceDeliverytype">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageDeliverytype">
+        <param name="len">1</param>
+      </method>
+      <method name="exportDeliverytype">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceDelivery">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageDelivery">
+        <param name="len">1</param>
+      </method>
+      <method name="exportDelivery">
+        <param name="len">1</param>
+      </method>
+      <method name="getDelivery">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServicePaymenttype">
+    <methods>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="queryPagePaymenttype">
+        <param name="len">1</param>
+      </method>
+      <method name="installPaymenttype">
+        <param name="len">1</param>
+      </method>
+      <method name="unloadPaymenttype">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceCart">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageCart">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCart">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceOrder">
+    <methods>
+      <method name="saveOrder">
+        <param name="len">1</param>
+      </method>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageOrder">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageReturnd">
+        <param name="len">1</param>
+      </method>
+      <method name="exportOrder">
+        <param name="len">1</param>
+      </method>
+      <method name="showproducts">
+        <param name="len">1</param>
+      </method>
+      <method name="updateIntro">
+        <param name="len">1</param>
+      </method>
+      <method name="purchaserCheck">
+        <param name="len">1</param>
+      </method>
+      <method name="kefuConfirm">
+        <param name="len">1</param>
+      </method>
+      <method name="orderInvalid">
+        <param name="len">1</param>
+      </method>
+      <method name="send">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="sign">
+        <param name="len">1</param>
+      </method>
+      <method name="returnGood">
+        <param name="len">1</param>
+      </method>
+      <method name="returnPartGood">
+        <param name="len">1</param>
+      </method>
+      <method name="settle">
+        <param name="len">1</param>
+      </method>
+      <method name="refund">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceSeeproduct">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageSeeproduct">
+        <param name="len">1</param>
+      </method>
+      <method name="exportSeeproduct">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+    <service name="ExtServiceOrdergoods">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageOrdergoods">
+                <param name="len">1</param>
+            </method>
+            <method name="exportOrdergoods">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+
+  <service name="ExtServiceNews">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageNews">
+        <param name="len">1</param>
+      </method>
+      <method name="exportNews">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceCompany">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageCompany">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCompany">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceSeriesimg">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageSeriesimg">
+        <param name="len">1</param>
+      </method>
+      <method name="exportSeriesimg">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceHelpcenter">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageHelpcenter">
+        <param name="len">1</param>
+      </method>
+      <method name="exportHelpcenter">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceCollect">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageCollect">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCollect">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceInput">
+    <methods>
+      <method name ="selectProduct">
+        <param name="len">0</param>
+      </method>
+      <method name ="saveToPtypeShow">
+        <param name="len">2</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceBrandptype">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageBrandptype">
+        <param name="len">1</param>
+      </method>
+      <method name="exportBrandptype">
+        <param name="len">1</param>
+      </method>
+      <method name="saveToBrandptype">
+        <param name="len">0</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceInvoice">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageInvoice">
+        <param name="len">1</param>
+      </method>
+      <method name="exportInvoice">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceRefundcomment">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageRefundcomment">
+        <param name="len">1</param>
+      </method>
+      <method name="exportRefundcomment">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceRefundproducts">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageRefundproducts">
+        <param name="len">1</param>
+      </method>
+      <method name="exportRefundproducts">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceAppdown">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageAppdown">
+        <param name="len">1</param>
+      </method>
+      <method name="exportAppdown">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceBulkpurchase">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageBulkpurchase">
+        <param name="len">1</param>
+      </method>
+      <method name="exportBulkpurchase">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceRank">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageRank">
+        <param name="len">1</param>
+      </method>
+      <method name="exportRank">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceRankjifenlog">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageRankjifenlog">
+        <param name="len">1</param>
+      </method>
+      <method name="exportRankjifenlog">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceJifenlog">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageJifenlog">
+        <param name="len">1</param>
+      </method>
+      <method name="exportJifenlog">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceLogintype">
+    <methods>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="queryPageLogintype">
+        <param name="len">1</param>
+      </method>
+      <method name="installLogintype">
+        <param name="len">1</param>
+      </method>
+      <method name="unloadLogintype">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceCoupon">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageCoupon">
+        <param name="len">1</param>
+      </method>
+      <method name="exportCoupon">
+        <param name="len">1</param>
+      </method>
+      <method name="check">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="queryPageSelProduct">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageSelCoupon">
+        <param name="len">1</param>
+      </method>
+      <method name="publishCoupon">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="publishemailCoupon">
+          <param name="len">1</param>
+          <param name="formHandler">true</param>
+      </method>
+      <method name="publishallCoupon">
+          <param name="len">1</param>
+          <param name="formHandler">true</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServicePromotion">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPagePromotion">
+        <param name="len">1</param>
+      </method>
+      <method name="exportPromotion">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceDepartment">
+    <methods>
+      <method name="save">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="update">
+        <param name="len">1</param>
+        <param name="formHandler">true</param>
+      </method>
+      <method name="deleteByIds">
+        <param name="len">1</param>
+      </method>
+      <method name="queryPageDepartment">
+        <param name="len">1</param>
+      </method>
+      <method name="exportDepartment">
+        <param name="len">1</param>
+      </method>
+    </methods>
+  </service>
+
+  <service name="ExtServiceCouponitems">
+      <methods>
+          <method name="save">
+              <param name="len">1</param>
+              <param name="formHandler">true</param>
+          </method>
+          <method name="update">
+              <param name="len">1</param>
+              <param name="formHandler">true</param>
+          </method>
+          <method name="deleteByIds">
+              <param name="len">1</param>
+          </method>
+          <method name="queryPageCouponitems">
+              <param name="len">1</param>
+          </method>
+          <method name="exportCouponitems">
+              <param name="len">1</param>
+          </method>
+      </methods>
+  </service>
+
+  <service name="ExtServiceGlobalSet">
+    <methods>
+      <method name="loadconfig">
+          <param name="len">1</param>
+      </method>
+      <method name="updateconfig">
+          <param name="len">1</param>
+          <param name="formHandler">true</param>
+      </method>
+    </methods>
+  </service>
+  <service name="ExtServiceVoucher">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageVoucher">
+                <param name="len">1</param>
+            </method>
+            <method name="exportVoucher">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+
+    <service name="ExtServiceVouchergoods">
+        <methods>
+            <method name="queryPageVouchergoods">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageSelGoods">
+                <param name="len">1</param>
+            </method>
+            <method name="updateLinkGoods">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+
+    <service name="ExtServiceVoucheritems">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageVoucheritems">
+                <param name="len">1</param>
+            </method>
+            <method name="exportVoucheritems">
+                <param name="len">1</param>
+            </method>
+            <method name ="exportEx">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+    <service name="ExtServiceVoucheritemslog">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageVoucheritemslog">
+                <param name="len">1</param>
+            </method>
+            <method name="exportVoucheritemslog">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+    <service name="ExtServiceDemo">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageVoucheritemslog">
+                <param name="len">1</param>
+            </method>
+            <method name="exportVoucheritemslog">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+    <service name="ExtServiceBanner">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageBanner">
+                <param name="len">1</param>
+            </method>
+            <method name="exportBanner">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+    <service name="ExtServiceActivity">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageActivity">
+                <param name="len">1</param>
+            </method>
+            <method name="exportActivity">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+
+    <service name="ExtServiceActivityproduct">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageActivityproduct">
+                <param name="len">1</param>
+            </method>
+            <method name="exportActivityproduct">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+
+    <service name="ExtServiceCountry">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageCountry">
+                <param name="len">1</param>
+            </method>
+            <method name="exportCountry">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+
+    <service name="ExtServiceSeckill">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageSeckill">
+                <param name="len">1</param>
+            </method>
+            <method name="exportSeckill">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+
+    <service name="ExtServiceSeckillproduct">
+        <methods>
+            <method name="save">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="update">
+                <param name="len">1</param>
+                <param name="formHandler">true</param>
+            </method>
+            <method name="deleteByIds">
+                <param name="len">1</param>
+            </method>
+            <method name="queryPageSeckillproduct">
+                <param name="len">1</param>
+            </method>
+            <method name="exportSeckillproduct">
+                <param name="len">1</param>
+            </method>
+        </methods>
+    </service>
+
+</services>

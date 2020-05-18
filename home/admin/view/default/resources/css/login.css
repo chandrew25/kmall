@@ -1,0 +1,31 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,table,img{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,simsun;color:#000;outline:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none;color:#000;cursor:pointer;}
+a:hover{text-decoration:underline;}
+ul,ol,li{list-style:none;overflow:hidden;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+em{font-style:normal;}
+img{border:0;}
+
+body{background:url(images/login/mainbg.jpg) center top;}
+.show{width:520px;height:320px;margin:262px auto 0px auto;background:url(images/login/showbg.png);font-family:microsoft yahei;}
+.show div{overflow:hidden;}
+.show .st{height:48px;font-size:24px;font-weight:bold;text-align:center;line-height:48px;}
+.show .scon{width:100%;}
+.show .scon .scl{width:320px;height:210px;margin:0px auto;}
+.show .scon .scl .lt{height:28px;line-height:26px;text-indent:85px;color:#f00;font-size:14px;}
+.show .scon .scl .linfo{}
+.show .scon .scl .linfo li{width:100%;float:left;margin:0px 0px 15px 0px;overflow:visible;}
+.show .scon .scl .linfo li .il{width:80px;float:left;line-height:32px;text-align:right;font-size:15px;}
+.show .scon .scl .linfo li .ir{width:234px;float:right;position:relative;overflow:visible;}
+.show .scon .scl .linfo li .ir .notice{position:absolute;left:0px;top:32px;color:#f00;}
+.show .scon .scl .linfo li .ir .vcode{float:left;width:50px;height:22px;margin:5px 0px 0px 13px;}
+.show .scon .scl .linfo li .ir .vchange{float:left;height:32px;line-height:32px;margin:0px 0px 0px 13px;}
+.show .scon .scl .linfo li .ir .vchange a{color:#47A8D4;font-size:15px;}
+.show .scon .scl .linfo li .ir .inputbg1{position:relative;width:230px;height:32px;float:left;background:url(images/login/inputbg1.png);}
+.show .scon .scl .linfo li .ir .inputbg1 input{position:absolute;left:7px;top:5px;width:215px;height:22px;line-height:22px;font-size:14px;background:transparent;border:0;}
+.show .scon .scl .linfo li .ir .inputbg2{position:relative;width:104px;height:32px;float:left;background:url(images/login/inputbg2.png);}
+.show .scon .scl .linfo li .ir .inputbg2 input{position:absolute;left:7px;top:5px;width:89px;height:22px;line-height:22px;font-size:14px;background:transparent;border:0;}
+.show .scon .scl .linfo li .ir .btnlogin{width:73px;height:27px;background:url(images/login/btn_login.jpg) no-repeat;cursor:pointer;}
+.show .scon .scl .linfo li .ir .btnlogin.f{background-image:url(images/login/btn_loginf.jpg);}

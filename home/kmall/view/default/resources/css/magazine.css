@@ -1,0 +1,70 @@
+#location_wrapper{
+	display:block;
+	overflow:hidden;
+}
+#down{
+	overflow:hidden;
+}
+#download{
+	border-width:1px;
+	border-style:solid;
+	width:766px;
+	float:left;
+	margin-left:20px;
+	padding:12px 15px;
+	font-weight:bold;
+}
+#download_title{
+	height:30px;
+	line-height:30px;
+	font-size:20px;
+	text-indent:15px;
+	border-width:0px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	color:#B41105;
+}
+#download_list{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
+.download_item{
+	position:relative;
+	border-width:0px;
+	border-bottom-style:dashed;
+	border-bottom-width:1px;
+	overflow:hidden;
+	padding:8px 0px;
+	width:100%;
+}
+.download_item_img{
+	width:150px;
+	height:200px;
+	overflow:hidden;
+	border-width:2px;
+	border-style:solid;
+	float:left;
+}
+.download_item_order{
+	width:150px;
+	overflow:hidden;
+	float:left;
+	color:#B41105;
+	margin-left:30px;
+}
+.download_item_name{
+	width:300px;
+	overflow:hidden;
+	float:left;
+	margin-left:30px;
+}
+.download_item_download{
+	position:absolute;
+	right:200px;
+	bottom:20px;
+}
+
+
+
+

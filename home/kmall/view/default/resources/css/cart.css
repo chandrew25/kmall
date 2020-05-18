@@ -1,0 +1,141 @@
+/* ====================
+     公共样式
+==================== */
+.block{width:960px; height:auto;
+}
+.f_l{float:left;}
+.f_r{float:right;}
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.dis{display:block;}
+.inline{display:inline;}
+.none{display:none;}
+.clearfix:after{content:"."; display:block; height:0; clear:both;
+visibility:hidden;
+}
+*html .clearfix{height:1%;
+}
+*+html .clearfix{height:1%;
+}
+/*英文强制换行*/
+.word{word-break:break-all;}
+
+/*边框*/
+.B_blue{border:1px solid #c5e4ff;}
+.B_input{border:1px solid #0f97ed;}
+/*字体颜色*/
+.f1{color:#ff6666;}
+.f2{color:#006bd0; font-weight:bold; margin-right:15px;}
+.f3{color:#9e9e9e;}
+.f4{color:#fe596a;}
+.f4_b{color:#fe596a; font-weight:bold;}
+.f5{font-size:14px; font-weight:bold;}
+.f6{color:#D70702;}
+.red2{color: #cc0000}
+.market{font-size:14px; text-decoration:line-through;}
+.shop{color:#fe596a; font-size:14px; font-weight:600;}
+.market_s{text-decoration:line-through;}
+.shop_s{color:#fe596a;}
+/*按钮部分*/
+.btnEleBg{width:76px; height:20px;
+text-align:center; line-height:21px;color:#fff;border:none; cursor:pointer;
+}
+.clear_btn{background:url(images/shop/clear.png)}
+.update_btn{background:url(images/shop/update.png)}
+/*模块标题*/
+h3.border{border:1px solid #c5e4ff; border-bottom:none;}
+h3 img{position:relative; top:7px;}
+h5{height:26px; line-height:26px; text-align:right; background-color:#edf7ff; font-size:12px;
+color:#56a5ee; padding:0 10px 0 0;
+}
+h6{height:23px; line-height:23px; text-align:right; font-size:12px; background:black; color:white;
+border:1px solid #fff; padding-right:10px;
+}
+h6 span{float:left; padding-left:15px;}
+
+/*页面留白*/
+.blank{height:8px; line-height:8px; clear:both; visibility:hidden;}
+.blank5{height:5px; line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
+/*布局*/
+.AreaL{width:200px; float:left; margin-right:10px;}
+.AreaR{width:750px; float:left;}
+/* ====================
+     购物流程
+==================== */
+.flowBox{ }
+.flowBox table{}
+
+#noitem{ 	display: none; 	text-align: center; 	width: 1000px; 	margin: 0 auto; }
+body{background:#fff;}
+.cart_title{	width: 1000px;	margin: 0 auto;	height: 34px;	line-height: 34px;	background-color: #f3f3f3;	font-size: 14px;	text-indent: 10px;	font-weight: bold;}
+.cartlists{	width: 1000px;	border: 1px solid #dedede;	margin:0px auto;}
+
+.cartlists th{	background-color: #eee;	font-weight: normal;	border-bottom:1px solid #dedede ;	height: 32px;	line-height: 32px;}
+.cartlists td{	height: 94px;	line-height: 94px;	border-bottom:1px solid #dedede ;	text-align: center;	background-color: #fefef4;}
+.cartlists td .favor{	color: #fff;	background-color: #cc0000;	display: inline-block;	width: 38px;	height: 18px;	line-height: 18px;}
+ .cartlists td .delone{ 	cursor: pointer; }
+ .cartlists td .nums{ 	width: 67px; 	margin: 0 auto; }
+
+ .cartlists td .nums div{ 	width: 22px;	height: 22px;
+	float: left;	cursor: pointer; }
+ .cartlists td .nums .minus{	background-image: url(images/cart/minus.png); }
+  .cartlists td .nums .plus{ 	background-image: url(images/cart/plus.png); }
+.cartlists td .nums input{float: left; width: 23px; height: 20px; text-align: center; border: 0; border: 1px solid #6c6c6c ; border-left:0; border-right:0; background: #fff; }
+.cartlists td .item{width: 95%; height: 82px; line-height: 82px; margin: auto 0; overflow:hidden; text-overflow:ellipsis;}
+
+.cartlists td .item img{height: 78px; width: 78px; border: 1px solid #cdcdcd; padding: 1px; float: left; margin: 0 10px; }
+.cartlists td .item >span{float: left; }
+.total{width: 970px; height: 180px; margin: 10px auto; padding: 0 10px; }
+.total .delsel{float: left; cursor: pointer; }
+.total .count{float: right; width: 320px; color: #666; }
+.total .count .price{float: right; }
+.total .count .price table td{height: 25px; }
+.total .count .price table td+td{text-align: right; }
+.total .count .price table .all_price td{border-top: 1px #999 solid; font-weight: bold; vertical-align: baseline; height: 40px; }
+.total .count .price table .all_price td span{font-size: 12px; }
+.total .count .price table .all_price td+td span{color: red; }
+.total .count .price table .all_price td span+span{font-size: 24px; }
+.total .count .chekcout{float: right; margin-top: 10px;min-width: 160px; }
+/*2.62在购物车里面显示相关配件*/
+.flowGoodsFittings{padding:10px;}
+.flowGoodsFittings ul{height:1%; margin:5px 4px; float:left;}
+.flowGoodsFittings li{float:left; width:120px;}
+.flowGoodsFittings li.goodsimg{width:48px; margin-right:10px;}
+.flowGoodsFittings li.goodsimg img{width:48px; height:48px; display:block;}
+
+
+.inputBg{background:url("images/user/inputbg.gif") repeat-x;border:1px solid rgb(179, 179,179);height:18px;}
+.buy_num{text-align:center;width:40px;float:right;}
+.updatenum{width:20px;height:20px;line-height:20px;text-align:center;display:block;cursor:pointer;margin:0px 4px;border:1px solid #ddd;float:right;}
+/*提示文本框*/
+#tishi{position:absolute;border:1px solid #FFE86A;font-size:13px;text-align:center;background-color:#FFFBDC;display:none;}
+#tishi_up{margin:10px 10px 0px 10px;color:#f00;}
+#tishi_down{margin:5px 10px 10px 10px;color:#000;}
+/*优惠券*/
+.coupon_divs{width:950px;height:135px;display: none;}
+.usecoupon{width:775px;height:135px;background:#FFF;overflow:hidden;float:left;margin-left:5px;display:inline;}
+.usecoupon_main{height:130px;margin-left:30px;margin-top:5px;overflow:hidden;}
+.usecoupon_text{font-size:12px;font-weight:bold;line-height:24px;}
+.coupon_name{display:none;}
+.canelcoupon1{color:#00A3E6;margin-left:140px;display:none;cursor:pointer;}
+.canelcoupon2{color:#00A3E6;margin-left:20px;display:none;cursor:pointer;}
+.usecouponform{margin-top:5px;height:25px;width:360px;}
+.couponiputtext{width:285px;height:25px;background:none;border:1px solid #CCC;}
+.submitcoupon{width:48px;height:25px;background:url(images/cart/queding.jpg);border:none;float:right;display:inline;margin-top:1px;cursor:pointer;}
+.usecouponstatus{display:none;width:278px;height:70px;position:relative;}
+.couponstatus_img{width:80px;height:70px;position:absolute;top:10px;}
+.failure_img{display:none;}
+.couponstatus_img img{width:80px;height:70px;}
+.desc_status{float:left;display:inline;margin-top:50px;margin-left:85px;}
+.desc_failure{display:none;}
+.subtotal{width:160px;float:left;display:inline;margin-top:20px;margin-left:10px;}
+.subtotal2{margin-top:0px;}
+.subtotal div{font-size:12px;line-height:24px;}
+.couponprice{display:none;}
+.finalprice{font-size:18px;color:#FF0000;}
+.subtotal_hr{font-size:0px;border:none;height:1px;width:150px;background:#BBB;margin:5px 0px;}
+
+.ch_header{width:1000px;height:96px;margin:0px auto;}
+.ch_header .ch_logo{background:url(images/checkout/logo.png) no-repeat;width:274px;height:71px;float:left;display:inline;margin:17px 0px 0px 22px;}
+.ch_header .ch_progress{background:url(images/checkout/progress_cart.png);width:657px;height:32px;float:right;display:inline;margin:46px 10px 0px 0px;}

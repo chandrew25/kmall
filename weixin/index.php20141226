@@ -1,0 +1,513 @@
+<?php
+
+include '../init.php';
+//定义您的标识
+define("TOKEN", "weixin"); //请将 "weixin" 改为您命名的 TOKEN
+$wechatObj = new wechat();
+if
+ (isset($_GET['echostr'])) {
+    $wechatObj->valid();
+} else {
+    $wechatObj->responseMsg();
+}
+
+class wechat {
+
+    public function valid() {
+        $echoStr = $_GET["echostr"];
+        //有效签名，选项
+        if
+        ($this->checkSignature()) {
+            echo $echoStr;
+            exit;
+        }
+    }
+
+    private function checkSignature() {
+        $signature = $_GET["signature"];
+        $timestamp = $_GET["timestamp"];
+        $nonce = $_GET["nonce"];
+        $token = TOKEN;
+        $tmpArr = array($token, $timestamp, $nonce);
+        sort($tmpArr, SORT_STRING);
+        $tmpStr = implode($tmpArr);
+        $tmpStr = sha1($tmpStr);
+
+        if
+        ($tmpStr == $signature) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function responseMsg() {
+        //接收数据
+        //使用 get 亦或 post 数据，取决于不同环境
+        $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
+       // $postStr = '<xml>
+       //     <ToUserName>ehlikejf</ToUserName>
+       //     <FromUserName>onjq1jq_6MUkhOX_MPhCB_5sEzIg</FromUserName>
+       //     <CreateTime>123456789</CreateTime>
+       //     <MsgType>event</MsgType>
+       //     <Event>CLICK</Event>
+       //     <EventKey>MEMBER</EventKey>
+       //     </xml>';
+        //获取 post 数据
+        if (!empty($postStr)) {
+            //用 SimpleXML 解析 post 过来的 XML 数据
+            $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
+            $type = trim($postObj->MsgType);
+            //判断数据类型
+            switch ($type) {
+                case "text":
+                    $resultStr = $this->receiveText($postObj);
+                    break;
+                case "image":
+                    $resultStr = $this->receiveImg($postObj);
+                    break;
+                case "event":
+                    $resultStr = $this->receiveEvent($postObj);
+                    break;
+                default:
+                    $resultStr = "unknow msg type: " . $type;
+                    break;
+            }
+//             $resultStr =  mb_convert_encoding($resultStr,"UTF-8","GBK");
+           // var_dump($resultStr);
+            echo $resultStr; //输出结果
+        } else {
+            echo "";
+            exit;
+        }
+    }
+
+    private function receiveText($object) {
+        $funcFlag = 0;
+        $keyword = trim($object->Content); //获取消息内容
+        $resultStr = "";
+        $contentStr = "";
+        //返回数据
+        //设置回复关键词18
+        if ($keyword == "18" || $keyword == " 18" || $keyword == "18 ") {
+            $contentStr = '
+    <a href="http://www.weixingon.com/wechat/wechatappdev/">微信公众平台应用开发实战</a>
+    ';
+            $resultStr = $this->transmitText($object, $contentStr, $funcFlag);
+            return $resultStr;
+        }
+        //设置回复关键词21
+        if ($keyword == "21" || $keyword == " 21" || $keyword == "21 ") {
+            $title = "欢迎进入大马头茶餐厅";
+            $url = "http://dmt.shop5i.com/index.php?go=membership.weixin.api&openid=" . $object->FromUserName;
+            $description = "谢谢您的关注！";
+            $resultStr = $this->transmitLink($title, $description, $url, $flag = 0);
+            return $resultStr;
+        }
+        //被动自动回复内容
+        else {
+            $contentStr = '尊敬的粉丝您好！如有问题咨询，请拨打客服电话：
+
+大马头茶餐厅（九江路店）已上线
+地址：九江路399号华盛大厦1楼
+电话：021-33766080
+营业时间：07:30-24:00
+
+大马头茶餐厅（中潭路店）待上线
+地址：中潭路49号
+电话：021-52955652
+
+大马头茶餐厅（昌里店）待上线
+地址：昌里路277号2号楼
+电话：021-68700238
+营业时间：10：30——02:00
+
+大马头茶餐厅（老西门店）待上线
+地址：西藏南路567号
+电话：021-53825699
+营业时间：8:00-凌晨2:30
+'; //返回消息内容
+            $resultStr = $this->transmitText($object, $contentStr, $funcFlag);
+            return $resultStr;
+        }
+    }
+
+    private function receiveImg($object) {
+        $mediaid = "";
+        $picurl = 'http://dmt.shop5i.com/upload/weixin.png';
+        $resultStr = $this->transmitImg($object, $picurl, $mediaid);
+        return $resultStr;
+    }
+
+    private function receiveEvent($object) {
+        $title = "";
+        $description = "";
+        $url = "";
+        switch ($object->Event) {
+            case "subscribe":
+                //关注後自动推送消息
+                $url = "http://dmt.shop5i.com/index.php?go=membership.weixin.api&openid=" . $object->FromUserName;
+                $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>2</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[点我─加我，享优惠]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/guanzhu1.png]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[感谢关注大马头茶餐厅，点我加粉丝，可以得到20元消费抵用券（消费满50元可使用）]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/guanzhu2.png]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    </Articles>
+                    </xml>";
+                break;
+            case "CLICK":
+                $resultStr = $this->functionClike($object);
+                break;
+        }
+        return $resultStr;
+    }
+
+    private function transmitText($object, $content, $flag = 0) {
+        //返回文本消息模板
+        $textTpl = "<xml>
+                    <ToUserName><![CDATA[%s]]></ToUserName>
+                    <FromUserName><![CDATA[%s]]></FromUserName>
+                    <CreateTime>%s</CreateTime>
+                    <MsgType><![CDATA[text]]></MsgType>
+                    <Content><![CDATA[%s]]></Content>
+                    <FuncFlag>%d</FuncFlag>
+                    </xml>";
+        //格式化消息模板
+        $resultStr = sprintf($textTpl, $object->FromUserName, $object->ToUserName, time(), $content, $flag);
+        return $resultStr;
+    }
+
+    private function transmitImg($object, $picurl, $mediaid, $flag = 0) {
+        $imgTpl = "<xml>
+                 <ToUserName><![CDATA[%s]]></ToUserName>
+                 <FromUserName><![CDATA[%s]]></FromUserName>
+                 <CreateTime>%s</CreateTime>
+                 <MsgType><![CDATA[image]]></MsgType>
+                 <PicUrl><![CDATA[%s]]></PicUrl>
+                 <MediaId><![CDATA[%s]]></MediaId>
+                 <MsgId>%s</MsgId>
+                 </xml>";
+        //格式化消息模板
+        $resultStr = sprintf($imgTpl, $object->FromUserName, $object->ToUserName, time(), $picurl, $mediaid, $flag);
+        return $resultStr;
+    }
+
+    private function transmitLink($object, $title, $description, $url, $flag = 0) {
+        $linkTpl = "<xml>
+                <ToUserName><![CDATA[%s]]></ToUserName>
+                <FromUserName><![CDATA[%s]]></FromUserName>
+                <CreateTime>%s</CreateTime>
+                <MsgType><![CDATA[link]]></MsgType>
+                <Title><![CDATA[%s]]></Title>
+                <Description><![CDATA[%s]]></Description>
+                <Url><![CDATA[%s]]></Url>
+                <MsgId>%s</MsgId>
+                </xml>";
+        //格式化消息模板
+        $resultStr = sprintf($linkTpl, $object->FromUserName, $object->ToUserName, time(), $title, $description, $url, $flag);
+        return $resultStr;
+    }
+
+    private function transmitImgText($object, $title, $description, $picurl, $url) {
+        $imgtextTpl = "<xml>
+                    <ToUserName><![CDATA[%s]]></ToUserName>
+                    <FromUserName><![CDATA[%s]]></FromUserName>
+                    <CreateTime>%s</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>1</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[%s]]></Title> 
+                    <Description><![CDATA[%s]]></Description>
+                    <PicUrl><![CDATA[%s]]></PicUrl>
+                    <Url><![CDATA[%s]]></Url>
+                    </item>
+                    </Articles>
+                    </xml> ";
+        //格式化消息模板
+        $resultStr = sprintf($imgtextTpl, $object->FromUserName, $object->ToUserName, time(), $title, $description, $picurl, $url);
+        return $resultStr;
+    }
+
+    private function functionClike($object) {
+        switch ($object->EventKey) {
+            case "MEMBER_ADD":
+                $resultStr = $this->member_add($object);
+                break;
+            case "MEMBER_RIGHTS":
+                $resultStr = $this->member_rights($object);
+                break;
+            case "MEMBER":
+                $resultStr = $this->member($object);
+                break;
+            case "SCRATCH_CARD":
+                $resultStr = $this->scratch_card($object);
+                break;
+            case "GOODS":
+                $resultStr = $this->goods($object);
+                break;
+            case "GOODSHOME":
+                $resultStr = $this->goodshome($object);
+                break;
+			case "ADDRESS":
+                $resultStr = $this->address($object);
+                break;
+        }
+       // $resultStr = $this->member_add($object);
+        return $resultStr;
+    }
+	private function address($object){
+        $contentStr = "大马头茶餐厅（九江路店）已上线
+地址：九江路399号华盛大厦1楼
+电话：021-33766080
+
+大马头茶餐厅（中潭路店）待上线
+地址：中潭路49号
+电话：021-52955652
+
+大马头茶餐厅（昌里店）待上线
+地址：昌里路277号2号楼
+电话：021-68700238
+
+大马头茶餐厅（老西门店）待上线
+地址：西藏南路567号
+电话：021-53825699";
+        $resultStr = $this->transmitText($object,$contentStr, $funcFlag=0);
+        return $resultStr;
+    } 
+    private function member_add($object) {
+        $data = UtilSend::isMember($object->FromUserName);
+        if ($data) {
+            $resultStr = $this->istMeber($object,$data);
+        } else {
+            $resultStr = $this->notMeber($object);
+        }
+        return $resultStr;
+    }
+    private function member($object){
+        $data = UtilSend::isMember($object->FromUserName);
+        if ($data) {
+            $balance = $point = 0.00;
+            $result = UtilApi::getMember($data->phone);
+            if($result->code == "A00006") {
+                $datacard = $result->data;
+                $balance = $datacard->user_balance;
+                $point = $datacard->user_point;
+            }
+            
+            $url = "http://dmt.shop5i.com/index.php?go=membership.weixin.api&openid=" . $object->FromUserName;
+            $picurl = 'http://dmt.shop5i.com/upload/weixin.png';
+            $couponurl = "http://dmt.shop5i.com/index.php?go=membership.coupon.index&openid=" . $object->FromUserName;
+            $coupon = UtilSend::getCoupon($data->phone);
+            $couponStr = "";
+            $j = 3;
+            if(!empty($coupon)){
+                foreach ($coupon as $key => $value) {
+                    $str = $value->batch_name."
+面值：".$value->amount."(每桌每餐限用一张)
+券码：".$value->coupon_pwd."
+有效期：".$value->time."
+至".$value->exp_date;
+                    $couponStr .="<item>
+                    <Title><![CDATA[".$str."]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[".$couponurl."]]></Url>
+                    </item>";
+                    $j++;
+                }
+            }
+            $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>".$j."</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[出示手机号即可行使权益]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[".$picurl."]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[储值余额：".$balance."]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[积分余额：".$point."]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[".$url."]]></Url>
+                    </item>
+                    ".$couponStr."
+                    </Articles>
+                    </xml>";
+            return $resultStr;
+        } else {
+            return $this->notMeber($object);
+        }
+    }
+    private function member_rights($object) {
+$contentStr = '1 粉丝会员权益：
+  扫码加粉丝获赠20元消费抵用券（消费满50元可使用）
+2 积分会员权益：
+  9元办理积分会员卡,立享哈根达斯冰激凌一份。会员现金消费部分返还10%积分，1积分=1元。当餐返还积分，下次消费起即可使用。使用时出示会员卡或者手机号
+'; //返回消息内容
+        $resultStr = $this->transmitText($object,$contentStr, $funcFlag=0);
+        return $resultStr;
+    }
+    private function scratch_card($object){
+        $data = UtilSend::scratch_card($object->FromUserName);
+        if ($data) {
+            $description = "您有一个张刮刮卡！请进入刮刮卡活动中心刮奖..";
+        }else{
+            $description = "谢谢您的关注！您目前拥护有0张刮刮卡，详情请进入刮刮卡活动中心..";
+        }
+        $title = "欢迎进入大码头茶餐厅";
+        $url = "http://dmt.shop5i.com/index.php?go=membership.scratchcard.index&openid=" . $object->FromUserName;
+        $picurl = 'http://dmt.shop5i.com/upload/guaguaka.png';
+        $resultStr = $this->transmitImgText($object, $title, $description, $picurl, $url);
+        return $resultStr;
+    }
+    private function notMeber($object) {
+        $contentStr = "<a href='http://dmt.shop5i.com/index.php?go=membership.weixin.api&openid=" . $object->FromUserName."'>亲,加入会员请点击这里</a>";
+        $resultStr = $this->transmitText($object,$contentStr, $funcFlag=0);
+        return $resultStr;
+    }
+
+    private function istMeber($object,$data) {
+        $contentStr = "您已经是粉丝会员了。
+手机号：".$data->phone."
+开卡日期：".date("Y-m-d",$data->commitTime)."
+<a href='http://dmt.shop5i.com/index.php?go=membership.weixin.api&openid=" . $object->FromUserName."'>请查看您的会员卡</a>";
+        $resultStr = $this->transmitText($object,$contentStr, $funcFlag=0);
+        return $resultStr;
+    }
+
+    private function goods($object){
+         $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>10</ArticleCount>
+                    <Articles>  
+                      <item>  
+                      <Title><![CDATA[港式脆皮咕噜猪颈肉]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/3.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>         
+                   <item>
+                    <Title><![CDATA[石锅蟹子小笼包]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/10.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>   
+                    <item>
+                    <Title><![CDATA[椒盐九肚鱼]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/9.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>      
+                      <item>
+                    <Title><![CDATA[海鲜自制豆腐煲]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/8.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item> 
+                    <item>
+                    <Title><![CDATA[果王榴莲酥]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/7.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>
+                     <item>
+                    <Title><![CDATA[鹅肝酱藕饼]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/6.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[大马头虾饺皇]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/11.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[脆皮乳鸽]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/2.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>                                 
+                    <item>
+                    <Title><![CDATA[脆皮炸鲜奶]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/12.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[咖喱薯仔牛腩煲]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/5.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>
+                   
+                  
+                   
+                     
+                  
+                    </Articles>
+                    </xml> ";
+        return $resultStr;
+    }
+
+    private function goodshome($object){
+        $resultStr = "<xml>
+                    <ToUserName><![CDATA[".$object->FromUserName."]]></ToUserName>
+                    <FromUserName><![CDATA[".$object->ToUserName."]]></FromUserName>
+                    <CreateTime>".time()."</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>2</ArticleCount>
+                    <Articles>
+                    <item>
+                    <Title><![CDATA[品牌介绍]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[http://dmt.shop5i.com/upload/20140918/14.jpg]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>
+                    <item>
+                    <Title><![CDATA[        漫漫历史长河，滔滔浪花飞溅，从最早的通商口岸城市，直至今日成为全球货物吞吐量第一大港，码头文化始终记载着上海滩的传奇，呈现给世人别具一格的海派风情。
+    在“海纳百川、兼容并蓄”的海派文化浸润下，谐音自“码头”、始创于2006年的“大马头茶餐厅”秉承了海派文化包容、多元、创新的特点，将香港饮食文化代表——茶餐厅，与沪、粤、川等传统中华美食有机地结合起来。
+    马者，善良、活力、坚强、忠诚也，它几乎成为了所有优秀品格的代表。在“马”的精神引领下，“大马头茶餐厅”以高品质的各式美食、热情周到的服务、时尚舒适的环境和亲民的价格，赢得了越来越多男女老幼的青睐。
+    香江、浦江之水汇集于此，品尝美食、感受文化，在大马头，让我们发现生活的新味道……
+]]></Title> 
+                    <Description><![CDATA[]]></Description>
+                    <PicUrl><![CDATA[]]></PicUrl>
+                    <Url><![CDATA[]]></Url>
+                    </item>
+                    </Articles>
+                    </xml>";
+        return $resultStr;
+    }
+
+}
+
+?>

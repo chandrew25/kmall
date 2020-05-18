@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	//查询列表输入提示
+	$("#queryText").focus(function(){
+		if($("#queryText").val()=="商品名称、商品编号、订单编号"){
+			$("#queryText").removeClass("hui_color");
+			$("#queryText").val("");
+		}
+	}).blur(function(){
+		if($("#queryText").val()==""){
+			$("#queryText").addClass("hui_color");
+			$("#queryText").val("商品名称、商品编号、订单编号");
+		}
+	});
+});

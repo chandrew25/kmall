@@ -1,0 +1,26 @@
+.main_container{width:100%;margin:0px auto;background:#d8b83a;}
+.banner_container{width:100%;height:621px;margin:0px auto;border-top:1px solid white;}
+.festival_banner{width:100%;height:621px;margin:0px auto;background:url(images/festival/banner.jpg) center center;}
+.content_style{background:#b80113;}
+.special_column{width:100%;}
+.column_top{width:100%;height:57px;}
+.weili_creed{width:169px;height:25px;background:url(images/festival/weili_creed.png) center center;top:22px;left:10px;}
+.see_more{width:95px;height:24px;background:url(images/festival/see_more.png) center center;top:22px;right:10px;}
+.column_newyear{background:url(images/festival/newyear.png) center center;}
+.column_universal{background:url(images/festival/universal.png) center center;}
+.column_voucher{background:url(images/festival/voucher.png) center center;}
+.goods_lists{width:100%;height:348px;}
+.goods_outer{width:322px;height:346px;border:1px solid #9f0b15;}
+.goods_inner{width:320px;height:344px;border:1px solid #fc3544;background:#c81623;}
+.goods_con{width:316px;height:340px;margin:2px;}
+.goods_img{width:100%;height:250px;}
+.red_triangle{width:20px;height:20px;background:url(images/festival/red_triangle);bottom:0px;right:0px;}
+.goods_name{width:100%;height:34px;line-height:34px;text-align:center;overflow:hidden;}
+.goods_oper{width:100%;height:55px;background:white;border-top:1px solid #fbeeef;}
+.goods_price{width:87px;height:100%;color:#c81623;line-height:59px;text-indent:4px;}
+.buy_voucher{width:110px;height:100%;}
+.buy_gift{width:110px;height:100%;}
+.operate_img{width:110px;height:41px;}
+
+.center_gap{width:14px;height:348px;}
+.bottom_gap{width:100%;height:10px;}

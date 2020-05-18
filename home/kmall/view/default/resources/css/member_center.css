@@ -1,0 +1,48 @@
+/*中间边框颜色*/
+.center_border_color{border:1px solid #FFAD4A;}
+/*灰色字体*/
+.hui_color{color:#636363;}
+/*红色字体*/
+.hong_color{color:#E90B06;}
+/*蓝色字体*/
+.blue_color{color:#05f;}
+.hun_color{color: #f76800;font-size: 16px;}
+/*中间内容区*/
+#center_down{width:964px;overflow:hidden;margin:0px auto;font-size:13px;font-family:"微软雅黑";background:white;}
+#center_menu{width:194px;float:left;padding:1px;overflow:hidden;}
+.center_menu_item{overflow:hidden;margin-bottom:5px;}
+.item_title{font-size:15px;font-family:"microfost yahei";font-weight:bold;color:white;background:url(images/title_bg.jpg);height:27px;margin:0px auto;width:194px;padding:5px 0px 0px 15px;;line-height:27px;}
+.item_content{width:194px;margin:0px auto;padding:0px;overflow:hidden;}
+.item_content li{position:relative;border-bottom-width:1px;border-bottom-style:dashed;padding:5px 0px;overflow:hidden;}
+.item_ico{margin:-2px 10px 0px 0px;vertical-align:middle;}
+.item_href{position:absolute;right:0px;top:10px;}
+/*右侧内容区外套*/
+#member_wrapper{width:750px;float:right;padding:1px;overflow:hidden;}
+#member{padding:5px 4px;font-size:13px;	overflow:hidden;}
+#member_title{width:730px;margin:0px auto 5px auto;height:30px;line-height:30px;font-size:18px;font-weight:bold;text-indent:10px;color:black;border-bottom:2px solid #FFAD4A;}
+/*通用的表格样式*/
+.tbl{width:730px;margin:0px auto;font-size:13px;text-align:center;color:#636363;border-collapse:collapse;}
+.tbl td{padding:5px 0px;}
+.tbl a{color:#333333;}
+.tbl_head{background-color:#DADADA;font-weight:bold;text-align:center;color:#000;}
+
+body{ background-color:#FFFFFF;}
+.manage{width:1000px;margin:10px auto 0px;background-color:#FFFFFF;overflow:hidden;}
+.manage .left_list{ width:195px; float:left; display:inline;}
+.manage .left_list .title{ height:40px; width:100%; background:url(images/member/new/bg_left.jpg) no-repeat; text-align:center;}
+.manage .left_list .title span{ font:18px "微软雅黑"; color:#FFFFFF; display:block; width:100%; height:100%; line-height:40px;}
+.manage .left_list .list{ width:193px; border:1px solid #D0D0D0;}
+.manage .left_list .list dl{width:100%;}
+.manage .left_list .list dl dt{ font:14px "宋体"; height:37px; line-height:37px; width:100%; border-bottom:1px solid #D0D0D0; font-weight:bold;}
+.manage .left_list .list dl .dt_bg1{ background:url(images/member/new/left_bg1.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl .dt_bg2{ background:url(images/member/new/left_bg2.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl .dt_bg3{ background:url(images/member/new/left_bg3.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl dt span{ margin-left:40px;}
+.manage .left_list .list dl dd{ width:100%; text-align:center; margin-bottom:2px;}
+.manage .left_list .list dl dd ul{ width:170px; margin-left:12px;}
+.manage .left_list .list dl dd ul li{ width:170px; height:33px; border-bottom:1px dashed #999999; line-height:33px; text-align:left; padding-left:30px;}
+.manage .left_list .list .b_none{border: none;}
+.manage .left_list .list dl dd ul .click_li{ background:url(images/member/new/li_bg.png) no-repeat 18px 14px;}
+.manage .left_list .list dl dd ul .click_li a{ color:#F00707;}
+.manage .right_list{ width:785px; float:right; display:inline;}
+.manage .right_list .title{ width:100%; height:30px; line-height:30px;border-bottom:1px solid #FF9933;}

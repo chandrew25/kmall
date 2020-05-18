@@ -1,0 +1,174 @@
+.manage{
+    border-bottom: 1px solid #E5E5E5;
+}
+.bor_tr{
+    border-bottom: 1px solid #E5E5E5;
+}
+#member .title_card{
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid #E5E5E5;
+}
+#member .cue{
+    width: 980px;
+    height: 30px;
+    margin: 0px auto;
+    border-bottom: 1px solid #ff9933;
+    line-height: 30px;
+}
+#member .cue span{
+    color: #D80700;
+    margin-left: 20px;
+}
+#member table{
+    width: 980px;
+    margin: 2px auto;
+}
+#member table .bg_tr{
+    background-color: #dbd8d8;
+}
+#member table td{
+    padding-left: 10px;
+}
+.all{
+    margin-left: 10px;
+}
+.reset{
+    cursor: pointer;
+}
+.btn_submit{
+    float: right;
+    display: inline;
+    margin-right: 30px;
+    border: 0;
+    cursor:pointer;
+}
+.btn_submit img{
+    width:128px;
+    height:37px;
+    border: 0;
+}
+.pro_img{
+    width: 64px;
+    height: 64px;
+    border: 1px solid #a2a2a2; 
+    float: left;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.pro_img img{
+    width: 64px;
+    height: 64px;
+}
+.pro_txt {
+    float: left; 
+    display: block;
+    margin-top:23px;
+    width : 200px; 
+    height: 20px;
+    overflow:hidden; 
+    text-overflow:ellipsis;   
+}
+
+
+.con_bg{
+    width: 100%;
+    height: 450px;
+    background-color: #eeeeee;
+    margin-top: 1px;           
+}
+.con_bg_img{
+    width: 100%;
+    height: 435px; 
+    background:url(images/member/gift_certificate_bg.jpg);
+}
+.con_bg_img .con_bg_left{
+    width: 1000px;
+    height: 100%;
+    background:url(images/member/con_gift_bg.png) no-repeat 0px 30px;
+    margin: 0px auto;
+}
+.con_bg_img .con_bg_left .left_txt{
+    margin-top: 130px;
+    margin-left: 180px;
+    float: left;
+    display: inline;
+}
+.con_bg_img .con_bg_left p{
+    color: #7B3A02;
+    font-size: 30px;
+    font-family: '微软雅黑';
+    margin-bottom : 30px;     
+}
+.con_bg_img .con_bg_left .right_login{
+    width: 345px; 
+    height: 380px;
+    float: right;
+    display: inline;
+    margin-top: 50px;
+    background:url(images/member/login_bg.png) no-repeat;
+}
+.con_bg_img .con_bg_left .right_login .right_title{
+    height: 30px; 
+    width: 300px; 
+    margin: 10px auto 25px;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: '宋体';
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #b2afaa;
+}
+.con_bg_img .con_bg_left .right_login .right_name{
+    height: 30px; 
+    width: 300px; 
+    margin: 7px auto;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: '宋体';
+    font-weight: bold;
+    color: #333;                       
+}
+.con_bg_img .con_bg_left .right_login .right_input{
+    height: 38px; 
+    width: 300px; 
+    margin: 7px auto; 
+}
+.con_bg_img .con_bg_left .right_login input{
+    padding-left : 5px;
+    height: 38px; 
+    width: 300px;    
+    border: 0;     
+    background:url(images/member/gift_input.jpg) no-repeat;                       
+}
+.con_bg_img .con_bg_left .login_btn{
+    height: 40px; 
+    width: 110px;  
+    float: left;
+    display: inline;
+    margin-left: 23px;
+    cursor: pointer;                                                                       
+}
+.con_bg_img .con_bg_left .submit_btn{
+    background:url(images/member/login_btn.png) no-repeat;                                                                                                          
+}
+.con_bg_img .con_bg_left .reset_btn{
+    background:url(images/member/reset_btn.png) no-repeat;                                                                                                          
+}
+
+.bottom_txt{
+    width: 300px;
+    height: 80px;
+    margin: 0px auto;
+}
+.con_bg_img .con_bg_left .right_login .tishi{
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+.msg_gift{
+    color: #ca171d;
+    font-size: 14px;
+}
+.footer{
+    margin-top: 0px;
+}

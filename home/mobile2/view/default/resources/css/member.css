@@ -1,0 +1,23 @@
+.member_edit_li{float: left;height: 50px; line-height: 50px;width: 640;margin-top: 15px; background-color: #fff;}
+.member_edit_li .member_edit_lable{float: left;width: 100px;text-align: right;font-size: 26px;}
+.member_edit_li .member_edit_ipt{float: left;width: 440px;margin-left: 5px;}
+.member_edit_submit{float: left; width: 100%;height: 50px;border-radius: 5px;background-image: url("images/member_top.jpg");color: #fff;line-height: 50px;text-align: center;font-weight: bold;cursor: pointer;}
+.text_ipt{width:300px;float: left;margin-left: 20px; border: 1px solid #ccc;border-radius: 5px; height: 50px;line-height: 50px;padding:0px 10px;font-size: 22px;}
+.bnt{float: left;widows: 100%;margin-left: 20px;}
+.bnt .commerce_commit_btn{
+	width: 600px;
+	height: 80px;
+	padding: 0;
+	border: none;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	background: url("images/commerce/commit_btn.jpg") no-repeat;
+	font-family: "微软雅黑";
+	font-size: 30px;
+	color: #ffffff;
+	line-height: 80px;
+	cursor: pointer;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}

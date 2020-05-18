@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <settinggroup id="basicgroup" name="基本设置">
+        <setting id="title" name="网站标题">菲生活商城</setting>
+        <setting id="logo" name="网站logo">upload/images/globalset/logo/20130709071819.png</setting>
+        <setting id="shopurl" name="网店网址">http://www.phoebelife.com</setting>
+    </settinggroup>
+    <settinggroup id="ordergroup" name="订单设置">
+        <setting id="ordercheck" name="是否审核">1</setting>
+        <setting id="orderconfirm" name="是否确认">1</setting>
+    </settinggroup>
+    <settinggroup id="smsgroup" name="短信设置">
+        <setting id="smsurl" name="短信服务器">http://210.14.64.74:81/SmsService/UnicomWdslRec.asmx?wsdl</setting>
+        <setting id="smsuname" name="用户名">201608111421</setting>
+        <setting id="smsupswd" name="用户密码">123456</setting>
+    </settinggroup>
+    <settinggroup id="emailgroup" name="邮箱设置">
+        <setting id="emailhost" name="邮件服务器">smtp.phoebelife.com</setting>
+        <setting id="emailport" name="服务器端口">25</setting>
+        <setting id="emailuname" name="邮箱用户名">sales@phoebelife.com</setting>
+        <setting id="emailpswd" name="邮箱密码">400888800808</setting>
+        <setting id="emailaddress" name="发件人地址">sales@phoebelife.com</setting>
+    </settinggroup>
+</settings>

@@ -1,0 +1,42 @@
+body{ background-color:#FFFFFF;}
+.clear{ clear:both;}
+.manage{ margin:auto; width:1000px; background-color:#FFFFFF; margin-top:20px;}
+.manage .left_list{ width:195px; float:left; display:inline;}
+.manage .left_list .title{ height:40px; width:100%; background:url(images/member/new/bg_left.jpg) no-repeat; text-align:center;}
+.manage .left_list .title span{ font:18px "微软雅黑"; color:#FFFFFF; display:block; width:100%; height:100%; line-height:40px;}
+.manage .left_list .list{ width:193px; border:1px solid #D0D0D0; padding-bottom:5px;}
+.manage .left_list .list dl{ width:100%;}
+.manage .left_list .list dl dt{ font:14px "宋体"; height:37px; line-height:37px; width:100%; border-bottom:1px solid #D0D0D0; font-weight:bold;}
+.manage .left_list .list dl .dt_bg1{ background:url(images/member/new/left_bg1.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl .dt_bg2{ background:url(images/member/new/left_bg2.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl .dt_bg3{ background:url(images/member/new/left_bg3.jpg) no-repeat 10px 8px; background-color:#F3F3F3;}
+.manage .left_list .list dl dt span{ margin-left:40px;}
+.manage .left_list .list dl dd{ width:100%; text-align:center; margin-bottom:2px;}
+.manage .left_list .list dl dd ul{ width:170px; margin-left:12px;}
+.manage .left_list .list dl dd ul li{ width:170px; height:33px; border-bottom:1px dashed #999999; line-height:33px; text-align:left; padding-left:30px;}
+.manage .left_list .list dl dd ul .click_li{ background:url(images/member/new/li_bg.png) no-repeat 18px 14px;}
+.manage .left_list .list dl dd ul .click_li a{ color:#F00707;}
+
+.manage .right_list{ width:785px; float:right; display:inline;}
+.manage .right_list .title{ width:100%; height:30px; line-height:30px; margin-top:10px; border-bottom:1px solid #FF9933;}
+.manage .right_list .title span{ font-weight:bold;}
+.manage .right_list .find{ height:35px;}
+.manage .right_list .find select{ float:left; display:inline; width:120px; height:24px; line-height:24px; border:1px solid #DDDDDD; margin-top:5px; color:#999999;}
+.manage .right_list .find input{ padding-left:5px; float:left; display:inline; width:186px; height:22px; line-height:22px; border:1px solid #999999; margin-top:5px; margin-left:10px; color:#999999;} 
+.manage .right_list .find div{ float:left; display:inline; width:50px; height:24px; color:#FFFFFF; background-color:#F29626; line-height:22px;
+ text-align:center; margin-left:10px; margin-top:5px; cursor:pointer;}
+.manage .right_list .div_tab th{ height:30px; background-color:#F3F3F3;}
+.manage .right_list .div_tab td{ text-align:center; height:80px; border-bottom:1px solid #CCCCCC;}
+.manage .right_list .div_tab td span{ height:40px; width:80px; overflow:hidden;text-overflow:ellipsis; display:block; margin-left:20px;}
+.manage .right_list .div_tab td .span_color{ color:#F00809;}
+.manage .right_list .div_tab td div{ height:66px; width:66px; border:1px solid #A6A6A6; margin-left:40px;float:left;display:inline; line-height:66px; overflow:hidden;text-overflow:ellipsis;}
+.manage .right_list .div_tab td p{ float:left;display:inline; height:20px; width:170px; text-align:left;
+ line-height:20px; margin-top:22px; margin-left:10px; overflow:hidden;text-overflow:ellipsis;}
+ .manage .right_list .fenye{ margin-top:5px; text-align:right;}
+.manage .right_list .fenye .num{ color:#F22728;}
+.manage .right_list .fenye .fy{ color:#0033CC;}
+.manage .right_list .fenye .fy a{color:#0033CC;}
+
+
+
+

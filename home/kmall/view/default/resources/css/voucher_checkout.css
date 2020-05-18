@@ -1,0 +1,251 @@
+.btnAddrSend{
+    background:url(images/member/applyaddress.png) repeat-x 0px 0px; width:129px; height:24px;
+    text-align:center; line-height:24px;color:#fff;border:none; cursor:pointer;font-weight:bold;
+}   
+.btnAddrSendnew{
+    background-color:#FF9623; width:129px; height:24px;font-weight:bold;
+    text-align:center; line-height:24px;color:#fff;border:none; cursor:pointer;margin:10px auto 0px auto;
+}
+.btnAddrSendnew2{
+    background-color:#FF9623; width:58px; height:24px;font-weight:bold;
+    text-align:center; line-height:24px;color:#fff;border:none; cursor:pointer;margin:10px auto 0px auto;
+}       
+
+.btnAddrDel{
+    background:url(images/member/del.jpg) no-repeat 0px 0px; width:57px; height:24px;
+    text-align:center; line-height:24px;color:#fff;border:none; cursor:pointer;font-weight:bold;
+} 
+
+/*英文强制换行*/
+.word{word-break:break-all;}
+
+/*边框*/
+.B_blue{border:1px solid #c5e4ff;}
+.B_input{border:1px solid #0f97ed;}                                                                                     
+/*字体颜色*/
+.f1{color:#ff6666;}
+.f2{color:#006bd0; font-weight:bold; margin-right:15px;}
+.f3{color:#9e9e9e;}
+.f4{color:#fe596a;}
+.f4_b{color:#fe596a; font-weight:bold;}
+.f5{ font-size:14px; font-weight:bold;}
+.f6{color:white;}
+.market{ font-size:14px; text-decoration:line-through;}
+.shop{color:#fe596a; font-size:14px; font-weight:600;}
+.market_s{text-decoration:line-through;}
+.shop_s{color:#fe596a;}
+/*模块标题*/
+h3.border{border:1px solid #c5e4ff; border-bottom:none;}
+h3 img{position:relative; top:7px;}
+h5{height:26px; line-height:26px; text-align:right; background-color:#edf7ff; font-size:12px;
+color:#56a5ee; padding:0 10px 0 0;
+}
+h6{height:23px; line-height:23px; text-align:right; font-size:12px; background:#F57921; color:white;
+border:1px solid #fff; padding-right:10px;
+}
+h6 span{float:left; padding-left:15px;}
+
+/*页面留白*/
+.blank{height:8px; line-height:8px; clear:both; visibility:hidden;}
+.blank5{height:5px; line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
+/*布局*/
+.AreaL{width:200px; float:left; margin-right:10px;}
+.AreaR{width:750px; float:left;}
+ 
+
+.flowBox{border:1px solid #DFDEDE; border-top:2px solid #DFDEDE;}
+.flowBox table{ margin:5px auto;}
+/*2.62在购物车里面显示相关配件*/
+.flowGoodsFittings{padding:10px;}
+.flowGoodsFittings ul{height:1%; margin:5px 4px; float:left;}
+.flowGoodsFittings li{float:left; width:120px;}
+.flowGoodsFittings li.goodsimg{width:48px; margin-right:10px;}
+.flowGoodsFittings li.goodsimg img{width:48px; height:48px; display:block;}
+
+
+.hui_color{
+    color:#aaa;
+}
+.mr{
+    margin-right:2px;
+}
+.ml{
+    margin-left:5px;
+}
+.notice{
+    color:#D70702;
+}
+.inputBg{
+    background:url("images/user/inputbg.gif") repeat-x;
+    border:1px solid rgb(179, 179,179);
+    height:18px;
+    width:180px;
+}
+#invoice_wrapper{
+    overflow:hidden;
+}
+#invoice{
+    margin-left:10px;
+    border-spacing:5px;
+    overflow:hidden;
+    text-align:left;
+}
+.pleft{
+    padding-left:30px;
+}
+#invoice_tishi{
+    padding:2px 5px;
+    border:1px solid #d55;
+    background-color:#FEFEE4;
+}
+#invoiceok{
+    cursor:pointer;
+}
+.paytypename{
+    padding:10px 15px;
+    float:left;
+    overflow:hidden;
+}
+.pay_type_ico{
+    float:left;height:32px;width:32px;
+}
+.paytype{
+    padding:8px 15px 8px 5px;
+    font-weight:bold;
+    float:left;
+    background-repeat:no-repeat;
+    background-color:#fff;
+}
+.paytype1{
+    color:#63A440;
+    background-image:url(images/shop/truck.jpg);
+    background-position:15px 10px;
+}
+.paytype2{
+    color:#294C7E;
+    background-image:url(images/shop/truck.jpg);
+    background-position:15px 7px;
+}
+.paytype3{
+    color:#294C7E;
+    background-image:url(images/shop/card.jpg);
+    background-position:15px 7px;
+}
+.paytype4{
+    color:#294C7E;
+    background-image:url(images/shop/card.jpg);
+    background-position:15px 7px;
+}
+.ptypeimg{
+    visibility:hidden;
+    margin:3px 0px 0px 5px;
+    cursor:pointer;
+    float:left;
+}
+/*选择支付类型弹出窗口*/
+#paytypebg{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:1000;
+    display:none;
+    background-color:#000;
+    filter:alpha(opacity=30);
+    opacity:0.3;
+}
+._paytype{
+    position:absolute;
+    width:658px;
+    z-index:1001;
+    display:none;
+    border:1px solid #ccc;
+    background-color:#fff;
+    overflow:hidden;
+}
+#paytitle{
+    position:relative;
+    width:656px;
+    height:26px;
+    line-height:26px;
+    background-color:#D70702;
+    font-size:13px;
+    color:#fff;
+    text-indent:10px;
+    margin:1px auto 0px auto;
+    overflow:hidden;
+}
+#paytitleclose{
+    position:absolute;
+    width:40px;
+    height:20px;
+    right:10px;
+    top:1px;
+    font-weight:normal;
+    cursor:pointer;
+}
+#paycontent{
+    padding:0px 15px 15px 15px;
+    overflow:hidden;
+}
+.payitem{
+    font-size:14px;
+    line-height:22px;
+    color:#666;
+    margin-top:10px;
+    border-bottom:1px solid #ccc;
+}
+.payitem span{
+    font-size:13px;
+    color:#980300;
+}
+.paylist{
+    width:100%;
+    list-style:none;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+}
+.paylist li{
+    width:130px;
+    margin:10px 20px 0px 0px;
+    padding:5px 0px;
+    overflow:hidden;
+    float:left;
+    cursor:pointer;
+}
+.paylist_lifocus{
+    background-color:#CCFF80;
+}
+.paylist li input{
+    vertical-align:middle;
+    margin-left:5px;
+    cursor:pointer;
+}
+.paylist li img{
+    vertical-align:middle;
+    margin-left:5px;
+    cursor:pointer;
+}
+#payok{
+    width:80px;
+    height:27px;
+    display:block;
+    margin:10px auto 0px auto;
+    cursor:pointer;
+}
+
+/*****2013-2-19修改****/
+.m_i_left{float:left;margin:5px 0px 5px 20px;display:inline;height:22px;}
+.m_i_left_name{width:80px;}
+.clear_both{clear:both;}
+.member_info_box{width:99%;margin:5px auto;background:white;}
+.email_input{width:180px;}
+.address_input{width:660px;}
+.mail_ok_hide{display:none;}
+
+.order_settle{background-color:#FF9623; width:126px; height:36px;font-weight:bold;font-size:16px;
+text-align:center; line-height:36px;color:#fff;border:none; cursor:pointer;margin:0px auto;}
+
+
+.color_red{color:red;}
+.checkview_main{width:1000px;margin:0px auto;background:white;}

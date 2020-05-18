@@ -1,0 +1,39 @@
+/*.member_title{float:left;margin-left: 1%;width:98%; border-radius: 5px;background-image: url("images/member_top.jpg"); height: 40px;}
+.member_title .member_title_left{float: left;width: 160px;height: 40px;line-height: 40px;color: #fff;margin-left: 10px;font-weight: bold;}
+.member_title .member_title_right{float: right;height: 30px;line-height: 30px;margin-top: 10px;color: #fff;margin-right: 10px;font-size: 13px;}
+.member_edit{float: left;width: 98%;min-height:460px;margin-left: 1%;border-radius: 5px;background-color: #fff;}
+.member_edit .member_edit_li{height: 40px; line-height: 40px;width: 300px;margin: 0px auto;}
+.member_edit .member_edit_li .member_edit_lable{float: left;width: 100px;text-align: right;}
+.member_edit .member_edit_li .member_edit_ipt{float: left;width: 180px;}
+.ipt{width: 180px;height: 30px;border: 1px solid #ccc;border-radius: 5px;}
+.weixin_api_submit{margin:20px auto; width: 100px;height: 40px;border-radius: 5px;background-image: url("images/member_top.jpg");color: #fff;line-height: 40px;text-align: center;font-weight: bold;cursor: pointer;}
+
+.text_title{width:75%;float: left; margin-left: 10%; height: 30px; line-height: 30px;}
+.text_ipt{width:75%;float: left;margin-left: 10%;margin-top: 10px; border: 1px solid #ccc;border-radius: 5px; height: 40px;line-height: 40px;padding:0px 10px;}
+.text_ipt .text_ipt_lable{float: left;width: 50%;}
+.text_ipt .text_ipt_input{float: left;width: 50%;}
+.text_ipt .ipt{float: left;width: 100%;border:0px;height: 30px;margin-top: 5px;}
+.text_bnt{width: 60%;float: left;margin-left: 20%;margin-top: 20px;}
+.text_bnt .bnt_submit{background-color: #4C9ED9;color: #fff; width: 45%;height: 30px;float: left;line-height: 30px;text-align: center;cursor: pointer;}
+.text_bnt .bnt_rest{background-color: #5C5757;color: #fff; width: 45%;height: 30px;float: left;margin-left: 10%;line-height: 30px;text-align: center;cursor: pointer;}
+.pop-up{border-bottom: 3px solid #4C9ED9;}*/
+.container{background-color: #ccc;}
+.member_title{float:left;margin-left: 1%;width:98%; border-radius: 5px;height: 40px;}
+.member_title .member_title_left{float: left;width: 160px;height: 40px;line-height: 40px;color: #fff;margin-left: 10px;font-weight: bold;}
+.member_title .member_title_right{float: right;height: 30px;line-height: 30px;margin-top: 10px;color: #fff;margin-right: 10px;font-size: 13px;}
+.member_edit{float: left;width: 98%;min-height:500px;margin-left: 1%;border-radius: 5px;}
+.member_edit .member_edit_li{height: 40px; line-height: 40px;width: 100%;float: left;margin-bottom: 5px; background-color: #fff;}
+.member_edit .member_edit_li .member_edit_lable{float: left;width: 20%;text-align: right;}
+.member_edit .member_edit_li .member_edit_ipt{float: left;width: 75%;margin-left: 5px;}
+.ipt{width: 180px;height: 30px;border: 0px;}
+.weixin_api_submit{float: left; width: 100%;height: 40px;border-radius: 5px;background-image: url("images/member_top.jpg");color: #fff;line-height: 40px;text-align: center;font-weight: bold;cursor: pointer;}
+
+.text_title{width:75%;float: left; margin-left: 10%; height: 30px; line-height: 30px;}
+.text_ipt{width:75%;float: left;margin-left: 10%;margin-top: 10px; border: 1px solid #ccc;border-radius: 5px; height: 40px;line-height: 40px;padding:0px 10px;}
+.text_ipt .text_ipt_lable{float: left;width: 50%;}
+.text_ipt .text_ipt_input{float: left;width: 50%;}
+.text_ipt .ipt{float: left;width: 100%;border:0px;height: 30px;margin-top: 5px;}
+.text_bnt{width: 60%;float: left;margin-left: 20%;margin-top: 20px;}
+.text_bnt .bnt_submit{background-color: #4C9ED9;color: #fff; width: 45%;height: 30px;float: left;line-height: 30px;text-align: center;cursor: pointer;}
+.text_bnt .bnt_rest{background-color: #5C5757;color: #fff; width: 45%;height: 30px;float: left;margin-left: 10%;line-height: 30px;text-align: center;cursor: pointer;}
+.pop-up{border-bottom: 3px solid #4C9ED9;}

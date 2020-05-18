@@ -1,0 +1,8 @@
+.member_title{float:left;margin-left: 1%;width:98%; border-radius: 5px;background-image: url("images/member_top.jpg"); height: 40px;}
+.member_title .member_title_left{float: left;width: 100px;height: 40px;line-height: 40px;color: #fff;margin-left: 10px;font-weight: bold;}
+.member_title .member_title_right{float: right;height: 40px;line-height: 40px;color: #fff;margin-right: 10px;font-size: 15px;}
+.member_edit{float: left;width: 98%;min-height: 300px; margin-left: 1%;border-radius: 5px;background-color: #fff;}
+.member_edit table{width: 98%;margin: 0px auto;}
+.member_edit table .table_th{text-align: center;height: 20px;line-height: 20px;}
+.member_edit table .table_td td{height: 40px;border-bottom: 1px solid #ccc; color: #3fa3d8;}
+.member_edit table .table_td .time{max-width: 50px;}

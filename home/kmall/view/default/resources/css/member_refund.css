@@ -1,0 +1,50 @@
+/*绿颜色*/
+.lv_color{
+	color:#066501;
+}
+.notice{
+	color:#D70702;
+}
+/*表格标题*/
+.tbl_title{
+	position:relative;
+	width:728px;
+	height:40px;
+	margin:0px auto;
+	border: 1px solid #DADADA;
+	overflow:hidden;
+}
+.tbl_title_query{
+	position:absolute;
+	right:20px;
+	top:6px;
+}
+/*订单编号/商品名称*/
+.product_nameno{
+	width:220px;
+	overflow:hidden;
+	margin:0px 5px;
+	text-align:left;
+}
+.refund_title{
+	text-align:left;
+	text-indent:15px;
+	color:#E90C04;
+	font-size:16px;
+}
+#refundForm{
+	overflow:hidden;
+}
+#refundForm .tbl{
+	text-align:left;
+}
+.txts{
+	width:400px;
+	height:85px;
+	resize:none;
+	border:1px solid rgb(179, 179,179);
+	font-size:13px;
+}
+.ml5{
+	margin-left:5px;
+}

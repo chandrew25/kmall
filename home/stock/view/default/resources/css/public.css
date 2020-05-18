@@ -1,0 +1,125 @@
+
+html,body {
+    background-color: #f7f7f7;
+}
+
+
+.ivu-collapse>.ivu-collapse-item>.ivu-collapse-header, .ivu-collapse>.ivu-collapse-item.ivu-collapse-item-active>.ivu-collapse-header {
+    background-color: #be0712;
+    color: #fff;
+}
+
+.v-content .v-head, .f-content, .a-content {
+    padding: 16px;
+}
+
+.v-content .v-foot, .f-content .f-foot, .a-content .f-foot {
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.v-foot-btns, .f-foot-btns {
+    width: 66%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.v-content .v-foot .btn-s, .f-content .f-foot .btn-s, .a-content .f-foot .btn-s {
+    min-width: 144px;
+    background-color: #be0712;
+    color: #fff;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    line-height: 44px;
+    font-weight: 600;
+    height: 44px;
+}
+
+.f-content .f-foot .btn-s[disabled],.ivu-btn[disabled] {
+    color: #c5c8ce !important;
+    background-color: #f7f7f7 !important;
+}
+
+.f-content .ptinfo {
+    margin: 60px auto 20px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.warm-info {
+    margin-top: 60px;
+}
+.warm-info ul {
+    background-color: #f7f7f7;
+}
+.warm-info li {
+    list-style: inside;
+    line-height: 30px;
+}
+
+.f-content table,.f-content table tr {
+    width: 100%;
+}
+.f-content table th,.f-content table td {
+    text-align: center;
+    line-height: 30px;
+    /* width: 50%; */
+}
+.f-content table th.left {
+    width: 50%;
+}
+.f-content table th.right {
+    width: 50%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.f-content table td.left {
+    width: 70%;
+    text-align: left;
+    padding-left: 10px;
+}
+.f-content table td.right {
+    width: 30%;
+    text-align: right;
+    padding-right: 10px;
+}
+.flow-container {
+    width: 100%;
+    text-align: center;
+}
+.flow-container .flow {
+    width: 320px;
+    margin: 60px auto;
+}
+
+.pay-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pay-container .paytype {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    padding-top: 9px;
+    display: inline-block;
+    border: 1px solid #be0712;
+}
+.succss-title {
+    text-align: center;
+    font-size: 32px;
+    color: #be0712;
+}
+
+.vertical-center-modal, .ivu-modal-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-center-modal .ivu-modal, .ivu-modal-wrap .ivu-modal {
+    top: 0;
+}

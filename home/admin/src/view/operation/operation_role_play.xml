@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roleplayers>
+    <roleplayer id="SUPERADMIN">
+        <operationGroups>
+            <operationGroup id="order" name="订单">
+                <operation gridname="orderGrid" id="btnSave" name="添加订单" />
+                <operation gridname="orderGrid" id="btnUpdate" name="修改订单" />
+<!--                <operation gridname="orderGrid" id="btnCheck" name="采购审核" />
+                <operation gridname="orderGrid" id="btnKefuConfirm" name="客服确认" />-->
+                <operation gridname="orderGrid" id="btnSend" name="确认发货" />
+                <operation gridname="orderGrid" id="btnSign" name="确认签收" />
+                <operation gridname="orderGrid" id="btnSettle" name="确认支付" />
+                <operation gridname="orderGrid" id="btnReturn" name="确认退货" />
+                <operation gridname="orderGrid" id="btnRefund" name="确认退款" />
+                <operation gridname="orderGrid" id="btnUneffect" name="订单无效" />
+                <operation gridname="orderGrid" id="printDelivery" name="打印配送单" />
+                <operation gridname="orderGrid" id="printInvoice" name="打印发票" />
+                <operation gridname="orderGrid" id="printExpress" name="打印快递单" />
+                <operation gridname="orderGrid" id="btnReturn" name="确认退货" />
+                <operation gridname="orderGrid" id="tvpView" name="查看订单" />
+                <operation gridname="kstmSayGrid" id="btnSave" name="添加顾客留言" />
+                <operation gridname="kstmSayGrid" id="btnUpdate" name="答复顾客" />
+                <operation gridname="invoiceGrid" id="btnSave" name="添加发票" />
+                <operation gridname="invoiceGrid" id="btnUpdate" name="修改发票" />
+                <operation gridname="invoiceGrid" id="btnRemove" name="删除发票" />
+            </operationGroup>
+        </operationGroups>
+    </roleplayer>
+    <roleplayer id="MANAGER">
+        <operationGroups>
+            <operationGroup id="order" name="订单">
+                <operation gridname="orderGrid" id="btnSave" name="添加订单" />
+                <operation gridname="orderGrid" id="btnUpdate" name="修改订单" />
+<!--                <operation gridname="orderGrid" id="btnCheck" name="采购审核" />
+                <operation gridname="orderGrid" id="btnKefuConfirm" name="客服确认" />-->
+                <operation gridname="orderGrid" id="btnSend" name="确认发货" />
+                <operation gridname="orderGrid" id="btnSign" name="确认签收" />
+                <operation gridname="orderGrid" id="btnSettle" name="确认支付" />
+                <operation gridname="orderGrid" id="btnReturn" name="确认退货" />
+                <operation gridname="orderGrid" id="btnRefund" name="确认退款" />
+                <operation gridname="orderGrid" id="btnUneffect" name="订单无效" />
+                <operation gridname="orderGrid" id="printDelivery" name="打印配送单" />
+                <operation gridname="orderGrid" id="printInvoice" name="打印发票" />
+                <operation gridname="orderGrid" id="printExpress" name="打印快递单" />
+                <operation gridname="orderGrid" id="btnReturn" name="确认退货" />
+                <operation gridname="orderGrid" id="tvpView" name="查看订单" />
+                <operation gridname="kstmSayGrid" id="btnSave" name="添加顾客留言" />
+                <operation gridname="kstmSayGrid" id="btnUpdate" name="答复顾客" />
+                <operation gridname="invoiceGrid" id="btnSave" name="添加发票" />
+                <operation gridname="invoiceGrid" id="btnUpdate" name="修改发票" />
+                <operation gridname="invoiceGrid" id="btnRemove" name="删除发票" />
+            </operationGroup>
+        </operationGroups>
+    </roleplayer>
+    <roleplayer id="NORMAL">
+        <operationGroups>
+            <operationGroup id="order" name="订单">
+                <operation gridname="orderGrid" id="btnSave" name="添加订单" />
+                <operation gridname="orderGrid" id="btnUpdate" name="修改订单" />
+<!--                <operation gridname="orderGrid" id="btnKefuConfirm" name="客服确认" />-->
+                <operation gridname="orderGrid" id="btnUneffect" name="订单无效" />
+                <operation gridname="orderGrid" id="printDelivery" name="打印配送单" />
+                <operation gridname="orderGrid" id="printInvoice" name="打印发票" />
+                <operation gridname="orderGrid" id="printExpress" name="打印快递单" />
+                <operation gridname="orderGrid" id="tvpView" name="查看订单" />
+                <operation gridname="kstmSayGrid" id="btnSave" name="添加顾客留言" />
+                <operation gridname="kstmSayGrid" id="btnUpdate" name="答复顾客" />
+                <operation gridname="invoiceGrid" id="btnSave" name="添加发票" />
+                <operation gridname="invoiceGrid" id="btnUpdate" name="修改发票" />
+                <operation gridname="invoiceGrid" id="btnRemove" name="删除发票" />
+            </operationGroup>
+        </operationGroups>
+    </roleplayer>
+    <roleplayer id="BUYER">
+        <operationGroups>
+            <operationGroup id="order" name="订单">
+                <!--<operation gridname="orderGrid" id="btnCheck" name="采购审核" />-->
+                <operation gridname="orderGrid" id="printDelivery" name="打印配送单" />
+                <operation gridname="orderGrid" id="printInvoice" name="打印发票" />
+                <operation gridname="orderGrid" id="printExpress" name="打印快递单" />
+                <operation gridname="orderGrid" id="tvpView" name="查看订单" />
+                <operation gridname="kstmSayGrid" id="btnSave" name="添加顾客留言" />
+                <operation gridname="kstmSayGrid" id="btnUpdate" name="答复顾客" />
+                <operation gridname="invoiceGrid" id="btnSave" name="添加发票" />
+                <operation gridname="invoiceGrid" id="btnUpdate" name="修改发票" />
+                <operation gridname="invoiceGrid" id="btnRemove" name="删除发票" />
+            </operationGroup>
+        </operationGroups>
+    </roleplayer>
+    <roleplayer id="FINANCE">
+        <operationGroups>
+            <operationGroup id="order" name="订单">
+                <operation gridname="orderGrid" id="btnSettle" name="确认支付" />
+                <operation gridname="orderGrid" id="btnRefund" name="确认退款" />
+                <operation gridname="orderGrid" id="printDelivery" name="打印配送单" />
+                <operation gridname="orderGrid" id="printInvoice" name="打印发票" />
+                <operation gridname="orderGrid" id="printExpress" name="打印快递单" />
+                <operation gridname="orderGrid" id="tvpView" name="查看订单" />
+                <operation gridname="kstmSayGrid" id="btnSave" name="添加顾客留言" />
+                <operation gridname="kstmSayGrid" id="btnUpdate" name="答复顾客" />
+                <operation gridname="invoiceGrid" id="btnSave" name="添加发票" />
+                <operation gridname="invoiceGrid" id="btnUpdate" name="修改发票" />
+                <operation gridname="invoiceGrid" id="btnRemove" name="删除发票" />
+            </operationGroup>
+        </operationGroups>
+    </roleplayer>
+    <roleplayer id="WAREHOUSEKEEPER">
+        <operationGroups>
+            <operationGroup id="order" name="订单">
+                <operation gridname="orderGrid" id="btnSend" name="确认发货" />
+                <operation gridname="orderGrid" id="btnSign" name="确认签收" />
+                <operation gridname="orderGrid" id="btnReturn" name="确认退货" />
+                <operation gridname="orderGrid" id="printDelivery" name="打印配送单" />
+                <operation gridname="orderGrid" id="printInvoice" name="打印发票" />
+                <operation gridname="orderGrid" id="printExpress" name="打印快递单" />
+                <operation gridname="orderGrid" id="btnReturn" name="确认退货" />
+                <operation gridname="orderGrid" id="tvpView" name="查看订单" />
+                <operation gridname="kstmSayGrid" id="btnSave" name="添加顾客留言" />
+                <operation gridname="kstmSayGrid" id="btnUpdate" name="答复顾客" />
+                <operation gridname="invoiceGrid" id="btnSave" name="添加发票" />
+                <operation gridname="invoiceGrid" id="btnUpdate" name="修改发票" />
+                <operation gridname="invoiceGrid" id="btnRemove" name="删除发票" />
+            </operationGroup>
+        </operationGroups>
+    </roleplayer>
+</roleplayers>

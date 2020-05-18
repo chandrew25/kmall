@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{margin:2px auto;overflow:hidden;width:964px;margin-bottom:10px;}
+#main .navi_left{width:202px;float:left;overflow:hidden;margin:0px 5px 0px 0px;border:#BCC1C5 1px solid;}
+#main .navi_left ul{width:202px;background:white;}
+#main .navi_left ul .choice{background:#EDE7E1;padding:17px 0px 10px 0px;}
+#main .navi_left ul .choice .pic{width:52%;margin:0px auto;}
+#main .navi_left ul .choice .button{margin:10px auto;width:52%;}
+#main .navi_left ul .choice .intro{line-height:20px;color:#999;text-align:center;}
+#main .navi_left ul li{overflow:hidden;}
+#main .navi_left ul li .items{border-bottom:#298BD4 1px solid;margin:0px;}
+#main .navi_left ul li .items .right{margin:8px 0px 0px 0px;}
+#main .navi_left ul li .title{font-size:15px;font-family:"microfost yahei";font-weight:bold;color:white;background:url(images/title_bg.jpg);height:27px;margin:0px auto;width:194px;padding:5px 0px 0px 15px;;line-height:27px;}
+#main .navi_left ul li .title .words{line-height:31px;margin:0px 0px 0px 10px;font-size:14px;float:left;}
+#main .navi_left ul li .title .time{float:right;margin:5px 10px 0px 0px;line-height:26px;font-size:14px;}
+#main .navi_left ul li .title .time span{color:white;}
+#main .navi_left ul li .title .arrow{margin:8px 5px 0px 0px;float:right;}
+#main .navi_left ul li .box{width:202px;margin:0;padding:8px 0px 0px 0px;}
+#main .navi_left ul li .box li{line-height:25px;padding:0px 0px 0px 15px;}
+#main .navi_left ul li .box .single{background:#E9EEF2;font-family:"microsoft yahei";font-size:14px;line-height:26px;}
+#main .navi_left ul li .box .double{font-family:"microsoft yahei";font-size:14px;line-height:26px;}
+#main .navi_left ul li .box .top{overflow:hidden;}
+#main .navi_left ul li .box .top .number{float:left;margin:0px 5px 0px 0px;width:18px;height:23px;background:url(images/number_1.gif);}
+#main .navi_left ul li .box .top .number span{color:#7FAFD7;font-size:13px;margin:1px 0px 0px 5px;font-weight:bold;line-height:19px;}
+#main .navi_left ul li .box .top .pic{margin:0px 5px 0px 0px;float:left;width:53px;}
+#main .navi_left ul li .box .top .intro{float:right;width:106px;}
+#main .navi_left ul li .box .top .intro .name{overflow:hidden;}
+#main .navi_left ul li .box .top .intro .name .words{float:left;}
+#main .navi_left ul li .box .top .intro .name .condition{float:right;margin:10px 8px 0px 0px;}
+#main .navi_left ul li .box .top .intro .grade{overflow:hidden;}
+#main .navi_left ul li .box .top .intro .type{color:#CCC;}
+#main .navi_left ul li .box .normal{overflow:hidden;}
+#main .navi_left ul li .box .normal .number{float:left;margin:0px 15px 0px 0px;width:8px;color:#09F;}
+#main .navi_left ul li .box .normal .pic{margin:3px 5px 0px 0px;float:left;width:17px;}
+#main .navi_left ul li .box .normal .intro{float:right;width:136px;}
+#main .navi_left ul li .box .normal .intro .name{overflow:hidden;}
+#main .navi_left ul li .box .normal .intro .name .words{float:left;}
+#main .navi_left ul li .box .normal .intro .name .condition{float:right;margin:10px 8px 0px 0px;}
+
+.week_show_detail{display:none;}
+.week_show_lists{display:block;}
+.week_show_detail_show{display:block;}
+.week_show_lists_hide{display:none;}
+.month_show_detail{display:none;}
+.month_show_lists{display:block;}
+.month_show_detail_show{display:block;}
+.month_show_lists_hide{display:none;}
+
+#main .content{width:752px;float:right;overflow:hidden;background:white;border:#BCC1C5 1px solid;}
+#main .content .banner{overflow:hidden;}
+#main .content .service{overflow:hidden;height:370px;}
+#main .content .service .title{font-size:16px;font-family:"microsoft yahei";line-height:46px;border-bottom:1px solid #CCC;overflow:hidden;height:46px}
+#main .content .service .title .t{padding:0px 0px 0px 24px;float:left;}
+#main .content .service .title .pages{float:right;padding:5px 24px 0px 0px;color:#DCDFE6;}
+#main .content .service .title .pages a{color:#73B1E2;text-decoration:none;}
+#main .content .service .details{margin:15px auto;width:90%;}
+#main .content .service .details li{line-height:25px;width:75px;margin:0px 45px 10px 0px;overflow:hidden;float:left;}
+#main .content .service .details li .type{color:#999;}
+#main .content .service .details .right{margin:0px;}
+#main .content .service .recommend{margin:10px 0px 0px 24px;background:#EEE7E1;width:215px;height:304px;padding:10px 0px 0px 0px;float:left;}
+#main .content .service .recommend .white{width:194px;height:189px;background:#FFF;overflow:hidden;margin:0px auto;}
+#main .content .service .recommend .white img{padding:10px 0px 0px 35px;width:112px;height:112px;}
+#main .content .service .recommend .white .stars{margin-left:45px;}
+#main .content .service .recommend .white span{padding:0px 0px 0px 45px;line-height:20px;}
+#main .content .service .recommend .white .type{color:#999;font-weight:bold;}
+#main .content .service .recommend .words{width:88%;margin:10px auto;overflow:hidden;color:black;}
+#main .content .service .details2{margin:15px auto;width:60%;}
+#main .content .service .details2 li{line-height:25px;width:75px;margin:0px 45px 10px 0px;overflow:hidden;float:left;}
+#main .content .service .details2 li .type{color:#999;}
+#main .content .service .details2 .right{margin:0px;}
+
+.tipshow{cursor:pointer;background:#85B5D9;float:left;margin:8px 4px 0px 0px;text-align:center;width:70px;line-height:31px;font-size:14px;}
+.tipshow_hover{background:#298BD4;}
+.box_show{display:none;}
+#activity_announcement_show{display:block;}
+.week_month{float:left;margin:0px 0px 0px 0px;padding:0px 5px 0px 5px;font-family:"microsoft yahei";cursor:pointer;}
+.week_month_show{background:white;}
+.week_month_box{display:none;}
+#week_show{display:block;}
+
+.turn_arrow{cursor:pointer;}
+/*免费下载*/
+.free_first_page{display:block;}
+.free_second_page{display:none;}
+.free_third_page{display:none;}
+.free_page_no{color:#73B1E2;cursor:pointer;}
+.free_page_no_show{color:#DCDFE6;}
+
+/*热门推荐*/
+.hot_first_page{display:block;}
+.hot_second_page{display:none;}
+.hot_third_page{display:none;}
+.hot_page_no{color:#73B1E2;cursor:pointer;}
+.hot_page_no_show{color:#DCDFE6;}
+
+/*最新上架*/
+.newest_first_page{display:block;}
+.newest_second_page{display:none;}
+.newest_third_page{display:none;}
+.newest_page_no{color:#73B1E2;cursor:pointer;}
+.newest_page_no_show{color:#DCDFE6;}
+

@@ -1,0 +1,22 @@
+.user_info td{
+	text-align:left;
+}
+.info_title{
+	text-indent:40px;
+}
+#register_submit{
+	border:0px;
+    font-size: 14px;
+    letter-spacing: 1mm;
+    color: #FFFFFF;     
+    font-weight: bold;
+    width: 109px; 
+    height: 32px;
+	cursor:pointer;
+    background: url("images/member/revise.png") repeat scroll 0 0 transparent;
+}
+/*提示消息*/
+.notice{
+	color:red;
+	margin-left:5px;
+}
